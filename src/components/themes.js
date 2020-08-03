@@ -2,6 +2,7 @@ export const theme ={
   colors: {
     mainGreen: "#85BA77",
     mainBlue: "#858FB8",
-    mainBlack: "#030301"
+    mainBlack: "#030301",
+    mainGray: "#a8a8a8"
   }
 }
