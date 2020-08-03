@@ -1,26 +1,53 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState, useRef } from 'react';
+import PrivacyPage from './PrivacyPage.js';
+import Homepage from './Homepage.js';
+import FlowifyPage from './FlowifyPage.js';
 
-function App() {
+import {
+  HashRouter,
+  Switch,
+  Route,
+  Link,
+
+} from "react-router-dom";
+
+export default function App() {
+  const [height, setHeight] = useState(window.innerHeight);
+  const [width, setWidth] = useState(window.innerWidth);
+  const test = useRef(null);
+  useEffect(()=>{
+    window.addEventListener("resize", updateDimensions);
+
+    return() =>{
+      window.removeEventListener("resize", updateDimensions);
+    }
+  }, []);
+
+  function updateDimensions(){
+    setHeight(window.innerHeight);
+    setWidth(window.innerWidth);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HashRouter>
+      <Switch>
+        <Route path="/" exact>
+          <Homepage width={width} ref={test} />
+        </Route>
+        <Route path="/flowify">
+          <FlowifyPage width={width} />
+        </Route>
+        <Route path="/privacy">
+          <PrivacyPage />
+        </Route>
+      </Switch>
+    </HashRouter>
+
     </div>
   );
 }
 
-export default App;
+
+
+
+
