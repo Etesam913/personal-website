@@ -2,7 +2,7 @@ import {theme} from "../components/themes";
 export const xVariants = {
   hidden: index => ({
     opacity: 0,
-    x: (index + 1) * -20
+    x: (index + 1) * -30
   }),
   show: {
     color: theme.colors.mainBlack,

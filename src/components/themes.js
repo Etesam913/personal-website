@@ -3,6 +3,7 @@ export const theme ={
     mainGreen: "#85BA77",
     mainBlue: "#858FB8",
     mainBlack: "#030301",
-    mainGray: "#a8a8a8"
+    mainGray: "#a8a8a8",
+    mainWhite: "#f7f7f7"
   }
 }

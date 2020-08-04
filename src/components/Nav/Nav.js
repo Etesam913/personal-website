@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from "react";
+import {motion} from 'framer-motion'
 import { Container } from "../Layouts";
 import { Header2 } from "../Titles";
 import { Link, useHistory } from "react-router-dom";
 import { withTheme } from "styled-components";
-import {xVariants, yVariants} from "../../variants/NavVariants";
+import styled from "styled-components";
+import { xVariants, yVariants } from "../../variants/NavVariants";
 
 function Nav(props) {
-  const [currentPathname, setCurrentPathname] = useState("/");
+  
   const history = useHistory();
 
   useEffect(() => {
     return history.listen(location => {
-      setCurrentPathname(location.pathname);
+      props.setCurrentPathname(location.pathname);
     });
   }, [history]);
   const navContent = [
@@ -19,8 +21,6 @@ function Nav(props) {
     { Experience: { link: "/experience" } },
     { About: { link: "/about" } }
   ];
-
-  
 
   function getHeader(direction, item, dictKey, index) {
     if (direction === "x") {
@@ -30,7 +30,7 @@ function Nav(props) {
           custom={index}
           initial="hidden"
           whileHover={{ color: props.theme.colors.mainBlack }}
-          animate={currentPathname === item[dictKey].link ? "show" : "grayed"}
+          animate={props.currentPathname === item[dictKey].link ? "show" : "grayed"}
           padding="0.875rem 0.5rem"
           key={index}
         >
@@ -44,7 +44,7 @@ function Nav(props) {
           custom={index}
           initial="hidden"
           whileHover={{ color: props.theme.colors.mainBlack }}
-          animate={currentPathname === item[dictKey].link ? "show" : "grayed"}
+          animate={props.currentPathname === item[dictKey].link ? "show" : "grayed"}
           padding="0.875rem 0.5rem"
           key={index}
         >
@@ -72,6 +72,7 @@ function Nav(props) {
 
   return (
     <>
+      
       {props.width <= 1100 ? (
         <Container margin="0 3rem 0 auto" className="flex" direction="column">
           <></>
@@ -85,5 +86,7 @@ function Nav(props) {
     </>
   );
 }
+
+
 
 export default withTheme(Nav);
