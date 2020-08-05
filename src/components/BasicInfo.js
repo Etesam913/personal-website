@@ -41,6 +41,9 @@ const InfoContainer = styled(Container)`
   @media screen and (max-width: 1100px) {
     padding-left: 6rem !important;
   }
+  @media screen and (max-width: 600px) {
+    padding-left: 3rem !important;
+  }
 `;
 
 export default withTheme(BasicInfo);

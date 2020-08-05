@@ -43,7 +43,7 @@ function App() {
                 <AnimatePresence>
                   <Switch location={location} key={location.pathname}>
                     <Route path="/" exact>
-                      <Projects />
+                      <Projects width={width} />
                     </Route>
                     <Route path="/experience" exact></Route>
                     <Route path="/about" exact></Route>

@@ -1,26 +1,26 @@
 import React from "react";
+import styled from "styled-components";
 import { Container } from "../../components/Layouts";
 import Card from "../../components/Card";
 import { Header2 } from "../../components/Titles";
+import { tsPropertySignature } from "@babel/types";
 
-function ProjectCol1() {
+function ProjectCol1(props) {
   return (
-    <Container
-      className="flex"
-      direction="column"
-      width="50%"
-      height="100%"
-      padding="1rem 0 0"
-    >
-      <Header2>
+    <ColContainer className="flex" direction="column" width="50%" height="100%">
+      <Header2 padding="0">
         I enjoy making open source projects in React.js that are free to use.
       </Header2>
-      <Card src="https://res.cloudinary.com/dz5ashos1/image/upload/v1596514911/github/slick-fox/ootaizslljxswekcd7vl.gif"
-        title="Slick-Fox"
-        desc="A modern theme for Firefox uses slick animations to create a collapsable url bar. "
-      />
-    </Container>
+      {props.col1Elements}
+    </ColContainer>
   );
 }
+
+const ColContainer = styled(Container)`
+  padding-left: 0.5rem;
+  @media screen and (max-width: 1100px) {
+    padding-left: 6rem !important;
+  }
+`;
 
 export default ProjectCol1;

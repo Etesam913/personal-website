@@ -4,11 +4,9 @@ import { Container } from "../Layouts";
 import { Header2 } from "../Titles";
 import { Link, useHistory } from "react-router-dom";
 import { withTheme } from "styled-components";
-import styled from "styled-components";
 import { xVariants, yVariants } from "../../variants/NavVariants";
 
 function Nav(props) {
-  
   const history = useHistory();
 
   useEffect(() => {
@@ -26,6 +24,7 @@ function Nav(props) {
     if (direction === "x") {
       return (
         <Header2
+          cursor
           variants={xVariants}
           custom={index}
           initial="hidden"
@@ -40,6 +39,7 @@ function Nav(props) {
     } else {
       return (
         <Header2
+          cursor
           variants={yVariants}
           custom={index}
           initial="hidden"
