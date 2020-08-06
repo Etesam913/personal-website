@@ -1,8 +1,8 @@
 import React from "react";
-import styled from "styled-components";
+import styled, {withTheme} from "styled-components";
 import { Container } from "../../components/Layouts";
 import { Header2 } from "../../components/Titles";
-import Card from "../../components/Card";
+import Card from "../../components/Card/Card";
 import ProjectCol1 from "./ProjectCol1";
 import ProjectCol2 from "./ProjectCol2";
 
@@ -15,7 +15,8 @@ function Projects(props) {
         title: "Slick-Fox",
         desc:
           "A modern theme for Firefox uses slick animations to create a collapsable url bar.",
-        link: "https://github.com/Etesam913/slick-fox"
+        link: "https://github.com/Etesam913/slick-fox",
+        color: props.theme.colors.mainGreen
       }
     },
     {
@@ -23,8 +24,9 @@ function Projects(props) {
         src:
           "https://res.cloudinary.com/dz5ashos1/image/upload/v1596600819/github/react-mouse-blur/tbsfzxtba6vohyk4dkgk.gif",
         title: "React-Mouse-Blur",
-        desc: "A npm package that allows for cool mouse effects to be created",
-        link: "https://github.com/Etesam913/react-mouse-blur"
+        desc: "A npm package that allows for cool mouse effects to be created.",
+        link: "https://github.com/Etesam913/react-mouse-blur",
+        color: props.theme.colors.mainGreen
       }
     }
   ];
@@ -36,7 +38,8 @@ function Projects(props) {
           "https://res.cloudinary.com/dz5ashos1/image/upload/v1596562595/github/Dragify/ug3eyokyzscqeq07tcgj.gif",
         title: "Dragify",
         desc: "A Free Flowing New Tab Extension.",
-        link: "https://github.com/Etesam913/dragify"
+        link: "https://github.com/Etesam913/dragify",
+        color: props.theme.colors.mainBlue
       }
     },
     {
@@ -45,7 +48,8 @@ function Projects(props) {
           "https://res.cloudinary.com/dz5ashos1/image/upload/v1596601578/github/react-swervy-text/cena4hb1asiigfipyhul.gif",
         title: "React-Swervy-Text",
         desc: "A npm package that provides an easy way for text to be animated along shapes and curves.",
-        link: "https://github.com/Etesam913/react-swervy-text"
+        link: "https://github.com/Etesam913/react-swervy-text",
+        color: props.theme.colors.mainBlue
       }
     }
   ];
@@ -58,6 +62,7 @@ function Projects(props) {
         title={elem[dictKey].title}
         desc={elem[dictKey].desc}
         link={elem[dictKey].link}
+        color={elem[dictKey].color}
       />
     );
   });
@@ -70,6 +75,7 @@ function Projects(props) {
         title={elem[dictKey].title}
         desc={elem[dictKey].desc}
         link={elem[dictKey].link}
+        color={elem[dictKey].color}
       />
     );
   });
@@ -115,4 +121,4 @@ const ProjectContainer = styled(Container)`
   }
 `;
 
-export default Projects;
+export default withTheme(Projects);

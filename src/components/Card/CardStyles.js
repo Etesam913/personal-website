@@ -1,27 +1,8 @@
-import React from "react";
-import { motion } from "framer-motion";
 import styled from "styled-components";
-import cursorImg from "../media/cursor.png"
-import { Header2, Header3 } from "./Titles";
+import cursorImg from "../../media/cursor.png";
+import { motion } from "framer-motion";
 
-function Card(props) {
-  return (
-    <CardContainer>
-      <ImgContainer href={props.link}>
-        <CardImg src={props.src} whileHover={{ scale: 1.1 }} whileTap={{scale: 1}}/>
-      </ImgContainer>
-
-      <CardDesc>
-        <Header2 textAlign="center">
-          {props.title}
-        </Header2>
-        <Header3 textAlign="center">{props.desc}</Header3>
-      </CardDesc>
-    </CardContainer>
-  );
-}
-
-const CardContainer = styled.div`
+export const CardContainer = styled.div`
   width: 23rem;
   height: 26rem;
   border-radius: 1rem;
@@ -36,14 +17,14 @@ const CardContainer = styled.div`
   }
 `;
 
-const ImgContainer = styled.a`
+export const ImgContainer = styled.a`
   overflow: hidden;
   height: auto;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 `;
 
-const CardImg = styled(motion.img)`
+export const CardImg = styled(motion.img)`
   height: auto;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -51,7 +32,7 @@ const CardImg = styled(motion.img)`
   cursor: url(${cursorImg}) 24 24, pointer;
 `;
 
-const CardDesc = styled.div`
+export const CardDesc = styled.div`
   flex-grow: 1;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -60,6 +41,10 @@ const CardDesc = styled.div`
   padding: 0.5rem;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 `;
 
-export default Card;
+export const CardLink = styled.a`
+  text-decoration-color: ${props => props.underlineColor};
+  cursor: url(${cursorImg}) 24 24, pointer;
+`;

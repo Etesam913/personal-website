@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Container } from "../../components/Layouts";
-import Card from "../../components/Card";
+
 function ProjectCol2(props) {
   return (
     <ColContainer

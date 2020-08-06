@@ -1,23 +1,24 @@
-import React, { useEffect, useState, useRef } from "react";
-import styled, { ThemeProvider } from "styled-components";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
-import BasicInfo from "./components/BasicInfo";
-import { theme } from "./components/themes";
-import { Container } from "./components/Layouts";
-import Nav from "./components/Nav/Nav";
-import Projects from "./pages/ProjectsPage/Projects";
+import React, { useEffect, useState, useRef } from 'react';
+import styled, { ThemeProvider } from 'styled-components';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import BasicInfo from './components/BasicInfo';
+import { theme } from './components/themes';
+import { Container } from './components/Layouts';
+import Nav from './components/Nav/Nav';
+import Projects from './pages/ProjectsPage/Projects';
+import Experience from "./pages/ExperiencePage/Experience";
 
 function App() {
   const [height, setHeight] = useState(window.innerHeight);
   const [width, setWidth] = useState(window.innerWidth);
-  const [currentPathname, setCurrentPathname] = useState("/");
+  const [currentPathname, setCurrentPathname] = useState(window.location.pathname);
 
   useEffect(() => {
-    window.addEventListener("resize", updateDimensions);
+    window.addEventListener('resize', updateDimensions);
 
     return () => {
-      window.removeEventListener("resize", updateDimensions);
+      window.removeEventListener('resize', updateDimensions);
     };
   }, []);
 
@@ -27,9 +28,9 @@ function App() {
   }
   return (
     <ThemeProvider theme={theme}>
-      <Container className="flex" direction="column">
+      <Container className='flex' direction='column'>
         <BrowserRouter>
-          <BodyContainer className="flex" margin="3.5rem auto 0 auto">
+          <BodyContainer className='flex' margin='3.5rem auto 0 auto'>
             <BasicInfo />
             <Nav
               width={width}
@@ -37,16 +38,18 @@ function App() {
               setCurrentPathname={setCurrentPathname}
             />
           </BodyContainer>
-          <BodyContainer margin="3.5rem auto 0 auto">
+          <BodyContainer margin='3.5rem auto 0 auto'>
             <Route
               render={({ location }) => (
                 <AnimatePresence>
                   <Switch location={location} key={location.pathname}>
-                    <Route path="/" exact>
+                    <Route path='/' exact>
                       <Projects width={width} />
                     </Route>
-                    <Route path="/experience" exact></Route>
-                    <Route path="/about" exact></Route>
+                    <Route path='/experience' exact>
+                      <Experience />
+                    </Route>
+                    <Route path='/about' ></Route>
                   </Switch>
                 </AnimatePresence>
               )}

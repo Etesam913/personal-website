@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Container } from "../../components/Layouts";
-import Card from "../../components/Card";
 import { Header2 } from "../../components/Titles";
-import { tsPropertySignature } from "@babel/types";
 
 function ProjectCol1(props) {
   return (
