@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {motion} from 'framer-motion'
-import { Container } from "../Layouts";
-import { Header2 } from "../Titles";
+import { Container } from "../styled/Layouts";
+import { Header2 } from "../styled/Titles";
 import { Link, useHistory } from "react-router-dom";
 import { withTheme } from "styled-components";
 import { xVariants, yVariants } from "../../variants/NavVariants";

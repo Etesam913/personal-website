@@ -1,6 +1,6 @@
 import styled, {css} from "styled-components";
 import { motion } from "framer-motion"; 
-import cursorImg from "../media/cursor.png"
+import cursorImg from "../../media/cursor.png"
 export const Header1 = styled(motion.h1)`
   padding: 0.5rem;
   margin: 0;

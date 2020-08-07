@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 export const Container = styled(motion.div)`
   position: relative;
+  scrollbar-width: none;
   color: ${props => props.color};
   background: ${props => props.background};
   margin: ${props => props.margin};

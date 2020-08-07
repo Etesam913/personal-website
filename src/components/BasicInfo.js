@@ -1,7 +1,7 @@
 import React from "react";
-import { Container } from "./Layouts";
+import { Container } from "./styled/Layouts";
 import styled, { withTheme } from "styled-components";
-import { Header1 } from "./Titles";
+import { Header1 } from "./styled/Titles";
 import WavingHand from "./WavingHand";
 function BasicInfo(props) {
   const list = {

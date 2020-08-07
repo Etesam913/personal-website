@@ -1,28 +1,81 @@
 import React from 'react';
-import styled, {withTheme} from "styled-components";
-import { Container } from '../Layouts';
-import { Header1, Header2 } from '../Titles';
+import { motion } from 'framer-motion';
+import styled, { withTheme } from 'styled-components';
+import { Container } from '../styled/Layouts';
+import { Header1, Header2, Header3 } from '../styled/Titles';
+import { Link } from '../styled/Link';
 
 function ExperienceItem(props) {
   return (
     <Container width='100%'>
-      <Container className='flex' align="center">
-        <Header1 color={props.theme.colors.mainGreen}>Columbia Daily Spectator</Header1>
-        <Container margin='0 0 0 auto'>
-          <CompanyLogo src="https://www.columbiaspectator.com/pb/resources/img/spectator-logo.png"/>
-        </Container>
-      </Container>
+      <MobileContainer>
+        <Link
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 1 }}
+          underline
+          href={props.link}
+          underlineColor={props.color}
+        >
+          <Header1 color={props.color}>{props.companyTitle}</Header1>
+        </Link>
+        <MobileRowItem>
+          <Link href={props.link}>
+            <CompanyLogo
+              src={props.imgSrc}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 1 }}
+            />
+          </Link>
+        </MobileRowItem>
+      </MobileContainer>
+      <MobileContainer>
+        <Header3>{props.title}</Header3>
+        <MobileRowItem>
+          <Header3>{props.timePeriod}</Header3>
+        </MobileRowItem>
+      </MobileContainer>
 
-      <Container margin="0 0 0 2rem">
-        <Header2>Bla bla bla</Header2>
-      </Container>
+      {props.points.map((text, index) => {
+        return (
+          <MobileText>
+            <Header2 key={'point-' + index}>{text}</Header2>
+          </MobileText>
+        );
+      })}
     </Container>
   );
 }
 
-const CompanyLogo = styled.img`
-  width: 15rem;
-  height: auto;
+const CompanyLogo = styled(motion.img)`
+  width: auto;
+  height: 2rem;
+  
+`;
+
+const MobileText = styled(Container)`
+  margin: 0 0 0 2rem;
+  @media screen and (max-width: 930px) {
+    text-align: center;
+    margin: 0;
+  }
+`;
+
+const MobileContainer = styled(Container)`
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  @media screen and (max-width: 930px) {
+    flex-direction: column;
+  }
+`;
+const MobileRowItem = styled(Container)`
+  margin: 0 0 0 auto;
+  @media screen and (max-width: 1100px) and (min-width: 930px) {
+    margin-right: 2rem;
+  }
+  @media screen and (max-width: 930px) {
+    margin: 0
+  }
 `;
 
 export default withTheme(ExperienceItem);

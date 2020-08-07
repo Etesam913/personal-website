@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Container } from "../../components/Layouts";
-import { Header2 } from "../../components/Titles";
+import { Container } from "../../components/styled/Layouts";
+import { Header2 } from "../../components/styled/Titles";
 
 function ProjectCol1(props) {
   return (

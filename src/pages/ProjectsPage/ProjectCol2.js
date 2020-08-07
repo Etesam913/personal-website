@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Container } from "../../components/Layouts";
+import { Container } from "../../components/styled/Layouts";
 
 function ProjectCol2(props) {
   return (

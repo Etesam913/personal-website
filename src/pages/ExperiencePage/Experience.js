@@ -1,16 +1,77 @@
 import React from 'react';
-import { Container } from '../../components/Layouts';
+import styled, { withTheme } from 'styled-components';
+import { Container } from '../../components/styled/Layouts';
 import ExperienceItem from '../../components/ExperienceItem/ExperienceItem';
-function Experience() {
+function Experience(props) {
+  const experienceItems = [
+    {
+      ColumbiaSpectator: {
+        imgSrc:
+          'https://www.columbiaspectator.com/pb/resources/img/spectator-logo.png',
+        title: 'Software Developer',
+        timePeriod: 'Sept 2019-Present',
+        companyTitle: 'Columbia Daily Spectator',
+        points: [
+          'Worked in a team with 10 other developers to overhaul Columbia’s leading student newspaper’s website with React.js. The website receives 50 million impressions annualy.',
+          'Worked in a committee to help improve the developer training experience for incoming students'
+        ],
+        link: 'https://www.columbiaspectator.com/',
+        color: props.theme.colors.mainGreen
+      }
+    },
+    {
+      CorrelationOne: {
+        imgSrc: 'https://avatars1.githubusercontent.com/u/20244732?s=200&v=4',
+        title: 'Software Developer Intern',
+        timePeriod: 'June 2020-Sept 2020',
+        companyTitle: 'Correlation One',
+        points: [
+          'Worked with 2 other developers to overhaul the main website.',
+          'Created the connect and about pages using a contentful database.'
+        ],
+        link: 'https://www.correlation-one.com/',
+        color: props.theme.colors.mainBlue
+      }
+    }
+  ];
+
   return (
     <Container
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      width='100%'
+      initial={{ opacity: 0, y: -40 }}
+      animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0 }}
     >
-      <ExperienceItem />
+      <>
+        {experienceItems.map((item, index) => {
+          const dictKey = Object.keys(item)[0];
+          return (
+            <ExperienceContainer margin='0 0 2rem'>
+              <ExperienceItem
+                key={'experience-item-' + index}
+                imgSrc={item[dictKey].imgSrc}
+                title={item[dictKey].title}
+                timePeriod={item[dictKey].timePeriod}
+                companyTitle={item[dictKey].companyTitle}
+                points={item[dictKey].points}
+                link={item[dictKey].link}
+                color={item[dictKey].color}
+              />
+            </ExperienceContainer>
+          );
+        })}
+      </>
     </Container>
   );
 }
 
-export default Experience;
+const ExperienceContainer = styled(Container)`
+  @media screen and (max-width: 1100px) {
+    padding: 0 6rem !important;
+  }
+
+  @media screen and (max-width: 792px) {
+    padding: 0 2rem !important;
+  }
+`;
+export default withTheme(Experience);

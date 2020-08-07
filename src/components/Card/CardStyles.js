@@ -43,8 +43,3 @@ export const CardDesc = styled.div`
   justify-content: center;
   align-items: center;
 `;
-
-export const CardLink = styled.a`
-  text-decoration-color: ${props => props.underlineColor};
-  cursor: url(${cursorImg}) 24 24, pointer;
-`;

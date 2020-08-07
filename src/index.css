@@ -5,17 +5,23 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-user-select: none; /* Safari */        
+  -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
-  cursor: url("./media/cursor.png") 24 24, default;
-  
+  cursor: url('./media/cursor.png') 24 24, default;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 span.wave {
@@ -27,23 +33,35 @@ span.wave {
 }
 
 @keyframes wave-animation {
-    0% { transform: rotate(  0.0deg) }
-   10% { transform: rotate(-10.0deg) }
-   20% { transform: rotate( 12.0deg) }
-   30% { transform: rotate(-10.0deg) }
-   40% { transform: rotate(  9.0deg) }
-   50% { transform: rotate(  0.0deg) } 
-  100% { transform: rotate(  0.0deg) }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
-
-
-.no-underline{
+.no-underline {
   text-decoration: none;
   color: rgb(50, 175, 233);
 }
 
-.video{
+.video {
   position: absolute;
   top: 0;
   left: 10%;
@@ -51,11 +69,10 @@ span.wave {
   height: 100%;
   border-radius: 2rem;
   border: none;
-  box-shadow:  20px 20px 60px #bdc9c9, 
-  -20px -20px 60px #ffffff;
+  box-shadow: 20px 20px 60px #bdc9c9, -20px -20px 60px #ffffff;
 }
 
-.video-mobile{
+.video-mobile {
   position: absolute;
   top: 0;
   left: 14%;
@@ -63,8 +80,7 @@ span.wave {
   height: 90%;
   border-radius: 2rem;
   border: none;
-  box-shadow:  20px 20px 60px #bdc9c9, 
-  -20px -20px 60px #ffffff;
+  box-shadow: 20px 20px 60px #bdc9c9, -20px -20px 60px #ffffff;
 }
 
 .video-container-mobile {
@@ -75,7 +91,7 @@ span.wave {
   align-self: center;
   margin-top: 1rem;
 }
-.video-container-desktop{
+.video-container-desktop {
   position: relative;
   width: 100%;
   height: 0;

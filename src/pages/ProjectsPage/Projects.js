@@ -1,7 +1,7 @@
 import React from "react";
 import styled, {withTheme} from "styled-components";
-import { Container } from "../../components/Layouts";
-import { Header2 } from "../../components/Titles";
+import { Container } from "../../components/styled/Layouts";
+import { Header2 } from "../../components/styled/Titles";
 import Card from "../../components/Card/Card";
 import ProjectCol1 from "./ProjectCol1";
 import ProjectCol2 from "./ProjectCol2";
@@ -11,7 +11,7 @@ function Projects(props) {
     {
       Card1: {
         src:
-          "https://res.cloudinary.com/dz5ashos1/image/upload/v1596514911/github/slick-fox/ootaizslljxswekcd7vl.gif",
+          "https://res.cloudinary.com/dz5ashos1/image/upload/v1596727929/github/slick-fox/t8ddsyosxckrtn0awhmh.gif",
         title: "Slick-Fox",
         desc:
           "A modern theme for Firefox uses slick animations to create a collapsable url bar.",
@@ -22,7 +22,7 @@ function Projects(props) {
     {
       Card2: {
         src:
-          "https://res.cloudinary.com/dz5ashos1/image/upload/v1596600819/github/react-mouse-blur/tbsfzxtba6vohyk4dkgk.gif",
+          "https://res.cloudinary.com/dz5ashos1/image/upload/v1596727671/github/react-mouse-blur/zvgjbdjuvqkxdqn7k3xr.gif",
         title: "React-Mouse-Blur",
         desc: "A npm package that allows for cool mouse effects to be created.",
         link: "https://github.com/Etesam913/react-mouse-blur",
@@ -35,7 +35,7 @@ function Projects(props) {
     {
       Card1: {
         src:
-          "https://res.cloudinary.com/dz5ashos1/image/upload/v1596562595/github/Dragify/ug3eyokyzscqeq07tcgj.gif",
+          "https://res.cloudinary.com/dz5ashos1/image/upload/v1596728594/github/Dragify/ggqsvqqroccjzywcq5ql.gif",
         title: "Dragify",
         desc: "A Free Flowing New Tab Extension.",
         link: "https://github.com/Etesam913/dragify",
@@ -45,7 +45,7 @@ function Projects(props) {
     {
       Card2: {
         src:
-          "https://res.cloudinary.com/dz5ashos1/image/upload/v1596601578/github/react-swervy-text/cena4hb1asiigfipyhul.gif",
+          "https://res.cloudinary.com/dz5ashos1/image/upload/v1596728223/github/react-swervy-text/k2gsml3ptbq6enaioq6i.gif",
         title: "React-Swervy-Text",
         desc: "A npm package that provides an easy way for text to be animated along shapes and curves.",
         link: "https://github.com/Etesam913/react-swervy-text",
@@ -58,6 +58,7 @@ function Projects(props) {
     const dictKey = Object.keys(elem)[0];
     return (
       <Card
+        key={index}
         src={elem[dictKey].src}
         title={elem[dictKey].title}
         desc={elem[dictKey].desc}
@@ -71,6 +72,7 @@ function Projects(props) {
     const dictKey = Object.keys(elem)[0];
     return (
       <Card
+        key={index}
         src={elem[dictKey].src}
         title={elem[dictKey].title}
         desc={elem[dictKey].desc}
@@ -84,8 +86,8 @@ function Projects(props) {
     <>
       <ProjectContainer
         width='100%'
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0 }}
         padding='0 0 1.5rem'
       >
@@ -115,6 +117,7 @@ function Projects(props) {
 const ProjectContainer = styled(Container)`
   display: flex;
   flex-direction: row;
+  
   @media screen and (max-width: 992px) {
     flex-direction: column;
     align-items: center;
