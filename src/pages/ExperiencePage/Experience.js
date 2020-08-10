@@ -1,13 +1,14 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { Container } from '../../components/styled/Layouts';
-import ExperienceItem from '../../components/ExperienceItem/ExperienceItem';
+import ExperienceItem from './ExperienceItem';
 function Experience(props) {
   const experienceItems = [
     {
       ColumbiaSpectator: {
         imgSrc:
-          'https://www.columbiaspectator.com/pb/resources/img/spectator-logo.png',
+          'https://res.cloudinary.com/dz5ashos1/image/upload/v1597019110/github/ols5toqngrrhqi1fdjpa.png',
+        altText: "Spectator Logo",
         title: 'Software Developer',
         timePeriod: 'Sept 2019-Present',
         companyTitle: 'Columbia Daily Spectator',
@@ -21,7 +22,8 @@ function Experience(props) {
     },
     {
       CorrelationOne: {
-        imgSrc: 'https://avatars1.githubusercontent.com/u/20244732?s=200&v=4',
+        imgSrc: 'https://res.cloudinary.com/dz5ashos1/image/upload/v1597019107/github/wavttgnmhaerr5t5g99z.png',
+        altText: "Correlation One Logo",
         title: 'Software Developer Intern',
         timePeriod: 'June 2020-Sept 2020',
         companyTitle: 'Correlation One',
@@ -50,6 +52,7 @@ function Experience(props) {
               <ExperienceItem
                 key={'experience-item-' + index}
                 imgSrc={item[dictKey].imgSrc}
+                altText={item[dictKey].altText}
                 title={item[dictKey].title}
                 timePeriod={item[dictKey].timePeriod}
                 companyTitle={item[dictKey].companyTitle}

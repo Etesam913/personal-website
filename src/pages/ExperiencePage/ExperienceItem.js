@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styled, { withTheme } from 'styled-components';
-import { Container } from '../styled/Layouts';
-import { Header1, Header2, Header3 } from '../styled/Titles';
-import { Link } from '../styled/Link';
+import { Container } from '../../components/styled/Layouts';
+import { Header1, Header2, Header3 } from '../../components/styled/Titles';
+import { Link } from '../../components/styled/Link';
 
 function ExperienceItem(props) {
   return (
@@ -22,6 +22,7 @@ function ExperienceItem(props) {
           <Link href={props.link}>
             <CompanyLogo
               src={props.imgSrc}
+              alt={props.altText}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 1 }}
             />

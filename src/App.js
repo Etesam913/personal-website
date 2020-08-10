@@ -4,7 +4,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  useLocation
 } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import BasicInfo from './components/BasicInfo';
@@ -13,6 +12,7 @@ import { Container } from './components/styled/Layouts';
 import Nav from './components/Nav/Nav';
 import Projects from './pages/ProjectsPage/Projects';
 import Experience from './pages/ExperiencePage/Experience';
+import About from "./pages/AboutPage/About"
 
 function App() {
   const [height, setHeight] = useState(window.innerHeight);
@@ -60,7 +60,7 @@ function App() {
                       </Route>
 
                       <Route path='/about' exact>
-                        <Projects width={width} />
+                        <About />
                       </Route>
                     </Switch>
                   </AnimatePresence>
