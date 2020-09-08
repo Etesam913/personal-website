@@ -1,8 +1,8 @@
 {
+  "homepage": "https://Etesam913.github.io",
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Etesam913.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.2",
     "@testing-library/react": "^10.4.7",
