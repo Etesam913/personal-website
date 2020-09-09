@@ -20,8 +20,6 @@ function App() {
   const [currentPathname, setCurrentPathname] = useState(
     window.location.pathname
   );
-
-  console.log(window.location.pathname);
   useEffect(() => {
     window.addEventListener('resize', updateDimensions);
 

@@ -6,18 +6,27 @@ import {
   CardDesc,
   CardLink
 } from './CardStyles';
+import {motion} from 'framer-motion'
 import { Header2, Header3 } from '../styled/Titles';
 import { Link } from '../styled/Link';
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 function Card(props) {
   return (
     <CardContainer>
       <ImgContainer href={props.link}>
-        <CardImg
-          src={props.src}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 1 }}
-        />
+        <motion.div whileHover={{scale: 1.1}}>
+          <LazyLoadImage
+            alt={`project-${props.num}`}
+            beforeLoad={() => {
+              console.log('bob');
+            }}
+            src={props.src}
+            height='auto'
+            width='100%'
+            effect='blur'
+          />
+        </motion.div>
       </ImgContainer>
 
       <CardDesc>
@@ -28,10 +37,7 @@ function Card(props) {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 1 }}
         >
-          <Header2
-            textAlign='center'
-            color={props.color}
-          >
+          <Header2 textAlign='center' color={props.color}>
             {props.title}
           </Header2>
         </Link>

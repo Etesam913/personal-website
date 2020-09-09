@@ -24,6 +24,7 @@ export const ImgContainer = styled.a`
   border-top-right-radius: 1rem;
 `;
 
+
 export const CardImg = styled(motion.img)`
   height: auto;
   border-top-left-radius: 1rem;
