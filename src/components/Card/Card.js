@@ -10,7 +10,6 @@ import {motion} from 'framer-motion'
 import { Header2, Header3 } from '../styled/Titles';
 import { Link } from '../styled/Link';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 function Card(props) {
   return (
     <CardContainer>
@@ -24,7 +23,6 @@ function Card(props) {
             src={props.src}
             height='auto'
             width='100%'
-            effect='blur'
           />
         </motion.div>
       </ImgContainer>
