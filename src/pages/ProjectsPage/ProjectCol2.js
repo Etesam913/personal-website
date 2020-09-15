@@ -1,17 +1,16 @@
-import React from "react";
-import styled from "styled-components";
-import { Container } from "../../components/styled/Layouts";
+import { React, styled } from '../../Dependencies';
+import { Container } from '../../components/ComponentsMaster';
 
 function ProjectCol2(props) {
   return (
     <ColContainer
-      className="flex"
-      direction="column"
-      width="50%"
-      height="100%"
-      padding="0 0 0 0.5rem"
+      className='flex'
+      direction='column'
+      width='50%'
+      height='100%'
+      padding='0 0 0 0.5rem'
     >
-      <Container margin="0 0 0 auto">{props.col2Elements}</Container>
+      <Container margin='0 0 0 auto'>{props.col2Elements}</Container>
     </ColContainer>
   );
 }

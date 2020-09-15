@@ -1,5 +1,4 @@
-import React from 'react';
-import styled, { withTheme } from 'styled-components';
+import { React, styled, withTheme } from '../../Dependencies';
 import { Container } from '../../components/styled/Layouts';
 import { Header2 } from '../../components/styled/Titles';
 import Card from '../../components/Card/Card';
@@ -58,16 +57,15 @@ function Projects(props) {
   const col1Elements = col1Content.map((elem, index) => {
     const dictKey = Object.keys(elem)[0];
     return (
-        <Card
-          key={`card-${index}`}
-          num={index}
-          src={elem[dictKey].src}
-          title={elem[dictKey].title}
-          desc={elem[dictKey].desc}
-          link={elem[dictKey].link}
-          color={elem[dictKey].color}
-        />
-      
+      <Card
+        key={`card-${index}`}
+        num={index}
+        src={elem[dictKey].src}
+        title={elem[dictKey].title}
+        desc={elem[dictKey].desc}
+        link={elem[dictKey].link}
+        color={elem[dictKey].color}
+      />
     );
   });
 
@@ -75,7 +73,7 @@ function Projects(props) {
     const dictKey = Object.keys(elem)[0];
     return (
       <Card
-        key={`card-${index+3}`}
+        key={`card-${index + 3}`}
         num={index}
         video={elem[dictKey].video}
         src={elem[dictKey].src}

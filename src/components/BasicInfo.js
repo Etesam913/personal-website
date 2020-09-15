@@ -1,8 +1,7 @@
-import React from "react";
-import { Container } from "./styled/Layouts";
-import styled, { withTheme } from "styled-components";
-import { Header1 } from "./styled/Titles";
-import WavingHand from "./WavingHand";
+import { React, styled, withTheme } from '../Dependencies';
+import { Container, Header1 } from './ComponentsMaster'
+import WavingHand from './WavingHand';
+
 function BasicInfo(props) {
   const list = {
     visible: { opacity: 1 },
@@ -16,13 +15,13 @@ function BasicInfo(props) {
 
   return (
     <InfoContainer
-      className="flex"
-      direction="column"
+      className='flex'
+      direction='column'
       variants={list}
-      initial="hidden"
-      animate="visible"
+      initial='hidden'
+      animate='visible'
     >
-      <Container className="flex" align="center" variants={item}>
+      <Container className='flex' align='center' variants={item}>
         <Header1 color={props.theme.colors.mainGreen}>
           Etesam Ansari <WavingHand />
         </Header1>

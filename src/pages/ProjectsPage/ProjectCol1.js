@@ -1,7 +1,5 @@
-import React from "react";
-import styled from "styled-components";
-import { Container } from "../../components/styled/Layouts";
-import { Header2 } from "../../components/styled/Titles";
+import { React, styled } from '../../Dependencies';
+import { Container, Header2 } from "../../components/ComponentsMaster";
 
 function ProjectCol1(props) {
   return (
@@ -10,6 +8,7 @@ function ProjectCol1(props) {
         I enjoy making open source projects in React.js that are free to use.
       </Header2>
       {props.col1Elements}
+
     </ColContainer>
   );
 }

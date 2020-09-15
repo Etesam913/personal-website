@@ -1,18 +1,21 @@
-import React, { useEffect, useState, useRef } from 'react';
-import styled, { ThemeProvider } from 'styled-components';
 import {
-  BrowserRouter as Router,
+  React,
+  useState,
+  useEffect,
+  styled,
+  ThemeProvider,
+  Router,
   Switch,
   Route,
-} from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
-import BasicInfo from './components/BasicInfo';
-import { theme } from './components/themes';
-import { Container } from './components/styled/Layouts';
-import Nav from './components/Nav/Nav';
-import Projects from './pages/ProjectsPage/Projects';
-import Experience from './pages/ExperiencePage/Experience';
-import About from "./pages/AboutPage/About"
+  AnimatePresence
+} from './Dependencies';
+import {
+  Nav,
+  Container,
+  BasicInfo,
+  theme
+} from './components/ComponentsMaster';
+import { Projects, Experience, About } from './pages/PagesMaster';
 
 function App() {
   const [height, setHeight] = useState(window.innerHeight);
@@ -47,21 +50,21 @@ function App() {
 
           <Route
             render={({ location }) => (
-              <BodyContainer margin='3rem auto 0 auto'>                
-                  <AnimatePresence exitBeforeEnter>
-                    <Switch location={location} key={location.pathname}>
-                      <Route path='/' exact>
-                        <Projects width={width} />
-                      </Route>
-                      <Route path='/experience' exact>
-                        <Experience width={width}/>
-                      </Route>
+              <BodyContainer margin='3rem auto 0 auto'>
+                <AnimatePresence exitBeforeEnter>
+                  <Switch location={location} key={location.pathname}>
+                    <Route path='/' exact>
+                      <Projects width={width} />
+                    </Route>
+                    <Route path='/experience' exact>
+                      <Experience width={width} />
+                    </Route>
 
-                      <Route path='/about' exact>
-                        <About />
-                      </Route>
-                    </Switch>
-                  </AnimatePresence>
+                    <Route path='/about' exact>
+                      <About />
+                    </Route>
+                  </Switch>
+                </AnimatePresence>
               </BodyContainer>
             )}
           />

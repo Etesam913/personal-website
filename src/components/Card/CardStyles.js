@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import cursorImg from "../../media/cursor.png";
-import { motion } from "framer-motion";
+import styled from 'styled-components';
+import cursorImg from '../../media/cursor.png';
+import { motion } from 'framer-motion';
 
 export const CardContainer = styled.div`
   width: 23rem;
@@ -23,7 +23,6 @@ export const ImgContainer = styled.a`
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 `;
-
 
 export const CardImg = styled(motion.img)`
   height: auto;

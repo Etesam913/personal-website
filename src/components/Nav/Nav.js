@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
-import {motion} from 'framer-motion'
-import { Container } from "../styled/Layouts";
-import { Header2 } from "../styled/Titles";
-import { Link, useHistory } from "react-router-dom";
-import { withTheme } from "styled-components";
-import { xVariants, yVariants } from "../../variants/NavVariants";
+import {
+  React,
+  useEffect,
+  Link,
+  useHistory,
+  withTheme
+} from '../../Dependencies';
+import { Container, Header2 } from '../ComponentsMaster';
+import { xVariants, yVariants } from '../../variants/NavVariants';
 
 function Nav(props) {
   const history = useHistory();
@@ -15,22 +17,24 @@ function Nav(props) {
     });
   }, [history]);
   const navContent = [
-    { Projects: { link: "/" } },
-    { Experience: { link: "/experience" } },
-    { About: { link: "/about" } }
+    { Projects: { link: '/' } },
+    { Experience: { link: '/experience' } },
+    { About: { link: '/about' } }
   ];
 
   function getHeader(direction, item, dictKey, index) {
-    if (direction === "x") {
+    if (direction === 'x') {
       return (
         <Header2
           cursor
           variants={xVariants}
           custom={index}
-          initial="hidden"
+          initial='hidden'
           whileHover={{ color: props.theme.colors.mainBlack }}
-          animate={props.currentPathname === item[dictKey].link ? "show" : "grayed"}
-          padding="0.875rem 0.5rem"
+          animate={
+            props.currentPathname === item[dictKey].link ? 'show' : 'grayed'
+          }
+          padding='0.875rem 0.5rem'
           key={index}
         >
           {dictKey}
@@ -42,10 +46,12 @@ function Nav(props) {
           cursor
           variants={yVariants}
           custom={index}
-          initial="hidden"
+          initial='hidden'
           whileHover={{ color: props.theme.colors.mainBlack }}
-          animate={props.currentPathname === item[dictKey].link ? "show" : "grayed"}
-          padding="0.875rem 0.5rem"
+          animate={
+            props.currentPathname === item[dictKey].link ? 'show' : 'grayed'
+          }
+          padding='0.875rem 0.5rem'
           key={index}
         >
           {dictKey}
@@ -62,7 +68,7 @@ function Nav(props) {
         <Link
           to={item[dictKey].link}
           key={index}
-          style={{ textDecoration: "none" }}
+          style={{ textDecoration: 'none' }}
         >
           {getHeader(direction, item, dictKey, index)}
         </Link>
@@ -72,21 +78,18 @@ function Nav(props) {
 
   return (
     <>
-      
       {props.width <= 1100 ? (
-        <Container margin="0 3rem 0 auto" className="flex" direction="column">
+        <Container margin='0 3rem 0 auto' className='flex' direction='column'>
           <></>
-          {getNavItems("y")}
+          {getNavItems('y')}
         </Container>
       ) : (
-        <Container margin="0 0 0 auto" className="flex">
-          {getNavItems("x")}
+        <Container margin='0 0 0 auto' className='flex'>
+          {getNavItems('x')}
         </Container>
       )}
     </>
   );
 }
-
-
 
 export default withTheme(Nav);

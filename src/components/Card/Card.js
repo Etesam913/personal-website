@@ -1,25 +1,14 @@
-import React from 'react';
-import {
-  CardContainer,
-  ImgContainer,
-  CardImg,
-  CardDesc,
-  CardLink
-} from './CardStyles';
-import {motion} from 'framer-motion'
-import { Header2, Header3 } from '../styled/Titles';
-import { Link } from '../styled/Link';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { CardContainer, ImgContainer, CardDesc } from './CardStyles';
+import { Header2, Header3, Link } from '../ComponentsMaster';
+import {React, motion, LazyLoadImage} from '../../Dependencies'
+
 function Card(props) {
   return (
     <CardContainer>
       <ImgContainer href={props.link}>
-        <motion.div whileHover={{scale: 1.1}}>
+        <motion.div whileHover={{ scale: 1.1 }}>
           <LazyLoadImage
             alt={`project-${props.num}`}
-            beforeLoad={() => {
-              console.log('bob');
-            }}
             src={props.src}
             height='auto'
             width='100%'

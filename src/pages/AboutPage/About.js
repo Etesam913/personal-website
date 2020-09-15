@@ -1,8 +1,5 @@
-import React from 'react';
-import styled, { withTheme } from 'styled-components';
-import { Container } from '../../components/styled/Layouts';
-import { Header2 } from '../../components/styled/Titles';
-import { Link } from '../../components/styled/Link';
+import { React, styled, withTheme } from '../../Dependencies';
+import { Container, Header2, Link } from '../../components/ComponentsMaster';
 
 function About({ theme }) {
   return (
