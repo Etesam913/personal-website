@@ -18,21 +18,19 @@ import {
 import { Projects, Experience, About } from './pages/PagesMaster';
 
 function App() {
-  const [height, setHeight] = useState(window.innerHeight);
   const [width, setWidth] = useState(window.innerWidth);
   const [currentPathname, setCurrentPathname] = useState(
-    window.location.pathname
+    window.location.hash
   );
   useEffect(() => {
+    setCurrentPathname(window.location.hash)
     window.addEventListener('resize', updateDimensions);
-
     return () => {
       window.removeEventListener('resize', updateDimensions);
     };
   }, []);
 
   function updateDimensions() {
-    setHeight(window.innerHeight);
     setWidth(window.innerWidth);
   }
   return (

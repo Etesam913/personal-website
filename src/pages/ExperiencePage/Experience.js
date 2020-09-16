@@ -49,7 +49,10 @@ function Experience(props) {
         {experienceItems.map((item, index) => {
           const dictKey = Object.keys(item)[0];
           return (
-            <ExperienceContainer margin='0 0 2rem'>
+            <ExperienceContainer
+              margin='0 0 2rem'
+              key={`experience-container-${index}`}
+            >
               <ExperienceItem
                 key={'experience-item-' + index}
                 imgSrc={item[dictKey].imgSrc}

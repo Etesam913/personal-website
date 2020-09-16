@@ -12,7 +12,7 @@ export const Header1 = styled(motion.h1)`
       : props.theme.colors.mainBlack};
   color: ${props => props.color};
   ${props =>
-    props.cursor &&
+    props.showCursor &&
     css`
       cursor: url(${cursorImg}) 24 24, pointer;
     `}

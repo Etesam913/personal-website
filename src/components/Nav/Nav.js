@@ -13,7 +13,7 @@ function Nav(props) {
 
   useEffect(() => {
     return history.listen(location => {
-      props.setCurrentPathname(location.pathname);
+      props.setCurrentPathname('#'+location.pathname);
     });
   }, [history]);
   const navContent = [
@@ -26,13 +26,13 @@ function Nav(props) {
     if (direction === 'x') {
       return (
         <Header2
-          cursor
+          showCursor
           variants={xVariants}
           custom={index}
           initial='hidden'
           whileHover={{ color: props.theme.colors.mainBlack }}
           animate={
-            props.currentPathname === item[dictKey].link ? 'show' : 'grayed'
+            props.currentPathname === ('#'+item[dictKey].link) ? 'show' : 'grayed'
           }
           padding='0.875rem 0.5rem'
           key={index}
@@ -43,13 +43,13 @@ function Nav(props) {
     } else {
       return (
         <Header2
-          cursor
+          showCursor
           variants={yVariants}
           custom={index}
           initial='hidden'
           whileHover={{ color: props.theme.colors.mainBlack }}
           animate={
-            props.currentPathname === item[dictKey].link ? 'show' : 'grayed'
+            props.currentPathname === ('#'+item[dictKey].link) ? 'show' : 'grayed'
           }
           padding='0.875rem 0.5rem'
           key={index}
@@ -63,7 +63,6 @@ function Nav(props) {
   function getNavItems(direction) {
     return navContent.map((item, index) => {
       const dictKey = Object.keys(item)[0];
-
       return (
         <Link
           to={item[dictKey].link}

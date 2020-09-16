@@ -38,8 +38,8 @@ function ExperienceItem(props) {
 
       {props.points.map((text, index) => {
         return (
-          <MobileText>
-            <Header2 key={'point-' + index}>{text}</Header2>
+          <MobileText key={'point-' + index}>
+            <Header2>{text}</Header2>
           </MobileText>
         );
       })}
@@ -50,7 +50,6 @@ function ExperienceItem(props) {
 const CompanyLogo = styled(motion.img)`
   width: auto;
   height: 2rem;
-  
 `;
 
 const MobileText = styled(Container)`
@@ -75,7 +74,7 @@ const MobileRowItem = styled(Container)`
     margin-right: 2rem;
   }
   @media screen and (max-width: 930px) {
-    margin: 0
+    margin: 0;
   }
 `;
 
