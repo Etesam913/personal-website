@@ -24,6 +24,15 @@ export const ImgContainer = styled.a`
   border-top-right-radius: 1rem;
 `;
 
+export const CardVideo = styled.video`
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  object-position: 100% 50%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+`;
+
 export const CardImg = styled(motion.img)`
   height: auto;
   border-top-left-radius: 1rem;

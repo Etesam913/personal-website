@@ -1,7 +1,5 @@
 import { React, styled, withTheme } from '../../Dependencies';
-import { Container } from '../../components/styled/Layouts';
-import { Header2 } from '../../components/styled/Titles';
-import Card from '../../components/Card/Card';
+import { Container, Header2, Card } from '../../components/ComponentsMaster';
 import ProjectCol1 from './ProjectCol1';
 import ProjectCol2 from './ProjectCol2';
 
@@ -10,12 +8,13 @@ function Projects(props) {
     {
       Card1: {
         src:
-          'https://res.cloudinary.com/dz5ashos1/image/upload/v1596727929/github/slick-fox/t8ddsyosxckrtn0awhmh.gif',
+          'https://res.cloudinary.com/dz5ashos1/video/upload/v1600231657/github/slick-fox/fhijdokyrzooj0boyo6z.mov',
         title: 'Slick-Fox',
         desc:
           'A modern theme for Firefox uses slick animations to create a collapsable url bar.',
         link: 'https://github.com/Etesam913/slick-fox',
-        color: props.theme.colors.mainGreen
+        color: props.theme.colors.mainGreen,
+        video: true
       }
     },
     {
@@ -25,7 +24,8 @@ function Projects(props) {
         title: 'React-Mouse-Blur',
         desc: 'A npm package that allows for cool mouse effects to be created.',
         link: 'https://github.com/Etesam913/react-mouse-blur',
-        color: props.theme.colors.mainGreen
+        color: props.theme.colors.mainGreen,
+        video: false
       }
     }
   ];
@@ -34,22 +34,25 @@ function Projects(props) {
     {
       Card1: {
         src:
-          'https://res.cloudinary.com/dz5ashos1/image/upload/v1596728594/github/Dragify/ggqsvqqroccjzywcq5ql.gif',
+          'https://res.cloudinary.com/dz5ashos1/video/upload/v1600233519/github/Dragify/lkcfgn5espp1kuwlcint.mov',
         title: 'Dragify',
         desc: 'A Free Flowing New Tab Extension.',
         link: 'https://github.com/Etesam913/dragify',
-        color: props.theme.colors.mainBlue
+        color: props.theme.colors.mainBlue,
+        video: true
       }
     },
     {
       Card2: {
         src:
-          'https://res.cloudinary.com/dz5ashos1/image/upload/v1596728223/github/react-swervy-text/k2gsml3ptbq6enaioq6i.gif',
+          'https://res.cloudinary.com/dz5ashos1/video/upload/v1600234046/github/react-swervy-text/gfpk5dykhnqt7jlnujgx.mov',
+        poster: 'https://res.cloudinary.com/dz5ashos1/image/upload/v1600237181/github/react-swervy-text/yhqkjucss1ahfztn0pw8.png',
         title: 'React-Swervy-Text',
         desc:
           'A npm package that provides an easy way for text to be animated along shapes and curves.',
         link: 'https://github.com/Etesam913/react-swervy-text',
-        color: props.theme.colors.mainBlue
+        color: props.theme.colors.mainBlue,
+        video: true
       }
     }
   ];
@@ -65,6 +68,7 @@ function Projects(props) {
         desc={elem[dictKey].desc}
         link={elem[dictKey].link}
         color={elem[dictKey].color}
+        video={elem[dictKey].video}
       />
     );
   });
