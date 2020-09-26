@@ -5,6 +5,7 @@ export const theme = {
     mainBlack: '#030301',
     mainGray: '#a8a8a8',
     mainWhite: '#f7f7f7',
-    mainOrange: '#FF9966'
+    mainOrange: '#FF9966',
+    mainPurple: '#BA77B9'
   }
 };
