@@ -21,7 +21,7 @@ function About({ theme }) {
         <Header2>When I am not coding I like to play basketball.</Header2>
         <Links>
           <StyledLink
-            href='https://drive.google.com/file/d/1b2Gjwp_c86hERS7-cOIGUmjCJdB2kARk/view?usp=sharing'
+            href='https://u.pcloud.link/publink/show?code=XZUJgJXZ2CucTsD4DQf72kTgphF0BR2l7eTy'
             underline
             underlineColor={theme.colors.mainPurple}
           >
