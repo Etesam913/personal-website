@@ -38,7 +38,7 @@ function App() {
     <Router>
       <ThemeProvider theme={theme}>
         <Container className='flex' direction='column'>
-          <BodyContainer className='flex' margin='3.5rem auto 0 auto'>
+          <BodyContainer as={'header'} className='flex' margin='3.5rem auto 0 auto'>
             <BasicInfo />
             <Nav
               width={width}
@@ -49,7 +49,7 @@ function App() {
 
           <Route
             render={({ location }) => (
-              <BodyContainer margin='3rem auto 0 auto'>
+              <BodyContainer as='main' margin='3rem auto 0 auto'>
                 <AnimatePresence exitBeforeEnter>
                   <Switch location={location} key={location.pathname}>
                     <Route path='/' exact>
@@ -78,6 +78,7 @@ const BodyContainer = styled(Container)`
   @media screen and (min-width: 1101px) {
     width: 56.25rem !important;
   }
+  
 `;
 
 export default App;

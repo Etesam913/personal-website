@@ -9,7 +9,6 @@ body {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
-  cursor: url('./media/cursor.png') 24 24, default;
   /* Hide scrollbar for Chrome, Safari and Opera */
   overflow: scroll;
   overflow-x: hidden;

@@ -1,5 +1,10 @@
 import { React, styled, withTheme, motion } from '../../Dependencies';
-import { Container, Header2, Link } from '../../components/ComponentsMaster';
+import {
+  Container,
+  Header2,
+  NavLink,
+  Link,
+} from '../../components/ComponentsMaster';
 import { spring } from 'popmotion';
 
 function About({ theme }) {
@@ -23,55 +28,43 @@ function About({ theme }) {
           <StyledLink
             href='https://u.pcloud.link/publink/show?code=XZivxHXZrAiNVEEs2kXtCxxXRDONV7Xesxq7'
             underline
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 1 }}
+            color={theme.colors.mainPurple}
             underlineColor={theme.colors.mainPurple}
           >
-            <LinkText
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 1 }}
-              color={theme.colors.mainPurple}
-            >
-              Resume
-            </LinkText>
+            Resume
           </StyledLink>
           <StyledLink
             href='https://github.com/etesam913/'
             underline
             underlineColor={theme.colors.mainGreen}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 1 }}
+            color={theme.colors.mainGreen}
           >
-            <LinkText
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 1 }}
-              color={theme.colors.mainGreen}
-            >
-              GitHub
-            </LinkText>
+            GitHub
           </StyledLink>
           <StyledLink
             href='https://www.linkedin.com/in/etesam-ansari-454a0a1b5/'
             underline
             underlineColor={theme.colors.mainBlue}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 1 }}
+            color={theme.colors.mainBlue}
           >
-            <LinkText
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 1 }}
-              color={theme.colors.mainBlue}
-            >
-              LinkedIn
-            </LinkText>
+            LinkedIn
           </StyledLink>
 
           <StyledLink
             href='https://www.youtube.com/channel/UCl-ua4-WPfbv3YhiYio0yew/'
             underline
             underlineColor={theme.colors.mainOrange}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 1 }}
+            color={theme.colors.mainOrange}
           >
-            <LinkText
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 1 }}
-              color={theme.colors.mainOrange}
-            >
-              YouTube
-            </LinkText>
+            YouTube
           </StyledLink>
         </Links>
       </DescContainer>
@@ -96,7 +89,7 @@ const DescContainer = styled(Container)`
   }
 `;
 
-const Links = styled(motion.div)`
+const Links = styled(motion.nav)`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -106,13 +99,10 @@ const Links = styled(motion.div)`
   }
 `;
 
-const LinkText = styled(Header2)`
-  /*display: inline-block;
-  width: auto;*/
-`;
-
 const StyledLink = styled(Link)`
   width: max-content;
+  font-size: 1.5em;
+  margin: 0.5rem 0;
 `;
 
 export default withTheme(About);

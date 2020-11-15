@@ -3,8 +3,15 @@ import { styled, motion, css } from '../../Dependencies';
 
 export const Link = styled(motion.a)`
   text-decoration: none;
-  cursor: url(${cursorImg}) 24 24, pointer;
-  
+  cursor: pointer;
+  margin: 0;
+  font-weight: bold;
+  font-family: 'Inter', 'Arial';
+  color: ${(props) => props.color};
+  font-size: 1.5em;
+  @media screen and (max-width: 600px) {
+    font-size: 1.15em;
+  }
   ${props =>
     props.underline &&
     css`

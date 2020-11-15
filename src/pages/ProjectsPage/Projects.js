@@ -99,7 +99,7 @@ function Projects(props) {
         padding='0 0 1.5rem'
       >
         {props.width < 993 ? (
-          <>
+          <ParentContainer>
             <Container width='65%' padding='0 0 0 0.5rem'>
               <Header2 padding='0'>
                 I enjoy making open source projects in React.js that are free to
@@ -109,12 +109,12 @@ function Projects(props) {
 
             {col1Elements}
             {col2Elements}
-          </>
+          </ParentContainer>
         ) : (
-          <>
+          <div style={{display: 'flex'}}>
             <ProjectCol1 col1Elements={col1Elements} />
             <ProjectCol2 col2Elements={col2Elements} />
-          </>
+          </div>
         )}
       </ProjectContainer>
     </>
@@ -124,11 +124,12 @@ function Projects(props) {
 const ProjectContainer = styled(Container)`
   display: flex;
   flex-direction: row;
-
-  @media screen and (max-width: 992px) {
-    flex-direction: column;
-    align-items: center;
-  }
 `;
+
+const ParentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
 
 export default withTheme(Projects);

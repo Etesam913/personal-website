@@ -1,4 +1,10 @@
-import { CardContainer, ImgContainer, CardDesc, CardVideo } from './CardStyles';
+import {
+  CardContainer,
+  ImgContainer,
+  CardDesc,
+  CardVideo,
+  LinkText,
+} from './CardStyles';
 import { Header2, Header3, Link } from '../ComponentsMaster';
 import { React, motion, LazyLoadImage } from '../../Dependencies';
 
@@ -7,17 +13,15 @@ function Card(props) {
     <CardContainer>
       {props.video === true ? (
         <ImgContainer href={props.link}>
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1 }}
-          >
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }}>
             <CardVideo
               poster={props.poster}
-              onLoadedData={e => {
+              onLoadedData={(e) => {
                 e.target.play();
               }}
               playsInline
               muted
+              preload
               autoPlay
               loop
               src={props.src}
@@ -41,13 +45,12 @@ function Card(props) {
         <Link
           href={props.link}
           underline
+          color = {props.color}
           underlineColor={props.color}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 1 }}
         >
-          <Header2 textAlign='center' color={props.color}>
-            {props.title}
-          </Header2>
+          {props.title}
         </Link>
 
         <Header3 textAlign='center'>{props.desc}</Header3>

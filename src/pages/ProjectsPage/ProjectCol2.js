@@ -8,7 +8,7 @@ function ProjectCol2(props) {
       direction='column'
       width='50%'
       height='100%'
-      padding='0 0 0 0.5rem'
+      padding='0 0 0 auto'
     >
       <Container margin='0 0 0 auto'>{props.col2Elements}</Container>
     </ColContainer>
