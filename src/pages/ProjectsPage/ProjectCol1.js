@@ -14,7 +14,6 @@ function ProjectCol1(props) {
 }
 
 const ColContainer = styled(Container)`
-  padding-left: 0.5rem;
   @media screen and (max-width: 1100px) {
     padding-left: 6rem !important;
   }
