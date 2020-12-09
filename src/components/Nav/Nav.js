@@ -73,8 +73,8 @@ function Nav(props) {
           key={index}
           style={
             direction === 'x'
-              ? { textDecorationColor: 'black' }
-              : { textDecorationColor: 'black', marginBottom: '0.9rem' }
+              ? { textDecoration: 'none' }
+              : { textDecoration: 'none', marginBottom: '0.9rem' }
           }
         >
           {getHeader(direction, item, dictKey, index, item[dictKey].link)}

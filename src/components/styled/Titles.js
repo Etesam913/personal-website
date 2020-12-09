@@ -51,7 +51,7 @@ export const NavLink = styled(motion.span)`
       cursor: pointer;
     `}
 
-  font-family: 'Inter', 'arial';
+  font-family: 'Manrope', 'arial';
   font-weight: bold;
   @media screen and (max-width: 600px) {
     font-size: 1.15em;
@@ -60,6 +60,7 @@ export const NavLink = styled(motion.span)`
 
 export const Header3 = styled.h3`
   font-size: 1.15em;
+  padding: ${(props) => props.padding};
   @media screen and (max-width: 600px) {
     font-size: 0.85em;
   }

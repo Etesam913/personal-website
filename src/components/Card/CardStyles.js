@@ -56,7 +56,6 @@ export const CardDesc = styled.div`
   border-bottom-right-radius: 1rem;
   width: 100%;
   display: flex;
-  padding: 0.5rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;

@@ -45,7 +45,7 @@ function Card(props) {
         <Link
           href={props.link}
           underline
-          color = {props.color}
+          color={props.color}
           underlineColor={props.color}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 1 }}
@@ -53,7 +53,9 @@ function Card(props) {
           {props.title}
         </Link>
 
-        <Header3 textAlign='center'>{props.desc}</Header3>
+        <Header3 padding='0 0.35rem' textAlign='center'>
+          {props.desc}
+        </Header3>
       </CardDesc>
     </CardContainer>
   );
