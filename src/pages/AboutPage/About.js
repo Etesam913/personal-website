@@ -2,10 +2,8 @@ import { React, styled, withTheme, motion } from '../../Dependencies';
 import {
   Container,
   Header2,
-  NavLink,
   Link,
 } from '../../components/ComponentsMaster';
-import { spring } from 'popmotion';
 
 function About({ theme }) {
   return (
@@ -23,25 +21,25 @@ function About({ theme }) {
           majoring in Computer Science at Columbia University.
         </Header2>
 
-        <Header2>When I am not coding I like to play basketball.</Header2>
+        <Header2 margin='1rem 0'>When I am not coding I like to play basketball.</Header2>
         <Links>
           <StyledLink
             href='https://u.pcloud.link/publink/show?code=XZivxHXZrAiNVEEs2kXtCxxXRDONV7Xesxq7'
             underline
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 1 }}
-            color={theme.colors.mainPurple}
-            underlineColor={theme.colors.mainPurple}
+            color={theme.colors.mainBlue}
+            underlineColor={theme.colors.mainBlue}
           >
             Resume
           </StyledLink>
           <StyledLink
             href='https://github.com/etesam913/'
             underline
-            underlineColor={theme.colors.mainGreen}
+            underlineColor={theme.colors.mainBlue}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 1 }}
-            color={theme.colors.mainGreen}
+            color={theme.colors.mainBlue}
           >
             GitHub
           </StyledLink>
@@ -59,10 +57,10 @@ function About({ theme }) {
           <StyledLink
             href='https://www.youtube.com/channel/UCl-ua4-WPfbv3YhiYio0yew/'
             underline
-            underlineColor={theme.colors.mainOrange}
+            underlineColor={theme.colors.mainBlue}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 1 }}
-            color={theme.colors.mainOrange}
+            color={theme.colors.mainBlue}
           >
             YouTube
           </StyledLink>

@@ -8,9 +8,9 @@ export const Link = styled(motion.a)`
   font-weight: bold;
   font-family: 'Manrope', 'Arial';
   color: ${(props) => props.color};
-  font-size: 1.5em;
+  font-size: ${props=>props.fontSize ? props.fontSize : '1.5em' };
   @media screen and (max-width: 600px) {
-    font-size: 1.15em;
+    font-size: ${props=>props.fontSize ? props.fontSize : '1.15em' };
   }
   ${(props) =>
     props.underline &&

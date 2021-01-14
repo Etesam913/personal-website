@@ -53,10 +53,10 @@ const CompanyLogo = styled(motion.img)`
 `;
 
 const MobileText = styled(Container)`
-  margin: 0 0 0 2rem;
+  margin: 1rem 0 1rem 2rem;
   @media screen and (max-width: 930px) {
     text-align: center;
-    margin: 0;
+    margin: 1rem 0;
   }
 `;
 

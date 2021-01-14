@@ -24,11 +24,11 @@ export const Header1 = styled(motion.h1)`
 `;
 
 export const Header2 = styled.h2`
-  margin: 0;
+  margin: ${props=>props.margin ? props.margin : 0};
   color: ${(props) => props.color};
-  font-size: 1.5em;
+  font-size: 1.2em;
   @media screen and (max-width: 600px) {
-    font-size: 1.15em;
+    font-size: 1em;
   }
 `;
 
@@ -60,6 +60,7 @@ export const NavLink = styled(motion.span)`
 
 export const Header3 = styled.h3`
   font-size: 1.15em;
+  margin: ${props => props.margin ? props.margin : '0.35rem'};
   padding: ${(props) => props.padding};
   @media screen and (max-width: 600px) {
     font-size: 0.85em;

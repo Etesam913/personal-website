@@ -7,24 +7,22 @@ import {
   Router,
   Switch,
   Route,
-  AnimatePresence
+  AnimatePresence,
 } from './Dependencies';
 import {
   Nav,
   Container,
   BasicInfo,
-  theme
+  theme,
 } from './components/ComponentsMaster';
-import { Projects, Experience, About } from './pages/PagesMaster';
+import { Projects, Experience, About, ErrorPage } from './pages/PagesMaster';
 
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
-  const [currentPathname, setCurrentPathname] = useState(
-    window.location.hash
-  );
+  const [currentPathname, setCurrentPathname] = useState(window.location.hash);
 
   useEffect(() => {
-    setCurrentPathname(window.location.hash)
+    setCurrentPathname(window.location.hash);
     window.addEventListener('resize', updateDimensions);
     return () => {
       window.removeEventListener('resize', updateDimensions);
@@ -38,7 +36,11 @@ function App() {
     <Router>
       <ThemeProvider theme={theme}>
         <Container className='flex' direction='column'>
-          <BodyContainer as={'header'} className='flex' margin='3.5rem auto 0 auto'>
+          <BodyContainer
+            as={'header'}
+            className='flex'
+            margin='3.5rem auto 0 auto'
+          >
             <BasicInfo />
             <Nav
               width={width}
@@ -58,9 +60,11 @@ function App() {
                     <Route path='/experience' exact>
                       <Experience width={width} />
                     </Route>
-
                     <Route path='/about' exact>
                       <About />
+                    </Route>
+                    <Route path='*'>
+                      <ErrorPage />
                     </Route>
                   </Switch>
                 </AnimatePresence>
@@ -78,7 +82,6 @@ const BodyContainer = styled(Container)`
   @media screen and (min-width: 1101px) {
     width: 56.25rem !important;
   }
-  
 `;
 
 export default App;
