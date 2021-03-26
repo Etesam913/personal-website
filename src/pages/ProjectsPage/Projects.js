@@ -8,7 +8,7 @@ function Projects(props) {
     {
       Card1: {
         src:
-          'https://res.cloudinary.com/dz5ashos1/video/upload/v1600231657/github/slick-fox/fhijdokyrzooj0boyo6z.mov',
+          'https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/SlickFox-Website-Promo.mp4',
         title: 'Slick-Fox',
         desc:
           'A modern theme for Firefox uses slick animations to create a collapsable url bar.',
@@ -20,12 +20,12 @@ function Projects(props) {
     {
       Card2: {
         src:
-          'https://res.cloudinary.com/dz5ashos1/image/upload/v1596727671/github/react-mouse-blur/zvgjbdjuvqkxdqn7k3xr.gif',
+          'https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/react-mouse-blur-promo.mov',
         title: 'React-Mouse-Blur',
         desc: 'A npm package that allows for cool mouse effects to be created.',
         link: 'https://github.com/Etesam913/react-mouse-blur',
         color: props.theme.colors.mainGreen,
-        video: false
+        video: true
       }
     }
   ];
@@ -34,7 +34,7 @@ function Projects(props) {
     {
       Card1: {
         src:
-          'https://res.cloudinary.com/dz5ashos1/video/upload/v1600233519/github/Dragify/lkcfgn5espp1kuwlcint.mov',
+          'https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/Dragify-Promo.mov',
         title: 'Dragify',
         desc: 'A Free Flowing New Tab Extension.',
         link: 'https://github.com/Etesam913/dragify',
@@ -45,7 +45,7 @@ function Projects(props) {
     {
       Card2: {
         src:
-          'https://res.cloudinary.com/dz5ashos1/video/upload/v1600234046/github/react-swervy-text/gfpk5dykhnqt7jlnujgx.mov',
+          'https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/SwervyTextPromo.mov',
         poster: 'https://res.cloudinary.com/dz5ashos1/image/upload/v1600237181/github/react-swervy-text/yhqkjucss1ahfztn0pw8.png',
         title: 'React-Swervy-Text',
         desc:
