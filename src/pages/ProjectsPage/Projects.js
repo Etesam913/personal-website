@@ -8,7 +8,7 @@ function Projects(props) {
     {
       Card1: {
         src:
-          'https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/SlickFox-Website-Promo.mp4',
+          'https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/SlickFox-Website-Promo-480.mov',
         title: 'Slick-Fox',
         desc:
           'A modern theme for Firefox uses slick animations to create a collapsable url bar.',
@@ -20,9 +20,9 @@ function Projects(props) {
     {
       Card2: {
         src:
-          'https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/react-mouse-blur-promo.mov',
-        title: 'React-Mouse-Blur',
-        desc: 'A npm package that allows for cool mouse effects to be created.',
+          'https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/Dragify-Promo-480.mov',
+        title: 'Dragify',
+        desc: 'A free flowing tab extension.',
         link: 'https://github.com/Etesam913/react-mouse-blur',
         color: props.theme.colors.mainGreen,
         video: true
@@ -34,10 +34,10 @@ function Projects(props) {
     {
       Card1: {
         src:
-          'https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/Dragify-Promo.mov',
-        title: 'Dragify',
-        desc: 'A Free Flowing New Tab Extension.',
-        link: 'https://github.com/Etesam913/dragify',
+          'https://etesam.nyc3.digitaloceanspaces.com/Euismod/darkmode-display-480.mov',
+        title: 'Euismod',
+        desc: 'A website that teaches CSS Grid interactively.',
+        link: 'https://github.com/Etesam913/euismod',
         color: props.theme.colors.mainBlue,
         video: true
       }
@@ -45,7 +45,7 @@ function Projects(props) {
     {
       Card2: {
         src:
-          'https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/SwervyTextPromo.mov',
+          'https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/SwervyTextPromo-480.mov',
         poster: 'https://res.cloudinary.com/dz5ashos1/image/upload/v1600237181/github/react-swervy-text/yhqkjucss1ahfztn0pw8.png',
         title: 'React-Swervy-Text',
         desc:
