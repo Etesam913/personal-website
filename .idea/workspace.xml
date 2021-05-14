@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3181785-4058-4d13-a26e-75e6fa783b5a" name="Default Changelist" comment="">
+    <list default="true" id="f3181785-4058-4d13-a26e-75e6fa783b5a" name="Default Changelist" comment="📱 Fixed a small padding bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ProjectsPage/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProjectsPage/Projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/styled/Titles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/styled/Titles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ProjectsPage/ProjectCol1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProjectsPage/ProjectCol1.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,11 +43,39 @@
       <updated>1584423906218</updated>
       <workItem from="1584423909819" duration="492000" />
       <workItem from="1616706604202" duration="2109000" />
-      <workItem from="1619984052316" duration="843000" />
+      <workItem from="1619984052316" duration="1263000" />
+      <workItem from="1619986375557" duration="196000" />
+      <workItem from="1620093933569" duration="216000" />
+      <workItem from="1621020129495" duration="508000" />
     </task>
+    <task id="LOCAL-00001" summary="🚚 Video files had quality reduced to speed up page">
+      <created>1619985470614</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1619985470614</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=" Video files had quality reduced to speed up page" />
+    <MESSAGE value=" Fixed a small padding bug" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Fixed a small padding bug" />
   </component>
 </project>

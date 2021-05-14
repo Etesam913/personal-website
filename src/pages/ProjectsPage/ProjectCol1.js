@@ -8,7 +8,6 @@ function ProjectCol1(props) {
         I enjoy making open source projects in React.js that are free to use.
       </Header2>
       {props.col1Elements}
-
     </ColContainer>
   );
 }
