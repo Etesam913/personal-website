@@ -21,6 +21,25 @@ function Experience(props) {
       }
     },
     {
+      Genesys: {
+        imgSrc:
+          'https://images.credly.com/size/680x680/images/357f688f-640c-47df-8e46-20aaa9e5bf3d/blob.png',
+        altText: 'Genesys Logo',
+        title: 'Software Developer Intern',
+        timePeriod: 'June 2021-August 2021',
+        companyTitle: 'Genesys',
+        points: [
+          'Worked with two other developers to create a serverless application that automates the uploading of VPAT (Voluntary Product Accessibility Template) files whenever a change is made to the VPAT in the repository.',
+          'Created a dashboard which displayed the VPAT files from the database as well as other important information (file name, team name, team contact email, etc...).',
+          'Used an AWS application load balancer, lambdas, DynamoDB, s3, and Jenkins to make this possible.',
+          'Worked with one other developer to migrate an old AngularJS app to modern Angular 11.',
+          'Used technologies like RxJS to manage state flow'
+        ],
+        link: 'https://www.genesys.com/',
+        color: props.theme.colors.mainBlue
+      }
+    },
+    {
       CorrelationOne: {
         imgSrc:
           'https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/correlation-one.png',
@@ -29,11 +48,11 @@ function Experience(props) {
         timePeriod: 'June 2020-Sept 2020',
         companyTitle: 'Correlation One',
         points: [
-          'Worked with 2 other developers to overhaul the main website.',
-          'Created the connect and about pages using a contentful database.'
+          'Worked with two other developers to make substantial UI improvements to the Assess, Connect, and About pages of the main website using React.js.',
+          'Worked with a Contentful database to get data for each employee on the About page.'
         ],
         link: 'https://www.correlation-one.com/',
-        color: props.theme.colors.mainBlue
+        color: props.theme.colors.mainGreen
       }
     }
   ];

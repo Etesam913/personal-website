@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3181785-4058-4d13-a26e-75e6fa783b5a" name="Default Changelist" comment="📱 Fixed a small padding bug">
-      <change afterPath="$PROJECT_DIR$/src/components/Hooks/GenericHooks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BasicInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BasicInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ExperiencePage/Experience.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ExperiencePage/Experience.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +28,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -35,6 +36,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -54,6 +56,7 @@
       <workItem from="1619986375557" duration="196000" />
       <workItem from="1620093933569" duration="216000" />
       <workItem from="1621020129495" duration="1158000" />
+      <workItem from="1631248088643" duration="384000" />
     </task>
     <task id="LOCAL-00001" summary="🚚 Video files had quality reduced to speed up page">
       <created>1619985470614</created>
