@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3181785-4058-4d13-a26e-75e6fa783b5a" name="Default Changelist" comment="📱 Fixed a small padding bug">
+    <list default="true" id="f3181785-4058-4d13-a26e-75e6fa783b5a" name="Default Changelist" comment="💬 Updated the experiences page with Genesys">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ExperiencePage/Experience.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ExperiencePage/Experience.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AboutPage/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutPage/About.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +55,9 @@
       <workItem from="1619986375557" duration="196000" />
       <workItem from="1620093933569" duration="216000" />
       <workItem from="1621020129495" duration="1158000" />
-      <workItem from="1631248088643" duration="384000" />
+      <workItem from="1631248088643" duration="600000" />
+      <workItem from="1631249050730" duration="5000" />
+      <workItem from="1631310315616" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="🚚 Video files had quality reduced to speed up page">
       <created>1619985470614</created>
@@ -72,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621021154092</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="💬 Updated the experiences page with Genesys">
+      <created>1631248824574</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1631248824575</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +101,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value=" Video files had quality reduced to speed up page" />
     <MESSAGE value=" Fixed a small padding bug" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Fixed a small padding bug" />
+    <MESSAGE value=" Updated the experiences page with Genesys" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Updated the experiences page with Genesys" />
   </component>
 </project>

@@ -24,7 +24,7 @@ function About({ theme }) {
         <Header2 margin='1rem 0'>When I am not coding I like to play basketball.</Header2>
         <Links>
           <StyledLink
-            href='https://u.pcloud.link/publink/show?code=XZivxHXZrAiNVEEs2kXtCxxXRDONV7Xesxq7'
+            href='https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/EtesamAnsariResume.pdf'
             underline
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 1 }}
