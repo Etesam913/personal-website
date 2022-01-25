@@ -1,4 +1,3 @@
-import cursorImg from '../../media/cursor.png';
 import { styled, motion, css } from '../../Dependencies';
 
 export const Link = styled(motion.a)`
