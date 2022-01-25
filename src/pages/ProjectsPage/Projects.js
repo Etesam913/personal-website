@@ -1,5 +1,5 @@
-import { React, styled, withTheme } from '../../Dependencies';
-import { Container, Header2, Card } from '../../components/ComponentsMaster';
+import { React, styled, withTheme } from 'Dependencies';
+import { Container, Header2, Card } from 'components/ComponentsMaster';
 import ProjectCol1 from './ProjectCol1';
 import ProjectCol2 from './ProjectCol2';
 

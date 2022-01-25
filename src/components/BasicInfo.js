@@ -1,4 +1,4 @@
-import { React, styled, withTheme } from '../Dependencies';
+import { React, styled, withTheme } from 'Dependencies';
 import { Container, Header1 } from './ComponentsMaster'
 import WavingHand from './WavingHand';
 import {useWindowSize} from "./Hooks/GenericHooks";

@@ -1,10 +1,10 @@
-import { React, styled, withTheme } from '../../Dependencies';
+import { React, styled, withTheme } from 'Dependencies';
 import {
   Header1,
   Header2,
   Header3,
   Link,
-} from '../../components/ComponentsMaster';
+} from 'components/ComponentsMaster';
 
 function ErrorPage({ theme }) {
   return (

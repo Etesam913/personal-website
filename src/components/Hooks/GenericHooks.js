@@ -1,4 +1,4 @@
-import {useState, useEffect} from "../../Dependencies";
+import {useState, useEffect} from "Dependencies";
 
 export function useWindowSize() {
   const [windowSize, setWindowSize] = useState({

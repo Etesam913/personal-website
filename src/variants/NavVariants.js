@@ -1,4 +1,4 @@
-import {theme} from "../components/themes";
+import {theme} from "components/themes";
 export const xVariants = {
   hidden: index => ({
     opacity: 0,

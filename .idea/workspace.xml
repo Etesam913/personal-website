@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3181785-4058-4d13-a26e-75e6fa783b5a" name="Default Changelist" comment="🔥 Removed custom cursor files">
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    <list default="true" id="f3181785-4058-4d13-a26e-75e6fa783b5a" name="Default Changelist" comment="🔥 Removed unused images">
+      <change afterPath="$PROJECT_DIR$/jsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hooks/GenericHooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hooks/GenericHooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/404ErrorPage/ErrorPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/404ErrorPage/ErrorPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AboutPage/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutPage/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ExperiencePage/Experience.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ExperiencePage/Experience.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ExperiencePage/ExperienceItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ExperiencePage/ExperienceItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ProjectsPage/ProjectCol1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProjectsPage/ProjectCol1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ProjectsPage/ProjectCol2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProjectsPage/ProjectCol2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ProjectsPage/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProjectsPage/Projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/variants/NavVariants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/variants/NavVariants.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +69,7 @@
       <workItem from="1631248088643" duration="600000" />
       <workItem from="1631249050730" duration="5000" />
       <workItem from="1631310315616" duration="1182000" />
-      <workItem from="1643070008829" duration="115000" />
+      <workItem from="1643070008829" duration="620000" />
     </task>
     <task id="LOCAL-00001" summary="🚚 Video files had quality reduced to speed up page">
       <created>1619985470614</created>
@@ -94,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643070079958</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="🔥 Removed unused images">
+      <created>1643070213525</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1643070213525</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,18 +137,7 @@
     <MESSAGE value=" Updated the experiences page with Genesys" />
     <MESSAGE value=" Updated the resume link" />
     <MESSAGE value=" Removed custom cursor files" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Removed custom cursor files" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/serviceWorker.js</url>
-          <line>17</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value=" Removed unused images" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Removed unused images" />
   </component>
 </project>

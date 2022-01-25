@@ -4,9 +4,9 @@ import {
   Link,
   useHistory,
   withTheme,
-} from '../../Dependencies';
-import { Container, Header2, NavLink } from '../ComponentsMaster';
-import { xVariants, yVariants } from '../../variants/NavVariants';
+} from 'Dependencies';
+import {Container, NavLink} from '../ComponentsMaster';
+import {xVariants, yVariants} from 'variants/NavVariants';
 
 function Nav(props) {
   const history = useHistory();
@@ -17,9 +17,9 @@ function Nav(props) {
     });
   }, [history]);
   const navContent = [
-    { Projects: { link: '/' } },
-    { Experience: { link: '/experience' } },
-    { About: { link: '/about' } },
+    {Projects: {link: '/'}},
+    {Experience: {link: '/experience'}},
+    {About: {link: '/about'}},
   ];
 
   function getHeader(direction, item, dictKey, index) {
@@ -30,7 +30,7 @@ function Nav(props) {
           variants={xVariants}
           custom={index}
           initial='hidden'
-          whileHover={{ color: props.theme.colors.mainBlack }}
+          whileHover={{color: props.theme.colors.mainBlack}}
           animate={
             props.currentPathname === '#' + item[dictKey].link
               ? 'show'
@@ -49,7 +49,7 @@ function Nav(props) {
           variants={yVariants}
           custom={index}
           initial='hidden'
-          whileHover={{ color: props.theme.colors.mainBlack }}
+          whileHover={{color: props.theme.colors.mainBlack}}
           animate={
             props.currentPathname === '#' + item[dictKey].link
               ? 'show'
@@ -73,8 +73,8 @@ function Nav(props) {
           key={index}
           style={
             direction === 'x'
-              ? { textDecoration: 'none' }
-              : { textDecoration: 'none', marginBottom: '0.9rem' }
+              ? {textDecoration: 'none'}
+              : {textDecoration: 'none', marginBottom: '0.9rem'}
           }
         >
           {getHeader(direction, item, dictKey, index, item[dictKey].link)}
@@ -87,7 +87,7 @@ function Nav(props) {
     <>
       {props.width <= 1100 ? (
         <Container
-          as={'nav'}
+          as='nav'
           margin='0 3rem 0 auto'
           className='flex'
           direction='column'
@@ -96,7 +96,7 @@ function Nav(props) {
           {getNavItems('y')}
         </Container>
       ) : (
-        <Container as={'nav'} margin='0 0 0 auto' className='flex'>
+        <Container as='nav' margin='0 0 0 auto' className='flex'>
           {getNavItems('x')}
         </Container>
       )}

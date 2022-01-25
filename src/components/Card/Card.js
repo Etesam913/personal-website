@@ -3,10 +3,9 @@ import {
   ImgContainer,
   CardDesc,
   CardVideo,
-  LinkText,
 } from './CardStyles';
-import { Header2, Header3, Link } from '../ComponentsMaster';
-import { React, motion, LazyLoadImage } from '../../Dependencies';
+import { Header3, Link } from 'components/ComponentsMaster';
+import { React, motion, LazyLoadImage } from 'Dependencies';
 
 function Card(props) {
   return (

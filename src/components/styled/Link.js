@@ -1,4 +1,4 @@
-import { styled, motion, css } from '../../Dependencies';
+import { styled, motion, css } from 'Dependencies';
 
 export const Link = styled(motion.a)`
   text-decoration: none;

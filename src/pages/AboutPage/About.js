@@ -1,9 +1,9 @@
-import { React, styled, withTheme, motion } from '../../Dependencies';
+import { React, styled, withTheme, motion } from 'Dependencies';
 import {
   Container,
   Header2,
   Link,
-} from '../../components/ComponentsMaster';
+} from 'components/ComponentsMaster';
 
 function About({ theme }) {
   return (

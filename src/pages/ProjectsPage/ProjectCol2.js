@@ -1,5 +1,5 @@
-import { React, styled } from '../../Dependencies';
-import { Container } from '../../components/ComponentsMaster';
+import { React, styled } from 'Dependencies';
+import { Container } from 'components/ComponentsMaster';
 
 function ProjectCol2(props) {
   return (

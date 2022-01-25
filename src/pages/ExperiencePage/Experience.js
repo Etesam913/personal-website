@@ -1,5 +1,5 @@
-import { React, styled, withTheme } from '../../Dependencies';
-import { Container } from '../../components/ComponentsMaster';
+import { React, styled, withTheme } from 'Dependencies';
+import { Container } from 'components/ComponentsMaster';
 import ExperienceItem from './ExperienceItem';
 
 function Experience(props) {

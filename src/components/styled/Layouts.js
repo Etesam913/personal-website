@@ -1,4 +1,4 @@
-import {styled, motion} from '../../Dependencies'
+import {styled, motion} from 'Dependencies'
 
 export const Container = styled(motion.div)`
   position: relative;

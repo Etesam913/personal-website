@@ -1,4 +1,4 @@
-import {styled, motion} from '../../Dependencies';
+import {styled, motion} from 'Dependencies';
 
 export const Header1 = styled(motion.h1)`
   margin: 0;

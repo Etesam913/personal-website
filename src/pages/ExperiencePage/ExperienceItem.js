@@ -1,17 +1,15 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import styled, { withTheme } from 'styled-components';
-import { Container } from '../../components/styled/Layouts';
-import { Header1, Header2, Header3 } from '../../components/styled/Titles';
-import { Link } from '../../components/styled/Link';
+import {React, motion, styled, withTheme} from 'Dependencies'
+import {Container} from 'components/styled/Layouts';
+import {Header1, Header2, Header3} from 'components/styled/Titles';
+import {Link} from 'components/styled/Link';
 
 function ExperienceItem(props) {
   return (
     <Container width='100%'>
       <MobileContainer>
         <Link
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 1 }}
+          whileHover={{scale: 1.1}}
+          whileTap={{scale: 1}}
           underline
           href={props.link}
           underlineColor={props.color}
@@ -23,8 +21,8 @@ function ExperienceItem(props) {
             <CompanyLogo
               src={props.imgSrc}
               alt={props.altText}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 1 }}
+              whileHover={{scale: 1.1}}
+              whileTap={{scale: 1}}
             />
           </Link>
         </MobileRowItem>
