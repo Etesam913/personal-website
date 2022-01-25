@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^12.1.0",
     "framer-motion": "^2.3.0",
     "netlify": "^4.3.13",
+    "prettier": "^2.5.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-lazy-load-image-component": "^1.5.0",

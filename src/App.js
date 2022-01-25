@@ -13,7 +13,8 @@ import {
   Nav,
   Container,
   BasicInfo,
-  theme,
+  lightTheme,
+  darkTheme,
   GlobalStyle
 } from 'components/ComponentsMaster';
 import {Projects, Experience, About, ErrorPage} from './pages/PagesMaster';
@@ -21,7 +22,7 @@ import {Projects, Experience, About, ErrorPage} from './pages/PagesMaster';
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
   const [currentPathname, setCurrentPathname] = useState(window.location.hash);
-
+  const [isDarkMode, setIsDarkMode] = useState(false);
   useEffect(() => {
     setCurrentPathname(window.location.hash);
     window.addEventListener('resize', updateDimensions);
@@ -36,8 +37,8 @@ function App() {
 
   return (
     <Router>
-      <GlobalStyle />
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
+        <GlobalStyle />
         <Container className='flex' direction='column'>
           <BodyContainer
             as={'header'}
@@ -49,6 +50,8 @@ function App() {
               width={width}
               currentPathname={currentPathname}
               setCurrentPathname={setCurrentPathname}
+              setIsDarkMode={setIsDarkMode}
+              isDarkMode={isDarkMode}
             />
           </BodyContainer>
 

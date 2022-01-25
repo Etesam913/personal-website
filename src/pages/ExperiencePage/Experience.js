@@ -7,7 +7,7 @@ function Experience(props) {
     {
       ColumbiaSpectator: {
         imgSrc:
-          'https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/speclogo.jpg',
+          'https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/spec-logo.png',
         altText: 'Spectator Logo',
         title: 'Software Developer',
         timePeriod: 'Sept 2019-Present',
@@ -23,7 +23,7 @@ function Experience(props) {
     {
       Genesys: {
         imgSrc:
-          'https://images.credly.com/size/680x680/images/357f688f-640c-47df-8e46-20aaa9e5bf3d/blob.png',
+          'https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/genesys-logo.png',
         altText: 'Genesys Logo',
         title: 'Software Developer Intern',
         timePeriod: 'June 2021-August 2021',
@@ -42,7 +42,7 @@ function Experience(props) {
     {
       CorrelationOne: {
         imgSrc:
-          'https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/correlation-one.png',
+          'https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/correlation-one-logo.png',
         altText: 'Correlation One Logo',
         title: 'Software Developer Intern',
         timePeriod: 'June 2020-Sept 2020',

@@ -4,6 +4,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Manrope', 'Arial', 'Roboto',serif;
     margin: 0;
+    background: ${props=>props.theme.colors.primary};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-user-select: none; /* Safari */
@@ -13,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
     /* Hide scrollbar for Chrome, Safari and Opera */
     overflow: scroll;
     overflow-x: hidden;
+    transition: background 200ms;
   }
 
   code {

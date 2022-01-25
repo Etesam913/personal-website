@@ -5,7 +5,8 @@ export const CardContainer = styled.section`
   width: 23rem;
   height: 26rem;
   border-radius: 1rem;
-  background: ${(props) => props.theme.colors.mainWhite};
+  background: ${(props) => props.theme.colors.primary};
+  transition: background 200ms;
   box-shadow: 10px 10px 49px -22px rgba(0, 0, 0, 0.35);
   margin-top: 1.5rem;
   display: flex;
