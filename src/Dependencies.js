@@ -7,7 +7,7 @@ import {
   Link,
   useHistory
 } from 'react-router-dom';
-import styled, { ThemeProvider, withTheme, css } from 'styled-components';
+import styled, { ThemeProvider, withTheme, css, keyframes } from 'styled-components';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export {
@@ -27,5 +27,6 @@ export {
   ThemeProvider,
   withTheme,
   css,
-  LazyLoadImage
+  LazyLoadImage,
+  keyframes
 };

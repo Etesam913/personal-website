@@ -14,8 +14,9 @@ import {
   Container,
   BasicInfo,
   theme,
-} from './components/ComponentsMaster';
-import { Projects, Experience, About, ErrorPage } from './pages/PagesMaster';
+  GlobalStyle
+} from 'components/ComponentsMaster';
+import {Projects, Experience, About, ErrorPage} from './pages/PagesMaster';
 
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -32,8 +33,10 @@ function App() {
   function updateDimensions() {
     setWidth(window.innerWidth);
   }
+
   return (
     <Router>
+      <GlobalStyle />
       <ThemeProvider theme={theme}>
         <Container className='flex' direction='column'>
           <BodyContainer
@@ -41,7 +44,7 @@ function App() {
             className='flex'
             margin='3.5rem auto 0 auto'
           >
-            <BasicInfo />
+            <BasicInfo/>
             <Nav
               width={width}
               currentPathname={currentPathname}
@@ -50,21 +53,21 @@ function App() {
           </BodyContainer>
 
           <Route
-            render={({ location }) => (
+            render={({location}) => (
               <BodyContainer as='main' margin='3rem auto 0 auto'>
                 <AnimatePresence exitBeforeEnter>
                   <Switch location={location} key={location.pathname}>
                     <Route path='/' exact>
-                      <Projects width={width} />
+                      <Projects width={width}/>
                     </Route>
                     <Route path='/experience' exact>
-                      <Experience width={width} />
+                      <Experience width={width}/>
                     </Route>
                     <Route path='/about' exact>
-                      <About />
+                      <About/>
                     </Route>
                     <Route path='*'>
-                      <ErrorPage />
+                      <ErrorPage/>
                     </Route>
                   </Switch>
                 </AnimatePresence>
