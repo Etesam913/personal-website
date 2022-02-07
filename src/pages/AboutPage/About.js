@@ -15,13 +15,13 @@ function About({ theme }) {
       direction='column'
       align='flex-start'
     >
+      <Header2>
+        I am a frontend developer who mainly uses React.js. I am a student
+        majoring in Computer Science at the Engineering School of Columbia University.
+      </Header2>
       <DescContainer>
-        <Header2>
-          I am a frontend developer that mainly uses React.js. I am a student
-          majoring in Computer Science at Columbia University.
-        </Header2>
 
-        <Header2 margin='1rem 0'>When I am not coding I like to play basketball.</Header2>
+        <Header2 margin='1rem 0'>When I am not coding, I like to play basketball.</Header2>
         <Links>
           <StyledLink
             href='https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/EtesamAnsariResume.pdf'

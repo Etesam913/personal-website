@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3181785-4058-4d13-a26e-75e6fa783b5a" name="Default Changelist" comment="💄 Added Dark &amp; Light Theme Switching">
-      <change beforePath="$PROJECT_DIR$/src/pages/ExperiencePage/Experience.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ExperiencePage/Experience.js" afterDir="false" />
+    <list default="true" id="f3181785-4058-4d13-a26e-75e6fa783b5a" name="Default Changelist" comment="🎨 Changed order of experiences">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AboutPage/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutPage/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ExperiencePage/ExperienceItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ExperiencePage/ExperienceItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ProjectsPage/ProjectCol1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProjectsPage/ProjectCol1.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +21,17 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1ZF9Jo9OlQYk7ZTV4HrM1FPSW8p" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -36,7 +50,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -60,7 +74,12 @@
       <workItem from="1631248088643" duration="600000" />
       <workItem from="1631249050730" duration="5000" />
       <workItem from="1631310315616" duration="1182000" />
-      <workItem from="1643070008829" duration="5092000" />
+      <workItem from="1643070008829" duration="5490000" />
+      <workItem from="1643175012949" duration="116000" />
+      <workItem from="1643175140087" duration="69000" />
+      <workItem from="1643411625826" duration="143000" />
+      <workItem from="1643411838868" duration="74000" />
+      <workItem from="1644194466708" duration="452000" />
     </task>
     <task id="LOCAL-00001" summary="🚚 Video files had quality reduced to speed up page">
       <created>1619985470614</created>
@@ -125,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643147175208</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="🎨 Changed order of experiences">
+      <created>1643147296350</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1643147296350</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +167,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=" Video files had quality reduced to speed up page" />
@@ -153,7 +178,8 @@
     <MESSAGE value=" Shortened import statements with absolution paths" />
     <MESSAGE value=" Switched from index.css to GlobalStyles.js" />
     <MESSAGE value=" Added Dark &amp; Light Theme Switching" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Added Dark &amp; Light Theme Switching" />
+    <MESSAGE value=" Changed order of experiences" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Changed order of experiences" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

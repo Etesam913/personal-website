@@ -14,7 +14,7 @@ function ExperienceItem(props) {
           href={props.link}
           underlineColor={props.color}
         >
-          <Header1 color={props.color}>{props.companyTitle}</Header1>
+          <Header1 textAlign="center" color={props.color}>{props.companyTitle}</Header1>
         </Link>
         <MobileRowItem>
           <Link href={props.link}>
@@ -28,9 +28,9 @@ function ExperienceItem(props) {
         </MobileRowItem>
       </MobileContainer>
       <MobileContainer>
-        <Header3>{props.title}</Header3>
+        <Header3 textAlign="center">{props.title}</Header3>
         <MobileRowItem>
-          <Header3>{props.timePeriod}</Header3>
+          <Header3 textAlign="center">{props.timePeriod}</Header3>
         </MobileRowItem>
       </MobileContainer>
 
