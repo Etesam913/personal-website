@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3181785-4058-4d13-a26e-75e6fa783b5a" name="Default Changelist" comment="🎨 Changed order of experiences">
+    <list default="true" id="f3181785-4058-4d13-a26e-75e6fa783b5a" name="Default Changelist" comment="✏️ Fixed grammatical errors in sentences">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/AboutPage/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutPage/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ExperiencePage/ExperienceItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ExperiencePage/ExperienceItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ProjectsPage/ProjectCol1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProjectsPage/ProjectCol1.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +77,8 @@
       <workItem from="1643175140087" duration="69000" />
       <workItem from="1643411625826" duration="143000" />
       <workItem from="1643411838868" duration="74000" />
-      <workItem from="1644194466708" duration="452000" />
+      <workItem from="1644194466708" duration="832000" />
+      <workItem from="1644261140100" duration="296000" />
     </task>
     <task id="LOCAL-00001" summary="🚚 Video files had quality reduced to speed up page">
       <created>1619985470614</created>
@@ -151,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643147296350</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="✏️ Fixed grammatical errors in sentences">
+      <created>1644195091344</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1644195091344</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +185,8 @@
     <MESSAGE value=" Switched from index.css to GlobalStyles.js" />
     <MESSAGE value=" Added Dark &amp; Light Theme Switching" />
     <MESSAGE value=" Changed order of experiences" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Changed order of experiences" />
+    <MESSAGE value="✏️ Fixed grammatical errors in sentences" />
+    <option name="LAST_COMMIT_MESSAGE" value="✏️ Fixed grammatical errors in sentences" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
