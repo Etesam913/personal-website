@@ -1,11 +1,7 @@
-import {
-  CardContainer,
-  ImgContainer,
-  CardDesc,
-  CardVideo,
-} from './CardStyles';
-import { Header3, Link } from 'components/ComponentsMaster';
-import { React, motion, LazyLoadImage } from 'Dependencies';
+import { CardContainer, ImgContainer, CardDesc, CardVideo } from "./CardStyles";
+import { Header3, Link } from "components/ComponentsMaster";
+import { React, motion, LazyLoadImage } from "Dependencies";
+import { withTheme } from "styled-components";
 
 function Card(props) {
   return (
@@ -33,8 +29,8 @@ function Card(props) {
             <LazyLoadImage
               alt={`project-${props.num}`}
               src={props.src}
-              height='auto'
-              width='100%'
+              height="auto"
+              width="100%"
             />
           </motion.div>
         </ImgContainer>
@@ -44,15 +40,15 @@ function Card(props) {
         <Link
           href={props.link}
           underline
-          color={props.color}
-          underlineColor={props.color}
+          color={props.theme.colors.mainBlue}
+          underlineColor={props.theme.colors.mainBlue}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 1 }}
         >
           {props.title}
         </Link>
 
-        <Header3 padding='0 0.35rem' textAlign='center'>
+        <Header3 padding="0 0.35rem" textAlign="center">
           {props.desc}
         </Header3>
       </CardDesc>
@@ -60,4 +56,4 @@ function Card(props) {
   );
 }
 
-export default Card;
+export default withTheme(Card);

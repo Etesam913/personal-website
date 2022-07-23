@@ -1,28 +1,30 @@
-import {React, motion, styled, withTheme} from 'Dependencies'
-import {Container} from 'components/styled/Layouts';
-import {Header1, Header2, Header3} from 'components/styled/Titles';
-import {Link} from 'components/styled/Link';
+import { React, motion, styled, withTheme } from "Dependencies";
+import { Container } from "components/styled/Layouts";
+import { Header1, Header2, Header3 } from "components/styled/Titles";
+import { Link } from "components/styled/Link";
 
 function ExperienceItem(props) {
   return (
-    <Container width='100%'>
+    <Container width="100%">
       <MobileContainer>
         <Link
-          whileHover={{scale: 1.1}}
-          whileTap={{scale: 1}}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 1 }}
           underline
           href={props.link}
-          underlineColor={props.color}
+          underlineColor={props.theme.colors.mainBlue}
         >
-          <Header1 textAlign="center" color={props.color}>{props.companyTitle}</Header1>
+          <Header1 textAlign="center" color={props.theme.colors.mainBlue}>
+            {props.companyTitle}
+          </Header1>
         </Link>
         <MobileRowItem>
           <Link href={props.link}>
             <CompanyLogo
               src={props.imgSrc}
               alt={props.altText}
-              whileHover={{scale: 1.1}}
-              whileTap={{scale: 1}}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 1 }}
             />
           </Link>
         </MobileRowItem>
@@ -36,7 +38,7 @@ function ExperienceItem(props) {
 
       {props.points.map((text, index) => {
         return (
-          <MobileText key={'point-' + index}>
+          <MobileText key={"point-" + index}>
             <Header2>{text}</Header2>
           </MobileText>
         );

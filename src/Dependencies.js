@@ -1,14 +1,19 @@
-import React, { useState, useContext, useRef, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState, useContext, useRef, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   HashRouter as Router,
   Switch,
   Route,
   Link,
-  useHistory
-} from 'react-router-dom';
-import styled, { ThemeProvider, withTheme, css, keyframes } from 'styled-components';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+  useHistory,
+} from "react-router-dom";
+import styled, {
+  ThemeProvider,
+  withTheme,
+  css,
+  keyframes,
+} from "styled-components";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export {
   React,
@@ -28,5 +33,5 @@ export {
   withTheme,
   css,
   LazyLoadImage,
-  keyframes
+  keyframes,
 };

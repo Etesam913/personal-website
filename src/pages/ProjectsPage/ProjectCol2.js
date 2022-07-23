@@ -1,16 +1,16 @@
-import { React, styled } from 'Dependencies';
-import { Container } from 'components/ComponentsMaster';
+import { React, styled } from "Dependencies";
+import { Container } from "components/ComponentsMaster";
 
 function ProjectCol2(props) {
   return (
     <ColContainer
-      className='flex'
-      direction='column'
-      width='50%'
-      height='100%'
-      padding='0 0 0 auto'
+      className="flex"
+      direction="column"
+      width="50%"
+      height="100%"
+      padding="0 0 0 auto"
     >
-      <Container margin='0 0 0 auto'>{props.col2Elements}</Container>
+      <Container margin="0 0 0 auto">{props.col2Elements}</Container>
     </ColContainer>
   );
 }

@@ -1,8 +1,8 @@
-import { React, styled, withTheme } from "Dependencies";
+import { React, styled } from "Dependencies";
 import { Container } from "components/ComponentsMaster";
 import ExperienceItem from "./ExperienceItem";
 
-function Experience(props) {
+function Experience() {
   const experienceItems = [
     {
       Genesys: {
@@ -20,7 +20,6 @@ function Experience(props) {
           "Used technologies like RxJS to manage state flow",
         ],
         link: "https://www.genesys.com/",
-        color: props.theme.colors.mainBlue,
       },
     },
     {
@@ -36,7 +35,6 @@ function Experience(props) {
           "Worked with a Contentful database to get data for each employee on the About page.",
         ],
         link: "https://www.correlation-one.com/",
-        color: props.theme.colors.mainGreen,
       },
     },
     {
@@ -52,7 +50,6 @@ function Experience(props) {
           "Worked in a committee to help improve the developer training experience for incoming students",
         ],
         link: "https://www.columbiaspectator.com/",
-        color: props.theme.colors.mainGreen,
       },
     },
   ];
@@ -81,7 +78,6 @@ function Experience(props) {
                 companyTitle={item[dictKey].companyTitle}
                 points={item[dictKey].points}
                 link={item[dictKey].link}
-                color={item[dictKey].color}
               />
             </ExperienceContainer>
           );
@@ -100,4 +96,4 @@ const ExperienceContainer = styled(Container)`
     padding: 0 2rem !important;
   }
 `;
-export default withTheme(Experience);
+export default Experience;

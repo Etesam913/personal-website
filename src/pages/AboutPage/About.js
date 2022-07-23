@@ -1,9 +1,5 @@
-import { React, styled, withTheme, motion } from 'Dependencies';
-import {
-  Container,
-  Header2,
-  Link,
-} from 'components/ComponentsMaster';
+import { React, styled, withTheme, motion } from "Dependencies";
+import { Container, Header2, Link } from "components/ComponentsMaster";
 
 function About({ theme }) {
   return (
@@ -11,20 +7,22 @@ function About({ theme }) {
       initial={{ opacity: 0, y: -40 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0 }}
-      className='flex'
-      direction='column'
-      align='flex-start'
+      className="flex"
+      direction="column"
+      align="flex-start"
     >
-
       <DescContainer>
         <Header2>
           I am a frontend developer who mainly uses React.js. I am a student
-          majoring in Computer Science at the Engineering School of Columbia University.
+          majoring in Computer Science at the Engineering School of Columbia
+          University.
         </Header2>
-        <Header2 margin='1rem 0'>When I am not coding, I like to play basketball.</Header2>
+        <Header2 margin="1rem 0">
+          When I am not coding, I like to play basketball.
+        </Header2>
         <Links>
           <StyledLink
-            href='https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/EtesamAnsariResume.pdf'
+            href="https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/EtesamAnsariResume.pdf"
             underline
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 1 }}
@@ -34,7 +32,7 @@ function About({ theme }) {
             Resume
           </StyledLink>
           <StyledLink
-            href='https://github.com/etesam913/'
+            href="https://github.com/etesam913/"
             underline
             underlineColor={theme.colors.mainBlue}
             whileHover={{ scale: 1.1 }}
@@ -44,7 +42,7 @@ function About({ theme }) {
             GitHub
           </StyledLink>
           <StyledLink
-            href='https://www.linkedin.com/in/etesam-ansari-454a0a1b5/'
+            href="https://www.linkedin.com/in/etesam-ansari-454a0a1b5/"
             underline
             underlineColor={theme.colors.mainBlue}
             whileHover={{ scale: 1.1 }}
@@ -55,7 +53,7 @@ function About({ theme }) {
           </StyledLink>
 
           <StyledLink
-            href='https://www.youtube.com/channel/UCl-ua4-WPfbv3YhiYio0yew/'
+            href="https://www.youtube.com/channel/UCl-ua4-WPfbv3YhiYio0yew/"
             underline
             underlineColor={theme.colors.mainBlue}
             whileHover={{ scale: 1.1 }}

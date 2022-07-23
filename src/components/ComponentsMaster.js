@@ -1,13 +1,13 @@
-import Card from './Card/Card';
-import Nav from './Nav/Nav';
-import { Container } from './styled/Layouts';
-import { Link } from './styled/Link';
-import { Header1, Header2, Header3, NavLink } from './styled/Titles';
-import BasicInfo from './BasicInfo';
-import WavingHand from './WavingHand';
-import { lightTheme, darkTheme } from './themes';
-import GlobalStyle from './styled/GlobalStyles'
-import Icons from './Icons'
+import Card from "./Card/Card";
+import Nav from "./Nav/Nav";
+import { Container } from "./styled/Layouts";
+import { Link } from "./styled/Link";
+import { Header1, Header2, Header3, NavLink } from "./styled/Titles";
+import BasicInfo from "./BasicInfo";
+import WavingHand from "./WavingHand";
+import { lightTheme, darkTheme } from "./themes";
+import GlobalStyle from "./styled/GlobalStyles";
+import Icons from "./Icons";
 export {
   Card,
   Nav,
@@ -22,5 +22,5 @@ export {
   lightTheme,
   darkTheme,
   GlobalStyle,
-  Icons
+  Icons,
 };

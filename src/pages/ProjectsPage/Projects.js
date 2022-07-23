@@ -1,60 +1,51 @@
-import { React, styled, withTheme } from 'Dependencies';
-import { Container, Header2, Card } from 'components/ComponentsMaster';
-import ProjectCol1 from './ProjectCol1';
-import ProjectCol2 from './ProjectCol2';
+import { React, styled } from "Dependencies";
+import { Container, Header2, Card } from "components/ComponentsMaster";
+import ProjectCol1 from "./ProjectCol1";
+import ProjectCol2 from "./ProjectCol2";
 
 function Projects(props) {
   const col1Content = [
     {
       Card1: {
-        src:
-          'https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/SlickFox-Website-Promo-480.mov',
-        title: 'Slick-Fox',
-        desc:
-          'A modern theme for Firefox uses slick animations to create a collapsable url bar.',
-        link: 'https://github.com/Etesam913/slick-fox',
-        color: props.theme.colors.mainGreen,
-        video: true
-      }
+        src: "https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/SlickFox-Website-Promo-480.mov",
+        title: "Slick-Fox",
+        desc: "A modern theme for Firefox uses slick animations to create a collapsable url bar.",
+        link: "https://github.com/Etesam913/slick-fox",
+        video: true,
+      },
     },
     {
       Card2: {
-        src:
-          'https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/Dragify-Promo-480.mov',
-        title: 'Dragify',
-        desc: 'A free flowing tab extension.',
-        link: 'https://github.com/Etesam913/react-mouse-blur',
-        color: props.theme.colors.mainGreen,
-        video: true
-      }
-    }
+        src: "https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/xp-newtab.mp4",
+        title: "XP Newtab",
+        desc: "A new tab extension in the style of Windows XP/98.",
+        link: "https://github.com/Etesam913/xp-newtab",
+        video: true,
+      },
+    },
   ];
 
   const col2Content = [
     {
       Card1: {
-        src:
-          'https://etesam.nyc3.digitaloceanspaces.com/Euismod/darkmode-display-480.mov',
-        title: 'Euismod',
-        desc: 'A website that teaches CSS Grid interactively.',
-        link: 'https://github.com/Etesam913/euismod',
-        color: props.theme.colors.mainBlue,
-        video: true
-      }
+        src: "https://etesam.nyc3.digitaloceanspaces.com/Euismod/darkmode-display-480.mov",
+        title: "Euismod",
+        desc: "A website that teaches CSS Grid interactively.",
+        link: "https://github.com/Etesam913/euismod",
+        video: true,
+      },
     },
     {
       Card2: {
-        src:
-          'https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/SwervyTextPromo-480.mov',
-        poster: 'https://res.cloudinary.com/dz5ashos1/image/upload/v1600237181/github/react-swervy-text/yhqkjucss1ahfztn0pw8.png',
-        title: 'React-Swervy-Text',
-        desc:
-          'A npm package that provides an easy way for text to be animated along shapes and curves.',
-        link: 'https://github.com/Etesam913/react-swervy-text',
-        color: props.theme.colors.mainBlue,
-        video: true
-      }
-    }
+        src: "https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/SwervyTextPromo-480.mov",
+        poster:
+          "https://res.cloudinary.com/dz5ashos1/image/upload/v1600237181/github/react-swervy-text/yhqkjucss1ahfztn0pw8.png",
+        title: "React-Swervy-Text",
+        desc: "A npm package that provides an easy way for text to be animated along shapes and curves.",
+        link: "https://github.com/Etesam913/react-swervy-text",
+        video: true,
+      },
+    },
   ];
 
   const col1Elements = col1Content.map((elem, index) => {
@@ -67,7 +58,6 @@ function Projects(props) {
         title={elem[dictKey].title}
         desc={elem[dictKey].desc}
         link={elem[dictKey].link}
-        color={elem[dictKey].color}
         video={elem[dictKey].video}
       />
     );
@@ -92,16 +82,16 @@ function Projects(props) {
   return (
     <>
       <ProjectContainer
-        width='100%'
+        width="100%"
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0 }}
-        padding='0 0 1.5rem'
+        padding="0 0 1.5rem"
       >
         {props.width < 993 ? (
           <ParentContainer>
-            <Container width='65%' padding='0 0 0 0.5rem'>
-              <Header2 padding='0'>
+            <Container width="65%" padding="0 0 0 0.5rem">
+              <Header2 padding="0">
                 I enjoy making open source projects in React.js that are free to
                 use.
               </Header2>
@@ -111,10 +101,10 @@ function Projects(props) {
             {col2Elements}
           </ParentContainer>
         ) : (
-          <div style={{display: 'flex'}}>
+          <ColContainer>
             <ProjectCol1 col1Elements={col1Elements} />
             <ProjectCol2 col2Elements={col2Elements} />
-          </div>
+          </ColContainer>
         )}
       </ProjectContainer>
     </>
@@ -131,6 +121,10 @@ const ParentContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-`
+`;
+const ColContainer = styled.div`
+  display: flex;
+  width: 100%;
+`;
 
-export default withTheme(Projects);
+export default Projects;

@@ -1,8 +1,8 @@
-import {React, styled, keyframes} from '../Dependencies';
+import { React, styled, keyframes } from "../Dependencies";
 
 function WavingHand() {
   return (
-    <Wave role='img' aria-label='wave emoji'>
+    <Wave role="img" aria-label="waving hand">
       👋
     </Wave>
   );
@@ -32,14 +32,12 @@ const waveAnimation = keyframes`
   }
 `;
 
-
-const Wave = styled.div`
+const Wave = styled.span`
   animation-name: ${waveAnimation};
   animation-duration: 4s;
   animation-iteration-count: infinite;
   transform-origin: 70% 70%;
   display: inline-block;
 `;
-
 
 export default WavingHand;

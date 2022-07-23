@@ -8,16 +8,16 @@ import {
   Switch,
   Route,
   AnimatePresence,
-} from './Dependencies';
+} from "./Dependencies";
 import {
   Nav,
   Container,
   BasicInfo,
   lightTheme,
   darkTheme,
-  GlobalStyle
-} from 'components/ComponentsMaster';
-import {Projects, Experience, About, ErrorPage} from './pages/PagesMaster';
+  GlobalStyle,
+} from "components/ComponentsMaster";
+import { Projects, Experience, About, ErrorPage } from "./pages/PagesMaster";
 
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -25,9 +25,9 @@ function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   useEffect(() => {
     setCurrentPathname(window.location.hash);
-    window.addEventListener('resize', updateDimensions);
+    window.addEventListener("resize", updateDimensions);
     return () => {
-      window.removeEventListener('resize', updateDimensions);
+      window.removeEventListener("resize", updateDimensions);
     };
   }, []);
 
@@ -39,13 +39,13 @@ function App() {
     <Router>
       <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
         <GlobalStyle />
-        <Container className='flex' direction='column'>
+        <Container className="flex" direction="column">
           <BodyContainer
-            as={'header'}
-            className='flex'
-            margin='3.5rem auto 0 auto'
+            as={"header"}
+            className="flex"
+            margin="3.5rem auto 0 auto"
           >
-            <BasicInfo/>
+            <BasicInfo />
             <Nav
               width={width}
               currentPathname={currentPathname}
@@ -56,21 +56,21 @@ function App() {
           </BodyContainer>
 
           <Route
-            render={({location}) => (
-              <BodyContainer as='main' margin='3rem auto 0 auto'>
+            render={({ location }) => (
+              <BodyContainer as="main" margin="3rem auto 0 auto">
                 <AnimatePresence exitBeforeEnter>
                   <Switch location={location} key={location.pathname}>
-                    <Route path='/' exact>
-                      <Projects width={width}/>
+                    <Route path="/" exact>
+                      <Projects width={width} />
                     </Route>
-                    <Route path='/experience' exact>
-                      <Experience width={width}/>
+                    <Route path="/experience" exact>
+                      <Experience width={width} />
                     </Route>
-                    <Route path='/about' exact>
-                      <About/>
+                    <Route path="/about" exact>
+                      <About />
                     </Route>
-                    <Route path='*'>
-                      <ErrorPage/>
+                    <Route path="*">
+                      <ErrorPage />
                     </Route>
                   </Switch>
                 </AnimatePresence>

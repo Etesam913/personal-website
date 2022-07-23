@@ -8,12 +8,6 @@ import {
   motion,
 } from "Dependencies";
 import { Container, NavLink, Icons } from "../ComponentsMaster";
-import {
-  xVariantsLight,
-  yVariantsLight,
-  xVariantsDark,
-  yVariantsDark,
-} from "variants/NavVariants";
 
 function Nav(props) {
   const history = useHistory();
