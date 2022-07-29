@@ -21,6 +21,7 @@ function ExperienceItem(props) {
         <MobileRowItem>
           <Link href={props.link}>
             <CompanyLogo
+              height={props.height}
               src={props.imgSrc}
               alt={props.altText}
               whileHover={{ scale: 1.1 }}
@@ -49,7 +50,7 @@ function ExperienceItem(props) {
 
 const CompanyLogo = styled(motion.img)`
   width: auto;
-  height: 2rem;
+  height: ${(props) => (props.height ? props.height : "2rem")};
 `;
 
 const MobileText = styled(Container)`

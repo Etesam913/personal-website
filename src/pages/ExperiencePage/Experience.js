@@ -19,6 +19,7 @@ function Experience() {
         ],
         companyTitle: "Meta",
         link: "https://www.meta.com/",
+        height: "2.65rem",
       },
     },
     {
@@ -94,6 +95,7 @@ function Experience() {
                 companyTitle={item[dictKey].companyTitle}
                 points={item[dictKey].points}
                 link={item[dictKey].link}
+                height={item[dictKey].height}
               />
             </ExperienceContainer>
           );

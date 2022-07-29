@@ -22,7 +22,7 @@ function About({ theme }) {
         </Header2>
         <Links>
           <StyledLink
-            href="https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/EtesamAnsariResume.pdf"
+            href="https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/Etesam_Ansari_Resume.pdf"
             underline
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 1 }}
