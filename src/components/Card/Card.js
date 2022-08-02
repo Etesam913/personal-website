@@ -1,5 +1,5 @@
 import { CardContainer, ImgContainer, CardDesc, CardVideo } from "./CardStyles";
-import { Header3, Link } from "components/ComponentsMaster";
+import { Link, Paragraph } from "components/ComponentsMaster";
 import { React, motion, LazyLoadImage } from "Dependencies";
 import { withTheme } from "styled-components";
 
@@ -48,9 +48,9 @@ function Card(props) {
           {props.title}
         </Link>
 
-        <Header3 padding="0 0.35rem" textAlign="center">
+        <Paragraph padding="0 0.35rem" textAlign="center">
           {props.desc}
-        </Header3>
+        </Paragraph>
       </CardDesc>
     </CardContainer>
   );

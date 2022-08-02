@@ -1,7 +1,12 @@
 import { React, motion, styled, withTheme } from "Dependencies";
-import { Container } from "components/styled/Layouts";
-import { Header1, Header2, Header3 } from "components/styled/Titles";
-import { Link } from "components/styled/Link";
+import {
+  Header1,
+  Header2,
+  Header3,
+  Paragraph,
+  Link,
+  Container,
+} from "components/ComponentsMaster";
 
 function ExperienceItem(props) {
   return (
@@ -31,7 +36,7 @@ function ExperienceItem(props) {
         </MobileRowItem>
       </MobileContainer>
       <MobileContainer>
-        <Header3 textAlign="center">{props.title}</Header3>
+        <Header2 textAlign="center">{props.title}</Header2>
         <MobileRowItem>
           <Header3 textAlign="center">{props.timePeriod}</Header3>
         </MobileRowItem>
@@ -40,7 +45,7 @@ function ExperienceItem(props) {
       {props.points.map((text, index) => {
         return (
           <MobileText key={"point-" + index}>
-            <Header2>{text}</Header2>
+            <Paragraph>{text}</Paragraph>
           </MobileText>
         );
       })}

@@ -18,3 +18,16 @@ export const Link = styled(motion.a)`
       text-decoration-color: ${(props) => props.underlineColor};
     `}
 `;
+
+export const Paragraph = styled(motion.p)`
+  font-size: 1.15em;
+  margin: ${(props) => (props.margin ? props.margin : "0.35rem")};
+  padding: ${(props) => props.padding};
+  @media screen and (max-width: 600px) {
+    font-size: 0.85em;
+  }
+  text-align: ${(props) => props.textAlign};
+  color: ${(props) =>
+    props.color ? props.color : props.theme.colors.secondary};
+  transition: color 200ms;
+`;

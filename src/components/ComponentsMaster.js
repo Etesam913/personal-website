@@ -1,7 +1,7 @@
 import Card from "./Card/Card";
 import Nav from "./Nav/Nav";
 import { Container } from "./styled/Layouts";
-import { Link } from "./styled/Link";
+import { Link, Paragraph } from "./styled/OtherText";
 import { Header1, Header2, Header3, NavLink } from "./styled/Titles";
 import BasicInfo from "./BasicInfo";
 import WavingHand from "./WavingHand";
@@ -13,6 +13,7 @@ export {
   Nav,
   Container,
   Link,
+  Paragraph,
   Header1,
   Header2,
   Header3,

@@ -1,5 +1,5 @@
 import { React, styled, withTheme, motion } from "Dependencies";
-import { Container, Header2, Link } from "components/ComponentsMaster";
+import { Container, Paragraph, Link } from "components/ComponentsMaster";
 
 function About({ theme }) {
   return (
@@ -12,14 +12,14 @@ function About({ theme }) {
       align="flex-start"
     >
       <DescContainer>
-        <Header2>
+        <Paragraph margin="0">
           I am a frontend developer who mainly uses React.js. I am a student
           majoring in Computer Science at the Engineering School of Columbia
           University.
-        </Header2>
-        <Header2 margin="1rem 0">
+        </Paragraph>
+        <Paragraph margin="1rem 0">
           When I am not coding, I like to play basketball.
-        </Header2>
+        </Paragraph>
         <Links>
           <StyledLink
             href="https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/Etesam_Ansari_Resume.pdf"
