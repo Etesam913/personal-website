@@ -13,7 +13,7 @@ function Experience() {
         timePeriod: "May 2022 - August 2022",
         points: [
           "Worked alongside two other software developers on Mephisto, a data collection platform that allows researchers to easily publish tasks that workers can complete for money.",
-          "I published a npm library with a two React.js components, tips and feedback.",
+          "I published a npm library with two React.js components: tips and feedback.",
           "These components were used in tandem with the Python backend to improve worker-to-worker and worker-to-researcher communication.",
           "Made other various improvements like adding a search bar to the documentation website and beautifying the command line interface.",
         ],
