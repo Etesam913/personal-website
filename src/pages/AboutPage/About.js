@@ -13,7 +13,10 @@ function About({ theme }) {
     >
 
       <DescContainer margin="2rem 0 0">
-        <Avatar alt="Avatar of Etesam Ansari" src="https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/etesam-avatar.png"/>
+        <div>
+          <Avatar alt="Avatar of Etesam Ansari" src="https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/etesam-avatar.png"/>
+        </div>
+
         <Paragraph margin="0">
           I am a frontend developer who mainly uses React.js. I am a student
           majoring in Computer Science at the Engineering School of Columbia
@@ -105,6 +108,7 @@ const StyledLink = styled(Link)`
 
 const Avatar = styled.img`
   width: min(10rem, 90%);
+  
   height: auto;
   margin: 0 auto 0 0;
   @media screen and (max-width: 600px) {
