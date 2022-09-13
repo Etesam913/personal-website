@@ -27,7 +27,7 @@ function Experience() {
         imgSrc:
           "https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/genesys-logo.png",
         altText: "Genesys Logo",
-        title: "Frontend Engineer Intern",
+        title: "Software Engineer Intern",
         timePeriod: "June 2021 - August 2021",
         companyTitle: "Genesys",
         points: [
@@ -44,7 +44,7 @@ function Experience() {
         imgSrc:
           "https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/correlation-one-logo.png",
         altText: "Correlation One Logo",
-        title: "Software Developer Intern",
+        title: "Software Engineer Intern",
         timePeriod: "June 2020 - Sept 2020",
         companyTitle: "Correlation One",
         points: [
@@ -59,7 +59,7 @@ function Experience() {
         imgSrc:
           "https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/spec-logo.png",
         altText: "Spectator Logo",
-        title: "Software Developer",
+        title: "Software Engineer",
         timePeriod: "Sept 2019 - Present",
         companyTitle: "Columbia Daily Spectator",
         points: [
