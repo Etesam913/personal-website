@@ -64,7 +64,8 @@ function Experience() {
         companyTitle: "Columbia Daily Spectator",
         points: [
           "Worked in a team with 10 other developers to overhaul Columbia’s leading student newspaper’s website with React.js. The website receives 50 million impressions annualy.",
-          "Worked in a committee to help improve the developer training experience for incoming students",
+          "Worked with three other developers to create react components for lionclubs.info, a platform where Columbia students can apply for clubs.",
+          "Utilized HTML/CSS, React.js, and Firebase"
         ],
         link: "https://www.columbiaspectator.com/",
       },
