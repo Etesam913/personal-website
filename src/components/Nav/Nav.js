@@ -7,7 +7,7 @@ import {
   styled,
   motion,
 } from "Dependencies";
-import { Container, NavLink, Icons } from "../ComponentsMaster";
+import { NavLink } from "../ComponentsMaster";
 
 function Nav(props) {
   const history = useHistory();
@@ -23,9 +23,10 @@ function Nav(props) {
     { About: { link: "/about" } },
   ];
 
-  function getHeader(direction, item, dictKey, index) {
+  function getHeader(item, dictKey, index) {
     return (
       <NavLink
+        margin={props.width <= 1100 ? "0" : "0 0.25rem"}
         showCursor
         key={index}
         grayedOut={props.currentPathname !== "#" + item[dictKey].link}
@@ -48,7 +49,7 @@ function Nav(props) {
               : { textDecoration: "none", marginBottom: "0.9rem" }
           }
         >
-          {getHeader(direction, item, dictKey, index, item[dictKey].link)}
+          {getHeader(item, dictKey, index)}
         </Link>
       );
     });
@@ -57,14 +58,18 @@ function Nav(props) {
   return (
     <>
       <NavContainer>
-        {getNavItems(props.width < 1100 ? "y" : "x")}
+        {getNavItems(props.width <= 1100 ? "y" : "x")}
         <ColorThemeButton
-          whileHover={{ scale: 1.15 }}
+          initial={{ y: -5 }}
+          whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-          margin={props.width < 1100 ? "0.5rem 0 0 0" : "0 0 0 0.35rem"}
           onClick={() => props.setIsDarkMode(!props.isDarkMode)}
         >
-          <Icons id={props.isDarkMode ? "moon" : "sun"} />
+          {props.isDarkMode ? (
+            <ColorThemeImage src='https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/Moon.png' />
+          ) : (
+            <ColorThemeImage src='https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/Sun.png' />
+          )}
         </ColorThemeButton>
       </NavContainer>
     </>
@@ -75,18 +80,26 @@ const ColorThemeButton = styled(motion.button)`
   background: transparent;
   border: 0;
   cursor: pointer;
+  display: inline-block;
   padding: 0;
   margin: ${(props) => props.margin};
-  height: 28px;
-  width: 28px;
+  height: 2.75rem;
+  width: 2.75rem;
   color: ${(props) => props.theme.colors.secondary};
+`;
+
+const ColorThemeImage = styled.img`
+  height: 100%;
+  width: 100%;
 `;
 
 const NavContainer = styled.nav`
   display: flex;
+  height: 4rem;
   @media screen and (max-width: 1100px) {
     flex-direction: column;
     align-items: flex-end;
+    height: auto;
   }
 `;
 

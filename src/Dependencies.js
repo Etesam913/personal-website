@@ -1,4 +1,10 @@
-import React, { useState, useContext, useRef, useEffect } from "react";
+import React, {
+  Fragment,
+  useState,
+  useContext,
+  useRef,
+  useEffect,
+} from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   HashRouter as Router,
@@ -34,4 +40,5 @@ export {
   css,
   LazyLoadImage,
   keyframes,
+  Fragment,
 };

@@ -59,6 +59,7 @@ function Projects() {
   const colElements = colContent.map((item, index) => {
     return (
       <Card
+        isFirst={index === 0}
         key={`card-${index}`}
         num={index}
         src={item.src}

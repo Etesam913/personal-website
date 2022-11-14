@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-export const CardContainer = styled.section`
+export const CardContainer = styled.div`
   width: min(100%, 25rem);
   max-height: 26rem;
   border-radius: 1rem;

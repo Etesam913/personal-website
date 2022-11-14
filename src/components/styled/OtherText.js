@@ -8,7 +8,7 @@ export const Link = styled(motion.a)`
   font-family: "Manrope", "Arial";
   color: ${(props) => props.color};
   font-size: ${(props) => (props.fontSize ? props.fontSize : "1.5em")};
-  
+
   ${(props) =>
     props.underline &&
     css`
@@ -21,7 +21,7 @@ export const Paragraph = styled(motion.p)`
   font-size: 1.15em;
   margin: ${(props) => (props.margin ? props.margin : "0.35rem")};
   padding: ${(props) => props.padding};
- 
+  width: ${(props) => props.width};
   text-align: ${(props) => props.textAlign};
   color: ${(props) =>
     props.color ? props.color : props.theme.colors.secondary};
