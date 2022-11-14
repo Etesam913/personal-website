@@ -5,10 +5,6 @@ import { useWindowSize } from "./Hooks/GenericHooks";
 
 function BasicInfo(props) {
   const size = useWindowSize();
-  const list = {
-    visible: { opacity: 1 },
-    hidden: { opacity: 0 },
-  };
 
   const item = {
     visible: { opacity: 1, y: 0 },
@@ -16,21 +12,15 @@ function BasicInfo(props) {
   };
 
   return (
-    <InfoContainer
-      className="flex"
-      direction="column"
-      variants={list}
-      initial="hidden"
-      animate="visible"
-    >
-      <Container className="flex" align="center" variants={item}>
+    <InfoContainer>
+      <Container className='flex' align='center' variants={item}>
         <Header1 color={props.theme.colors.mainGreen}>
           Etesam {size.width <= 600 && <br />} Ansari <WavingHand />
         </Header1>
       </Container>
       <Container variants={item}>
         <Header1 color={props.theme.colors.mainBlue}>
-          Frontend {size.width <= 600 && <br />} Developer
+          Software {size.width <= 600 && <br />} Engineer
         </Header1>
       </Container>
       <Container variants={item}>
@@ -40,13 +30,6 @@ function BasicInfo(props) {
   );
 }
 
-const InfoContainer = styled(Container)`
-  @media screen and (max-width: 1100px) {
-    padding-left: 6rem !important;
-  }
-  @media screen and (max-width: 600px) {
-    padding-left: 3rem !important;
-  }
-`;
+const InfoContainer = styled.div``;
 
 export default withTheme(BasicInfo);

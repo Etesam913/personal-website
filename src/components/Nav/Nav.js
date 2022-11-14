@@ -27,7 +27,6 @@ function Nav(props) {
     return (
       <NavLink
         showCursor
-        padding={direction === "x" ? "0 0.5rem" : "0.875rem 0"}
         key={index}
         grayedOut={props.currentPathname !== "#" + item[dictKey].link}
       >
@@ -57,13 +56,7 @@ function Nav(props) {
 
   return (
     <>
-      <Container
-        as="nav"
-        margin={props.width < 1100 ? "0 3rem 0 auto" : "0.5rem 0 0 auto"}
-        className="flex"
-        align={props.width < 1100 ? "flex-end" : "center"}
-        direction={props.width < 1100 ? "column" : "row"}
-      >
+      <NavContainer>
         {getNavItems(props.width < 1100 ? "y" : "x")}
         <ColorThemeButton
           whileHover={{ scale: 1.15 }}
@@ -73,7 +66,7 @@ function Nav(props) {
         >
           <Icons id={props.isDarkMode ? "moon" : "sun"} />
         </ColorThemeButton>
-      </Container>
+      </NavContainer>
     </>
   );
 }
@@ -88,4 +81,13 @@ const ColorThemeButton = styled(motion.button)`
   width: 28px;
   color: ${(props) => props.theme.colors.secondary};
 `;
+
+const NavContainer = styled.nav`
+  display: flex;
+  @media screen and (max-width: 1100px) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+`;
+
 export default withTheme(Nav);

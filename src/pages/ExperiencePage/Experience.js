@@ -1,6 +1,7 @@
 import { React, styled } from "Dependencies";
 import { Container } from "components/ComponentsMaster";
 import ExperienceItem from "./ExperienceItem";
+import { Fragment } from "react";
 
 function Experience() {
   const experienceItems = [
@@ -65,7 +66,7 @@ function Experience() {
         points: [
           "Worked in a team with 10 other developers to overhaul Columbia’s leading student newspaper’s website with React.js. The website receives 50 million impressions annualy.",
           "Worked with three other developers to create react components for lionclubs.info, a platform where Columbia students can apply for clubs.",
-          "Utilized HTML/CSS, React.js, and Firebase"
+          "Utilized HTML/CSS, React.js, and Firebase",
         ],
         link: "https://www.columbiaspectator.com/",
       },
@@ -74,7 +75,7 @@ function Experience() {
 
   return (
     <Container
-      width="100%"
+      width='100%'
       initial={{ opacity: 0, y: -40 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0 }}
@@ -83,10 +84,7 @@ function Experience() {
         {experienceItems.map((item, index) => {
           const dictKey = Object.keys(item)[0];
           return (
-            <ExperienceContainer
-              margin="0 0 2rem"
-              key={`experience-container-${index}`}
-            >
+            <Fragment key={`experience-container-${index}`}>
               <ExperienceItem
                 key={"experience-item-" + index}
                 imgSrc={item[dictKey].imgSrc}
@@ -98,7 +96,7 @@ function Experience() {
                 link={item[dictKey].link}
                 height={item[dictKey].height}
               />
-            </ExperienceContainer>
+            </Fragment>
           );
         })}
       </>
@@ -106,13 +104,4 @@ function Experience() {
   );
 }
 
-const ExperienceContainer = styled(Container)`
-  @media screen and (max-width: 1100px) {
-    padding: 0 6rem !important;
-  }
-
-  @media screen and (max-width: 792px) {
-    padding: 0 2rem !important;
-  }
-`;
 export default Experience;

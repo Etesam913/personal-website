@@ -12,9 +12,6 @@ export const Header1 = styled(motion.h1)`
   color: ${(props) => props.color};
   transition: color 200ms;
   cursor: ${(props) => props.showCursor && "pointer"};
-  @media screen and (max-width: 600px) {
-    font-size: 1.3em;
-  } ;
 `;
 
 export const Header2 = styled.h2`
@@ -47,9 +44,6 @@ export const NavLink = styled(motion.span)`
   transition: 200ms color;
   &:hover {
     color: ${(props) => props.theme.colors.secondary};
-  }
-  @media screen and (max-width: 600px) {
-    font-size: 1.15em;
   }
 `;
 

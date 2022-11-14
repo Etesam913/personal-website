@@ -39,12 +39,8 @@ function App() {
     <Router>
       <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
         <GlobalStyle />
-        <Container className="flex" direction="column">
-          <BodyContainer
-            as={"header"}
-            className="flex"
-            margin="3.5rem auto 0 auto"
-          >
+        <BodyContainer>
+          <HeaderContainer>
             <BasicInfo />
             <Nav
               width={width}
@@ -53,41 +49,49 @@ function App() {
               setIsDarkMode={setIsDarkMode}
               isDarkMode={isDarkMode}
             />
-          </BodyContainer>
+          </HeaderContainer>
 
           <Route
             render={({ location }) => (
-              <BodyContainer as="main" margin="3rem auto 0 auto">
+              <MainContainer>
                 <AnimatePresence exitBeforeEnter>
                   <Switch location={location} key={location.pathname}>
-                    <Route path="/" exact>
+                    <Route path='/' exact>
                       <Projects width={width} />
                     </Route>
-                    <Route path="/experience" exact>
+                    <Route path='/experience' exact>
                       <Experience width={width} />
                     </Route>
-                    <Route path="/about" exact>
+                    <Route path='/about' exact>
                       <About />
                     </Route>
-                    <Route path="*">
+                    <Route path='*'>
                       <ErrorPage />
                     </Route>
                   </Switch>
                 </AnimatePresence>
-              </BodyContainer>
+              </MainContainer>
             )}
           />
-        </Container>
+        </BodyContainer>
       </ThemeProvider>
     </Router>
   );
 }
 
-const BodyContainer = styled(Container)`
-  width: 100%;
-  @media screen and (min-width: 1101px) {
-    width: 56.25rem !important;
-  }
+const HeaderContainer = styled.header`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
 `;
 
+const MainContainer = styled.main`
+  margin-top: 2.5rem;
+`;
+
+const BodyContainer = styled.div`
+  width: min(56.25rem, 80%);
+  margin: 0 auto;
+  padding-bottom: 2rem;
+`;
 export default App;

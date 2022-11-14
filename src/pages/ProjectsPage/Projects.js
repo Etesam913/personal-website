@@ -1,9 +1,40 @@
-import { React, styled } from "Dependencies";
-import { Container, Header2, Card } from "components/ComponentsMaster";
-import ProjectCol1 from "./ProjectCol1";
-import ProjectCol2 from "./ProjectCol2";
+import { React, styled, motion } from "Dependencies";
+import { Card } from "components/ComponentsMaster";
 
-function Projects(props) {
+function Projects() {
+  const colContent = [
+    {
+      src: "https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/SlickFox-Website-Promo-480.mov",
+      title: "Slick-Fox",
+      desc: "A modern theme for Firefox uses slick animations to create a collapsable url bar.",
+      link: "https://github.com/Etesam913/slick-fox",
+      video: true,
+    },
+    {
+      src: "https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/xp-newtab.mp4",
+      title: "XP Newtab",
+      desc: "A new tab extension in the style of Windows XP/98.",
+      link: "https://github.com/Etesam913/xp-newtab",
+      video: true,
+    },
+    {
+      src: "https://etesam.nyc3.digitaloceanspaces.com/Euismod/darkmode-display-480.mov",
+      title: "Euismod",
+      desc: "A website that teaches CSS Grid interactively.",
+      link: "https://github.com/Etesam913/euismod",
+      video: true,
+    },
+    {
+      src: "https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/SwervyTextPromo-480.mov",
+      poster:
+        "https://res.cloudinary.com/dz5ashos1/image/upload/v1600237181/github/react-swervy-text/yhqkjucss1ahfztn0pw8.png",
+      title: "React-Swervy-Text",
+      desc: "A npm package that provides an easy way for text to be animated along shapes and curves.",
+      link: "https://github.com/Etesam913/react-swervy-text",
+      video: true,
+    },
+  ];
+
   const col1Content = [
     {
       Card1: {
@@ -25,106 +56,45 @@ function Projects(props) {
     },
   ];
 
-  const col2Content = [
-    {
-      Card1: {
-        src: "https://etesam.nyc3.digitaloceanspaces.com/Euismod/darkmode-display-480.mov",
-        title: "Euismod",
-        desc: "A website that teaches CSS Grid interactively.",
-        link: "https://github.com/Etesam913/euismod",
-        video: true,
-      },
-    },
-    {
-      Card2: {
-        src: "https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/SwervyTextPromo-480.mov",
-        poster:
-          "https://res.cloudinary.com/dz5ashos1/image/upload/v1600237181/github/react-swervy-text/yhqkjucss1ahfztn0pw8.png",
-        title: "React-Swervy-Text",
-        desc: "A npm package that provides an easy way for text to be animated along shapes and curves.",
-        link: "https://github.com/Etesam913/react-swervy-text",
-        video: true,
-      },
-    },
-  ];
-
-  const col1Elements = col1Content.map((elem, index) => {
-    const dictKey = Object.keys(elem)[0];
+  const colElements = colContent.map((item, index) => {
     return (
       <Card
         key={`card-${index}`}
         num={index}
-        src={elem[dictKey].src}
-        title={elem[dictKey].title}
-        desc={elem[dictKey].desc}
-        link={elem[dictKey].link}
-        video={elem[dictKey].video}
-      />
-    );
-  });
-
-  const col2Elements = col2Content.map((elem, index) => {
-    const dictKey = Object.keys(elem)[0];
-    return (
-      <Card
-        key={`card-${index + 3}`}
-        num={index}
-        video={elem[dictKey].video}
-        src={elem[dictKey].src}
-        title={elem[dictKey].title}
-        desc={elem[dictKey].desc}
-        link={elem[dictKey].link}
-        color={elem[dictKey].color}
+        src={item.src}
+        title={item.title}
+        desc={item.desc}
+        link={item.link}
+        video={item.video}
       />
     );
   });
 
   return (
     <>
-      <ProjectContainer
-        width="100%"
+      <GridContainer
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0 }}
-        padding="0 0 1.5rem"
       >
-        {props.width < 993 ? (
-          <ParentContainer>
-            <Container width="65%" padding="0 0 0 0.5rem">
-              <Header2 padding="0">
-                I enjoy making open source projects in React.js that are free to
-                use.
-              </Header2>
-            </Container>
-
-            {col1Elements}
-            {col2Elements}
-          </ParentContainer>
-        ) : (
-          <ColContainer>
-            <ProjectCol1 col1Elements={col1Elements} />
-            <ProjectCol2 col2Elements={col2Elements} />
-          </ColContainer>
-        )}
-      </ProjectContainer>
+        {colElements}
+      </GridContainer>
     </>
   );
 }
 
-const ProjectContainer = styled(Container)`
-  display: flex;
-  flex-direction: row;
-`;
-
-const ParentContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-`;
-const ColContainer = styled.div`
-  display: flex;
-  width: 100%;
+const GridContainer = styled(motion.div)`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2rem 4rem;
+  margin: 0 auto;
+  justify-content: center;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 3rem 0;
+  }
 `;
 
 export default Projects;

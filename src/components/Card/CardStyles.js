@@ -2,19 +2,15 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const CardContainer = styled.section`
-  width: 23rem;
-  height: 26rem;
+  width: min(100%, 25rem);
+  max-height: 26rem;
   border-radius: 1rem;
   background: ${(props) => props.theme.colors.primary};
   transition: background 200ms;
   box-shadow: 10px 10px 49px -22px rgba(0, 0, 0, 0.35);
-  margin-top: 1.5rem;
+  margin: 1.5rem auto 0;
   display: flex;
   flex-direction: column;
-  @media screen and (max-width: 992px) {
-    width: 65%;
-    height: auto;
-  }
 `;
 
 export const ImgContainer = styled.a`
@@ -36,11 +32,9 @@ export const CardVideo = styled.video`
 export const LinkText = styled.span`
   margin: 0;
   font-weight: bold;
+  text-align: center;
   color: ${(props) => props.color};
   font-size: 1.5em;
-  @media screen and (max-width: 600px) {
-    font-size: 1.15em;
-  }
 `;
 
 export const CardImg = styled(motion.img)`
@@ -61,4 +55,5 @@ export const CardDesc = styled.div`
   justify-content: center;
   align-items: center;
   padding: 1rem 0;
+  text-align: center;
 `;

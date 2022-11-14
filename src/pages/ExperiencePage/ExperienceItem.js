@@ -10,7 +10,7 @@ import {
 
 function ExperienceItem(props) {
   return (
-    <Container width="100%">
+    <Container width='100%' as='section'>
       <MobileContainer>
         <Link
           whileHover={{ scale: 1.1 }}
@@ -19,7 +19,7 @@ function ExperienceItem(props) {
           href={props.link}
           underlineColor={props.theme.colors.mainBlue}
         >
-          <Header1 textAlign="center" color={props.theme.colors.mainBlue}>
+          <Header1 textAlign='center' color={props.theme.colors.mainBlue}>
             {props.companyTitle}
           </Header1>
         </Link>
@@ -36,9 +36,9 @@ function ExperienceItem(props) {
         </MobileRowItem>
       </MobileContainer>
       <MobileContainer>
-        <Header2 textAlign="center">{props.title}</Header2>
+        <Header2 textAlign='center'>{props.title}</Header2>
         <MobileRowItem>
-          <Header3 textAlign="center">{props.timePeriod}</Header3>
+          <Header3 textAlign='center'>{props.timePeriod}</Header3>
         </MobileRowItem>
       </MobileContainer>
 
