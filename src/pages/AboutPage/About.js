@@ -17,7 +17,7 @@ function About({ theme }) {
       </div>
 
       <Paragraph margin='1.5rem 0 0 0'>
-        I am a frontend developer who mainly uses React.js. I am a student
+        I am a software developer who mainly uses React.js. I am a student
         majoring in Computer Science at the Engineering School of Columbia
         University.
       </Paragraph>

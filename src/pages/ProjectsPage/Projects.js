@@ -2,19 +2,23 @@ import { React, styled, motion } from "Dependencies";
 import { Card } from "components/ComponentsMaster";
 
 function Projects() {
-  const colContent = [
+  const projData = [
     {
       src: "https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/SlickFox-Website-Promo-480.mov",
       title: "Slick-Fox",
       desc: "A modern theme for Firefox uses slick animations to create a collapsable url bar.",
       link: "https://github.com/Etesam913/slick-fox",
+      poster:
+        "https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/slick-fox-poster.png",
       video: true,
     },
     {
-      src: "https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/xp-newtab.mp4",
+      src: "https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/xp.mp4",
       title: "XP Newtab",
       desc: "A new tab extension in the style of Windows XP/98.",
       link: "https://github.com/Etesam913/xp-newtab",
+      poster:
+        "https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/xp-poster.png",
       video: true,
     },
     {
@@ -22,6 +26,8 @@ function Projects() {
       title: "Euismod",
       desc: "A website that teaches CSS Grid interactively.",
       link: "https://github.com/Etesam913/euismod",
+      poster:
+        "https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/euismod-poster.png",
       video: true,
     },
     {
@@ -56,7 +62,7 @@ function Projects() {
     },
   ];
 
-  const colElements = colContent.map((item, index) => {
+  const projects = projData.map((item, index) => {
     return (
       <Card
         isFirst={index === 0}
@@ -78,7 +84,7 @@ function Projects() {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0 }}
       >
-        {colElements}
+        {projects}
       </GridContainer>
     </>
   );

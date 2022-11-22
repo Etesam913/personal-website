@@ -7,27 +7,25 @@ function Card(props) {
   return (
     <section>
       {props.isFirst && (
-        <Paragraph width='min(95%,24rem)' margin='0 auto'>
+        <Paragraph width='fit-content' margin='0 auto'>
           I enjoy making open source projects using React.js.
         </Paragraph>
       )}
       <CardContainer>
-        {props.video === true ? (
+        {props.video ? (
           <ImgContainer href={props.link}>
-            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }}>
-              <CardVideo
-                poster={props.poster}
-                onLoadedData={(e) => {
-                  e.target.play();
-                }}
-                playsInline
-                muted
-                preload
-                autoPlay
-                loop
-                src={props.src}
-              />
-            </motion.div>
+            <CardVideo
+              poster={props.poster}
+              onLoadedData={(e) => {
+                e.target.play();
+              }}
+              playsInline
+              muted
+              preload
+              autoPlay
+              loop
+              src={props.src}
+            />
           </ImgContainer>
         ) : (
           <ImgContainer href={props.link}>

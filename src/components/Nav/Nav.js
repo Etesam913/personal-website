@@ -66,9 +66,15 @@ function Nav(props) {
           onClick={() => props.setIsDarkMode(!props.isDarkMode)}
         >
           {props.isDarkMode ? (
-            <ColorThemeImage src='https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/Moon.png' />
+            <ColorThemeImage
+              alt='moon'
+              src='https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/Moon.png'
+            />
           ) : (
-            <ColorThemeImage src='https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/Sun.png' />
+            <ColorThemeImage
+              alt='sun'
+              src='https://etesam.nyc3.digitaloceanspaces.com/Personal-Website/Sun.png'
+            />
           )}
         </ColorThemeButton>
       </NavContainer>

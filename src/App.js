@@ -22,9 +22,13 @@ import { Projects, Experience, About, ErrorPage } from "./pages/PagesMaster";
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
   const [currentPathname, setCurrentPathname] = useState(window.location.hash);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(
+    window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+  );
   useEffect(() => {
     setCurrentPathname(window.location.hash);
+
     window.addEventListener("resize", updateDimensions);
     return () => {
       window.removeEventListener("resize", updateDimensions);
