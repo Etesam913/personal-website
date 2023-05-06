@@ -12,7 +12,7 @@
   --body-background: #f5f5f5;
   --text-color: #2e2e2e;
   --green: #376c51;
-
+  --link: #3565ab;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -40,7 +40,6 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: var(--body-background);
   color: var(--text-color);
-  transition: background-color 0.5s ease-in-out;
   width: min(900px, 90vw);
   margin: 0 auto;
 }
@@ -89,4 +88,10 @@ main{
 
 nav{
     padding: 1.5rem 0;
+    display: flex;
+}
+
+p{
+    margin-bottom: 1rem;
+    font-size: 1.15em;
 }

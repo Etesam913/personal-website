@@ -2,7 +2,24 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
 
+.navbar-links{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+
+.navbar-link{
+    color: var(--link);
+    font-family: var(--font-manrope);
+    font-size: 1.5em;
+}
+
+.navbar-link-container{
+    margin-right: 1rem;
 }
 
 .navbar-green{

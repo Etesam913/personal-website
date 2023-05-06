@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  images: {
+    domains: ['etesam.nyc3.cdn.digitaloceanspaces.com',],
+    hostname: 'etesam.nyc3.cdn.digitaloceanspaces.com',
+  },
+}
 
 module.exports = nextConfig
