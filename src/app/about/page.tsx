@@ -12,7 +12,7 @@ export default function About() {
         I am a software developer who mainly uses HTML/CSS & JS, React.js, and Python.
       </p>
       <p>
-        I graduated from Columbia University's Engineering School with a Bacherlors of Science in Computer Science.
+        I graduated from Columbia University&apos;s Engineering School with a Bacherlors of Science in Computer Science.
       </p>
       <p>
         When I am not coding, I like to play basketball.
