@@ -1,8 +1,9 @@
 import Image from "next/image";
+import PageWrapper from "./page-wrapper";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <div className='header-row-container'>
         <Image
           style={{ marginRight: "1rem" }}
@@ -14,6 +15,6 @@ export default function Home() {
         />
         <h1>My Projects</h1>
       </div>
-    </main>
+    </>
   );
 }

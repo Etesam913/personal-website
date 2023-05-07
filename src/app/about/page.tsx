@@ -3,7 +3,7 @@ import "./about.css";
 
 export default function About() {
   return (
-    <main>
+    <>
       <div className='header-row-container'>
         <Image
           style={{ marginRight: "1rem" }}
@@ -33,6 +33,6 @@ export default function About() {
         Bachelors of Science in Computer Science.
       </p>
       <p>When I am not coding, I like to play basketball.</p>
-    </main>
+    </>
   );
 }

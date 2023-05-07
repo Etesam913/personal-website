@@ -3,7 +3,7 @@ import ExperienceRow from "./experience-row";
 
 export default function Experience() {
   return (
-    <main>
+    <>
       <div className='header-row-container'>
         <Image
           style={{ marginRight: "1rem" }}
@@ -151,6 +151,6 @@ export default function Experience() {
           </li>
         </ul>
       </ExperienceRow>
-    </main>
+    </>
   );
 }

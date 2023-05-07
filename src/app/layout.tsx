@@ -1,6 +1,7 @@
 import { inter, manrope } from "@/app/fonts";
 import "./global.css";
 import Navbar from "./(navbar)";
+import PageWrapper from "./page-wrapper";
 
 export const metadata = {
   title: "Etesam Ansari's Personal Website",
@@ -16,7 +17,7 @@ export default function RootLayout({
     <html lang='en' className={`${manrope.variable}`}>
       <body className={inter.className}>
         <Navbar />
-        {children}
+        <PageWrapper>{children}</PageWrapper>
       </body>
     </html>
   );
