@@ -30,6 +30,7 @@
   color: var(--gray);
   font-family: var(--font-manrope);
   font-size: 1.5em;
+  text-decoration-thickness: 2px;
   transition: 400ms color;
 }
 

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import PageWrapper from "./page-wrapper";
+import Card from "./card";
 
-export default function Home() {
+export default function Projects() {
   return (
     <>
       <div className='header-row-container'>
@@ -14,6 +14,12 @@ export default function Home() {
           src='https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/projects-icon.png'
         />
         <h1>My Projects</h1>
+      </div>
+      <div className='cards-container'>
+        <Card projectName='XP Newtab' />
+        <Card projectName='Custoplayer' />
+        <Card projectName='Euismod' />
+        <Card projectName='Slick Fox' />
       </div>
     </>
   );
