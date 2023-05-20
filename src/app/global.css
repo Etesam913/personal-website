@@ -177,3 +177,9 @@ a {
     justify-content: center;
   }
 }
+
+button {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}

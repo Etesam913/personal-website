@@ -20,12 +20,12 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  overflow-y: auto;
 
   background-color: var(--body-background);
   box-shadow: var(--shadow-elevation-high);
   width: min(60rem, 95%);
   border-radius: 1rem;
-  overflow: hidden;
 }
 
 .cards-container {
@@ -83,4 +83,21 @@
   left: 0;
   background-color: #4646468f;
   margin: auto;
+}
+
+video {
+  object-fit: cover;
+  cursor: pointer;
+  background-color: black;
+}
+
+video[data-isOpen="true"] {
+  object-fit: contain;
+}
+
+.card-body > a {
+  display: block;
+  font-size: 1.1em;
+  width: fit-content;
+  margin: 0.5rem auto;
 }

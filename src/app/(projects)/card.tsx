@@ -1,16 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { ReactNode, useState } from "react";
 import GrayFade from "./gray-fade";
 import "./projects.css";
+import CardVideo from "./card-video";
 
 export default function Card({
   projectName,
+  videoPoster,
+  videoSrc,
   children,
 }: {
   projectName: string;
+  videoPoster: string;
+  videoSrc: string;
   children?: ReactNode;
 }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,35 +27,17 @@ export default function Card({
           <GrayFade setIsOpen={setIsOpen} />
         </>
       )}
-      <motion.div
-        layout
-        transition={{ type: "spring", damping: 13 }}
-        className={isOpen ? "opened-card" : "card"}
-      >
-        <div className='card-img-container'>
-          {isOpen ? (
-            <div className='video-container'>
-              <video
-                preload='none'
-                width={"100%"}
-                height={"100%"}
-                controls
-                poster='https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/xp-newtab/xp-newtab-poster.png'
-                src='https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/xp-newtab/xp-newtab-demo.mp4'
-              />
-            </div>
-          ) : (
-            <Image
-              fill
-              style={{ objectFit: "cover" }}
-              alt='Image Showing XP Newtab Interface'
-              priority
-              src='https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/xp-newtab/xp-newtab-poster.png'
-            />
-          )}
-        </div>
+      <motion.div layout className={isOpen ? "opened-card" : "card"}>
+        <motion.button
+          whileHover={{ scale: isOpen ? 1 : 1.05 }}
+          className='card-img-container'
+          onClick={() => setIsOpen(true)}
+        >
+          <CardVideo src={videoSrc} isOpen={isOpen} poster={videoPoster} />
+        </motion.button>
         <div className='card-name-container'>
           <motion.button
+            layout
             whileHover={{ scale: 1.1 }}
             whileFocus={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
@@ -61,6 +47,7 @@ export default function Card({
           >
             {projectName}
           </motion.button>
+          {isOpen && <div className='card-body'>{children}</div>}
         </div>
       </motion.div>
     </>
