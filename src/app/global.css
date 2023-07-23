@@ -182,4 +182,7 @@ button {
   padding: 0;
   border: none;
   cursor: pointer;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
 }

@@ -1,35 +1,8 @@
 import Image from "next/image";
 import ExperienceRow from "./experience-row";
-
-const classesTaken = [
-  "User Interface Design",
-  "Introduction to Databases",
-  "Data Structures in Java",
-  "Open Source Development",
-  "Natural Language Processing",
-  "3D UI and Augemented Reality",
-  "Artificial Intelligence",
-  "Advanced Programming",
-  "Artificial Intelligence",
-  "Introduction to Devops",
-  "Discrete Mathematics",
-  "Computational Linear Algebra",
-  "Introduction to Probability and Statistics",
-  "Fundamentals of Computer Systems",
-  "Computer Science Theory",
-  "Programming Languages and Translators",
-  "Database Systems Implementation",
-  "Parallel Functional Programming",
-  "Visual Interfaces to Computers",
-  "Competitive Programming",
-  "Introduction to Python",
-];
+import CollegeCoursework from "./college-coursework";
 
 export default function Experience() {
-  const programmingCoursework = classesTaken.map((course, i) => {
-    return <li key={`course-${i}`}>{course}</li>;
-  });
-
   return (
     <>
       <div className="header-row-container">
@@ -71,7 +44,9 @@ export default function Experience() {
         <ul className="experience-list">
           <li>
             Programming coursework
-            <ul className="experience-list">{programmingCoursework}</ul>
+            <ul className="experience-list">
+              <CollegeCoursework />
+            </ul>
           </li>
         </ul>
       </ExperienceRow>
@@ -90,17 +65,18 @@ export default function Experience() {
       >
         <ul className="experience-list">
           <li>
-            Worked alongside two other software developers on{" "}
+            Worked alongside two other software developers on
             <a href="https://mephisto.ai/">Mephisto</a>, a data collection
             platform that allows researchers to easily publish tasks that
             workers can complete for money.
           </li>
           <li>
-            I published{" "}
+            I published
             <a href="https://mephisto.ai/docs/guides/how_to_use/worker_experience/mephisto-worker-addons/">
               a npm library
-            </a>{" "}
-            with two React.js components named "tips" and "feedback".
+            </a>
+            with two React.js components named &quot;tips&quot; and
+            &quot;feedback.
           </li>
           <li>
             These components were used in tandem with the Python backend to
