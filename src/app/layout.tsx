@@ -6,6 +6,9 @@ import PageWrapper from "./page-wrapper";
 export const metadata = {
   title: "Etesam Ansari's Personal Website",
   description: "Check out my cool projects!",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
