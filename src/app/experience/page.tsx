@@ -1,23 +1,51 @@
 import Image from "next/image";
 import ExperienceRow from "./experience-row";
 
+const classesTaken = [
+  "User Interface Design",
+  "Introduction to Databases",
+  "Data Structures in Java",
+  "Open Source Development",
+  "Natural Language Processing",
+  "3D UI and Augemented Reality",
+  "Artificial Intelligence",
+  "Advanced Programming",
+  "Artificial Intelligence",
+  "Introduction to Devops",
+  "Discrete Mathematics",
+  "Computational Linear Algebra",
+  "Introduction to Probability and Statistics",
+  "Fundamentals of Computer Systems",
+  "Computer Science Theory",
+  "Programming Languages and Translators",
+  "Database Systems Implementation",
+  "Parallel Functional Programming",
+  "Visual Interfaces to Computers",
+  "Competitive Programming",
+  "Introduction to Python",
+];
+
 export default function Experience() {
+  const programmingCoursework = classesTaken.map((course, i) => {
+    return <li key={`course-${i}`}>{course}</li>;
+  });
+
   return (
     <>
-      <div className='header-row-container'>
+      <div className="header-row-container">
         <Image
           style={{ marginRight: "1rem" }}
           height={48}
           width={48}
           priority
-          alt='Icon of Desktop Computer'
-          src='https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/my-experience-icon.png'
+          alt="Icon of Desktop Computer"
+          src="https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/my-experience-icon.png"
         />
         <h1>My Experience</h1>
       </div>
       <ExperienceRow
-        companyName='Balyasny Asset Management'
-        title='Software Engineer'
+        companyName="Balyasny Asset Management"
+        title="Software Engineer"
         date={{ from: "June 2023", to: "Present" }}
         imgData={{
           src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/bam-logo.jpeg",
@@ -27,10 +55,31 @@ export default function Experience() {
           href: "https://www.bamfunds.com/",
         }}
       />
+
       <ExperienceRow
-        companyName='Meta'
+        companyName="Columbia University"
+        title="Bachelors in Computer Science"
+        date={{ from: "September 2019", to: "May 2023" }}
+        imgData={{
+          src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/columbia-logo.png",
+          alt: "Columbia University Logo",
+          width: 640 / 15,
+          height: 507 / 15,
+          href: "https://www.columbia.edu/",
+        }}
+      >
+        <ul className="experience-list">
+          <li>
+            Programming coursework
+            <ul className="experience-list">{programmingCoursework}</ul>
+          </li>
+        </ul>
+      </ExperienceRow>
+
+      <ExperienceRow
+        companyName="Meta"
         date={{ from: "May 2022", to: "August 2022" }}
-        title='Frontend Engineer Intern'
+        title="Frontend Engineer Intern"
         imgData={{
           src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/meta-logo.png",
           alt: "Meta Logo",
@@ -39,16 +88,16 @@ export default function Experience() {
           href: "https://www.meta.com/",
         }}
       >
-        <ul className='experience-list'>
+        <ul className="experience-list">
           <li>
             Worked alongside two other software developers on{" "}
-            <a href='https://mephisto.ai/'>Mephisto</a>, a data collection
+            <a href="https://mephisto.ai/">Mephisto</a>, a data collection
             platform that allows researchers to easily publish tasks that
             workers can complete for money.
           </li>
           <li>
             I published{" "}
-            <a href='https://mephisto.ai/docs/guides/how_to_use/worker_experience/mephisto-worker-addons/'>
+            <a href="https://mephisto.ai/docs/guides/how_to_use/worker_experience/mephisto-worker-addons/">
               a npm library
             </a>{" "}
             with two React.js components named "tips" and "feedback".
@@ -64,9 +113,9 @@ export default function Experience() {
         </ul>
       </ExperienceRow>
       <ExperienceRow
-        companyName='Genesys'
+        companyName="Genesys"
         date={{ from: "June 2021", to: "August 2021" }}
-        title='Software Engineer Intern'
+        title="Software Engineer Intern"
         imgData={{
           src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/genesys-logo.png",
           alt: "Genesys Logo",
@@ -75,7 +124,7 @@ export default function Experience() {
           href: "https://www.genesys.com/",
         }}
       >
-        <ul className='experience-list'>
+        <ul className="experience-list">
           <li>
             Worked with two other developers to create a serverless application
             that automates the uploading of VPAT (Voluntary Product
@@ -98,9 +147,9 @@ export default function Experience() {
         </ul>
       </ExperienceRow>
       <ExperienceRow
-        companyName='Correlation One'
+        companyName="Correlation One"
         date={{ from: "June 2020", to: "September 2020" }}
-        title='Software Engineer Intern'
+        title="Software Engineer Intern"
         imgData={{
           src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/correlation-one-logo.png",
           alt: "Correlation One Logo",
@@ -109,7 +158,7 @@ export default function Experience() {
           href: "https://www.correlation-one.com/",
         }}
       >
-        <ul className='experience-list'>
+        <ul className="experience-list">
           <li>
             Worked with two other developers to make substantial UI improvements
             to the Assess, Connect, and About pages of the main website using
@@ -123,9 +172,9 @@ export default function Experience() {
       </ExperienceRow>
 
       <ExperienceRow
-        companyName='Columbia Daily Spectator'
+        companyName="Columbia Daily Spectator"
         date={{ from: "September 2019", to: "May 2023" }}
-        title='Software Engineer'
+        title="Software Engineer"
         imgData={{
           src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/spec-logo.png",
           alt: "Columbia Daily Spectator Logo",
@@ -134,7 +183,7 @@ export default function Experience() {
           href: "https://www.columbiaspectator.com/",
         }}
       >
-        <ul className='experience-list'>
+        <ul className="experience-list">
           <li>
             Worked with four other developers to create the Columbia Daily
             Spectator Mobile App. Utilized react-native and the expo framework
@@ -146,7 +195,7 @@ export default function Experience() {
           </li>
           <li>
             Worked with three other developers to create react components for{" "}
-            <a href='https://www.lionclubs.info/'>lionclubs</a>, a platform
+            <a href="https://www.lionclubs.info/">lionclubs</a>, a platform
             where Columbia students can apply for clubs.
           </li>
         </ul>

@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' className={`${manrope.variable}`}>
+    <html lang="en" className={`${manrope.variable}`}>
       <body className={inter.className}>
         <Navbar />
         <PageWrapper>{children}</PageWrapper>
