@@ -25,6 +25,8 @@ export default function Projects() {
         <Card
           href="https://etesam913.github.io/Custoplayer/"
           projectName="Custoplayer"
+          videoSrc="https://custoplayer.nyc3.cdn.digitaloceanspaces.com/docs/custoplayer-demo.mp4"
+          videoPoster="https://custoplayer.nyc3.cdn.digitaloceanspaces.com/docs/custoplayer-demo-poster.png"
         />
         <Card
           href="https://www.euismod.dev/#/"

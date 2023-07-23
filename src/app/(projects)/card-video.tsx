@@ -1,4 +1,5 @@
 "use client";
+// @ts-ignore
 import { Custoplayer } from "custoplayer";
 
 export default function CardVideo({
