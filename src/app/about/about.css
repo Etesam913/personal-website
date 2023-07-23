@@ -1,0 +1,14 @@
+.avatar-container {
+  width: calc(980px / 5);
+  height: calc(2204px / 5);
+  position: relative;
+  margin-bottom: 2rem;
+  transform: translateX(-8px);
+}
+
+@media screen and (max-width: 768px) {
+  .avatar-container {
+    margin: 0 auto 2rem;
+    transform: translateX(0px);
+  }
+}
