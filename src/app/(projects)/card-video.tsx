@@ -1,22 +1,30 @@
+"use client";
+import { Custoplayer } from "custoplayer";
+
 export default function CardVideo({
-  isOpen,
   src,
   poster,
 }: {
-  isOpen: boolean;
   src: string;
   poster: string;
 }) {
   return (
-    <video
-      // whileHover={{ scale: !isOpen ? 1.05 : 1 }}
-      data-isOpen={isOpen}
-      preload='none'
-      width={"100%"}
+    <Custoplayer
+      preload="none"
+      width={"auto"}
       height={"100%"}
-      controls={isOpen}
       poster={poster}
       src={src}
+      values={{
+        item1: {
+          id: "progressBar1",
+          progressColor: "#caeffc",
+        },
+        item2: {
+          id: "fullscreenButton1",
+          buttonColor: "#ffffff",
+        },
+      }}
     />
   );
 }

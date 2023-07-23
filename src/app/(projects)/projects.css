@@ -58,8 +58,9 @@
   border: 0;
   font-weight: 600;
   font-size: 1.35em;
-  margin: 0.5rem auto;
+  margin: 1rem auto;
   font-family: var(--font-manrope);
+
 }
 
 .placeholder-box {
