@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 // @ts-ignore
 import { Custoplayer } from "custoplayer";
 
