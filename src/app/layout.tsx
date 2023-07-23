@@ -1,6 +1,6 @@
 import { inter, manrope } from "./fonts";
 import "./global.css";
-import Navbar from "./(navbar)/navbar";
+import Navbar from "./navbar/navbar";
 import PageWrapper from "./page-wrapper";
 
 export const metadata = {
