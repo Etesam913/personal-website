@@ -27,7 +27,12 @@ export default function Experience() {
           height: 200 / 5,
           href: "https://www.bamfunds.com/",
         }}
-      />
+      >
+        <div className="technology-row">
+          <h3>Technologies: &nbsp; </h3> React.js, Apollo GraphQL, HTML, CSS,
+          JavaScript, PostgreSQL
+        </div>
+      </ExperienceRow>
 
       <ExperienceRow
         companyName="Columbia University"
@@ -65,18 +70,18 @@ export default function Experience() {
       >
         <ul className="experience-list">
           <li>
-            Worked alongside two other software developers on
+            Worked alongside two other software developers on{" "}
             <a href="https://mephisto.ai/">Mephisto</a>, a data collection
             platform that allows researchers to easily publish tasks that
             workers can complete for money.
           </li>
           <li>
-            I published
+            I published{" "}
             <a href="https://mephisto.ai/docs/guides/how_to_use/worker_experience/mephisto-worker-addons/">
               a npm library
-            </a>
+            </a>{" "}
             with two React.js components named &quot;tips&quot; and
-            &quot;feedback.
+            &quot;feedback&quot;.
           </li>
           <li>
             These components were used in tandem with the Python backend to
@@ -87,6 +92,9 @@ export default function Experience() {
             documentation website and beautifying the command line interface.
           </li>
         </ul>
+        <div className="technology-row">
+          <h3>Technologies: &nbsp; </h3> React.js, Python, HTML, CSS, JavaScript
+        </div>
       </ExperienceRow>
       <ExperienceRow
         companyName="Genesys"
@@ -121,6 +129,10 @@ export default function Experience() {
             modern Angular 11.
           </li>
         </ul>
+        <div className="technology-row">
+          <h3>Technologies: &nbsp; </h3> React.js, Angular, AWS Lambda,
+          DynamoDB, s3, Serverless Framework, Jenkins, HTML, CSS, JavaScript
+        </div>
       </ExperienceRow>
       <ExperienceRow
         companyName="Correlation One"
@@ -145,6 +157,9 @@ export default function Experience() {
             the About page.
           </li>
         </ul>
+        <div className="technology-row">
+          <h3>Technologies: &nbsp; </h3> React.js, HTML, CSS, JavaScript
+        </div>
       </ExperienceRow>
 
       <ExperienceRow
@@ -175,6 +190,10 @@ export default function Experience() {
             where Columbia students can apply for clubs.
           </li>
         </ul>
+        <div className="technology-row">
+          <h3>Technologies: &nbsp; </h3> React.js, React Native, HTML, CSS,
+          JavaScript
+        </div>
       </ExperienceRow>
     </>
   );

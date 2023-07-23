@@ -41,3 +41,10 @@
 .see-more-button > svg{
   margin-left: 0.5rem;
 }
+
+.technology-row{
+  display: flex;
+  align-items: center;
+  line-height: 1.7rem;
+  margin-top: 0.5rem;
+}
