@@ -1,6 +1,6 @@
-import { inter, manrope } from "@/app/fonts";
+import { inter, manrope } from "./fonts";
 import "./global.css";
-import Navbar from "./(navbar)/index";
+import Navbar from "./(navbar)";
 import PageWrapper from "./page-wrapper";
 
 export const metadata = {
@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${manrope.className}`}>
+    <html lang="en" className={`${manrope.variable}`}>
       <body className={inter.className}>
         <Navbar />
         <PageWrapper>{children}</PageWrapper>
