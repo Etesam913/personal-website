@@ -1,15 +1,12 @@
-import { Inter, Manrope } from "@next/font/google";
+import { inter, manrope } from "@/app/fonts";
 import "./global.css";
-import Navbar from "./(navbar)";
+import Navbar from "./(navbar)/index";
 import PageWrapper from "./page-wrapper";
 
 export const metadata = {
   title: "Etesam Ansari's Personal Website",
   description: "Check out my cool projects!",
 };
-
-const manrope = Manrope({ subsets: ["latin"] });
-const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
