@@ -18,9 +18,16 @@ export default function CardVideo({
       poster={poster}
       src={src}
       values={{
+        previewTooltip: {
+          id: "text",
+        },
+        controlsBar: {
+          animate: "movement",
+          barColor: "rgba(28, 28, 28, 0.85)",
+        },
         item1: {
           id: "progressBar1",
-          progressColor: "#caeffc",
+          progressColor: "#72d7fb",
         },
         item2: {
           id: "fullscreenButton1",

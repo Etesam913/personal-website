@@ -33,7 +33,7 @@ export default function About() {
         Bachelors of Science in Computer Science.
       </p>
       <p>When I am not coding, I like to play basketball.</p>
-      <h2>My Links</h2>
+      <h2 className="no-text-align">My Links</h2>
       <ul>
         <li>
           <a href="https://www.linkedin.com/in/etesam-ansari/">LinkedIn</a>

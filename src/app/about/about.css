@@ -11,4 +11,7 @@
     margin: 0 auto 2rem;
     transform: translateX(0px);
   }
+  .no-text-align{
+    text-align: left;
+  }
 }
