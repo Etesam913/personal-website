@@ -22,6 +22,10 @@
   .row {
     flex-direction: column;
   }
+  .technology-row{
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .experience-list {
