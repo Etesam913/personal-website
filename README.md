@@ -2,6 +2,8 @@
 
 This is my personal website. Here you can learn about my personal projects, work experience, and my social media.
 
+![personal-website](https://github.com/Etesam913/personal-website/assets/55665282/844d473e-743e-4279-b8b8-a025092cca76)
+
 # Development
 
 ## Getting Started
