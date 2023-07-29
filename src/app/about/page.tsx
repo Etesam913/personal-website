@@ -36,6 +36,11 @@ export default function About() {
       <h2 className="no-text-align">My Links</h2>
       <ul>
         <li>
+          <a href="https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/Etesam_Ansari_Resume.pdf">
+            Resume
+          </a>
+        </li>
+        <li>
           <a href="https://www.linkedin.com/in/etesam-ansari/">LinkedIn</a>
         </li>
         <li>
