@@ -33,6 +33,7 @@
 
 @media (prefers-color-scheme: dark) {
   * {
+    color-scheme: dark;
     --body-background: #323232;
     --text-color: #f5f5f5;
     --green: rgb(133, 186, 119);
@@ -60,6 +61,7 @@
 html,
 body {
   height: 100%;
+  scrollbar-gutter: stable;
 }
 /*
   Typographic tweaks!
