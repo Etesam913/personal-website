@@ -17,6 +17,12 @@ export default function Projects() {
       </div>
       <div className="cards-container">
         <Card
+          href="https://www.react-magic-motion.com/"
+          projectName="react-magic-motion"
+          videoSrc="https://react-magic-motion.nyc3.cdn.digitaloceanspaces.com/react-magic-motion-full-demo.mp4"
+          videoPoster="https://react-magic-motion.nyc3.cdn.digitaloceanspaces.com/react-magic-motion-full-demo-poster.png"
+        />
+        <Card
           href="https://chrome.google.com/webstore/detail/xp-newtab/ncfmlogaelpnniflgipmnnglhfiifkke"
           projectName="XP Newtab"
           videoSrc="https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/xp-newtab/xp-newtab-demo.mp4"
