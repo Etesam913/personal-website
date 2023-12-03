@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Card from "./card";
+import { Suspense } from "react";
 
 export default function Projects() {
   return (
@@ -16,12 +17,15 @@ export default function Projects() {
         <h1>My Projects</h1>
       </div>
       <div className="cards-container">
-        <Card
-          href="https://www.react-magic-motion.com/"
-          projectName="react-magic-motion"
-          videoSrc="https://react-magic-motion.nyc3.cdn.digitaloceanspaces.com/react-magic-motion-full-demo.mp4"
-          videoPoster="https://react-magic-motion.nyc3.cdn.digitaloceanspaces.com/react-magic-motion-full-demo-poster.png"
-        />
+        <Suspense fallback={<div>loading...</div>}>
+          <Card
+            href="https://www.react-magic-motion.com/"
+            projectName="react-magic-motion"
+            videoSrc="https://react-magic-motion.nyc3.cdn.digitaloceanspaces.com/react-magic-motion-full-demo.mp4"
+            videoPoster="https://react-magic-motion.nyc3.cdn.digitaloceanspaces.com/react-magic-motion-full-demo-poster.png"
+          />
+        </Suspense>
+
         <Card
           href="https://chrome.google.com/webstore/detail/xp-newtab/ncfmlogaelpnniflgipmnnglhfiifkke"
           projectName="XP Newtab"
