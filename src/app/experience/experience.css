@@ -32,14 +32,11 @@
   margin-top: 0.5rem;
 }
 
-.see-more-row{
-  border-bottom: 1px solid var(--text-color);
-  display: inline-block;
-}
-
 .see-more-button {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid var(--text-color);
+  margin-bottom: 1rem;
   
 }
 .see-more-button > svg{

@@ -21,11 +21,38 @@
   width: 100%;
   flex-grow: 1;
 }
+.card-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 0.55rem;
+}
 
 .card-name-container {
   text-align: center;
   padding: 0.5rem;
 }
+
+.card-start-count-row{
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.star-svg{
+  fill:none;
+  cursor:pointer;
+}
+.star-svg:hover{
+  fill:currentColor;
+}
+
+/* :hover{
+  .star-svg{
+    fill:currentColor;
+  }
+} */
 
 .card-link {
   color: var(--link);
@@ -38,7 +65,6 @@
   border: 0;
   font-weight: 600;
   font-size: 1.35em;
-  margin: 1rem auto;
   font-family: var(--font-manrope);
 
 }
