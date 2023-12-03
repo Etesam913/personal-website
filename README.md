@@ -11,7 +11,13 @@ This is my personal website. Here you can learn about my personal projects, work
 First, run the development server:
 
 ```bash
-yarn dev
+pnpm run dev
+```
+
+To run the build:
+
+```
+pnpm run vercel:build
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
