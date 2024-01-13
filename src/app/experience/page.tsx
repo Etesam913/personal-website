@@ -16,10 +16,29 @@ export default function Experience() {
         />
         <h1>My Experience</h1>
       </div>
+
       <ExperienceRow
         companyName="Balyasny Asset Management"
-        title="Software Engineer"
-        date={{ from: "June 2023", to: "Present" }}
+        title="Software Engineer II"
+        date={{ from: "January 2024", to: "Present" }}
+        imgData={{
+          src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/bam-logo.jpeg",
+          alt: "Balyasny Asset Management Logo",
+          width: 200 / 5,
+          height: 200 / 5,
+          href: "https://www.bamfunds.com/",
+        }}
+      >
+        <div className="technology-row">
+          <h3>Technologies: &nbsp; </h3> Python, React.js, HTML, CSS,
+          JavaScript, PostgreSQL
+        </div>
+      </ExperienceRow>
+
+      <ExperienceRow
+        companyName="Balyasny Asset Management"
+        title="Software Engineer I"
+        date={{ from: "June 2023", to: "January 2024" }}
         imgData={{
           src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/bam-logo.jpeg",
           alt: "Balyasny Asset Management Logo",
