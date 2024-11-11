@@ -25,7 +25,7 @@ export default function About() {
         />
       </div>
       <p>
-        I am a software developer who mainly uses HTML/CSS & JS, React.js, and
+        I am a software engineer who mainly uses HTML/CSS & JS, React.js, and
         Python.
       </p>
       <p>
@@ -36,7 +36,7 @@ export default function About() {
 
       <h2 className="email-me-link">
         <a href="mailto:etesamansari13@gmail.com">Email Me</a>
-       </h2>
+      </h2>
 
       <h2 className="no-text-align">My Links</h2>
       <ul>

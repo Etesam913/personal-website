@@ -11,6 +11,7 @@ interface ExperienceRowProps {
     width: number;
     height: number;
     href: string;
+    style?: React.CSSProperties;
   };
   title: string;
   children?: ReactNode;
@@ -24,12 +25,12 @@ export default function ExperienceRow({
   children,
 }: ExperienceRowProps) {
   return (
-    <section className='experience-block'>
-      <div className='row'>
-        <h1 className='experience-header'>{companyName}</h1>
+    <section className="experience-block">
+      <div className="row">
+        <h1 className="experience-header">{companyName}</h1>
         <a href={imgData?.href}>
           <Image
-            style={{ margin: "0.5rem 0" }}
+            style={{ margin: "0.5rem 0", ...imgData?.style }}
             src={imgData?.src}
             alt={imgData?.alt}
             height={imgData?.height}
@@ -37,7 +38,7 @@ export default function ExperienceRow({
           />
         </a>
       </div>
-      <div className='row'>
+      <div className="row">
         <h3>{title}</h3>
         <h3>
           {date?.from} - {date?.to}

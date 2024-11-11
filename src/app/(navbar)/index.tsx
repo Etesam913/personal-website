@@ -8,8 +8,8 @@ export default function Navbar() {
         <h2 className="navbar-green">
           Etesam Ansari <span className="wave">👋</span>{" "}
         </h2>
-        <h2>Software Developer</h2>
-        <h2>Columbia Grad</h2>
+        <h2>Software Engineer</h2>
+        <h2>Columbia Grad.</h2>
       </div>
       <div className="navbar-links">
         <NavbarLink href="/">Experience</NavbarLink>

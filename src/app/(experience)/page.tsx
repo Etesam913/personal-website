@@ -16,11 +16,28 @@ export default function Experience() {
         />
         <h1>My Experience</h1>
       </div>
+      <ExperienceRow
+        companyName="Google"
+        title="Software Engineer (L3)"
+        date={{ from: "November 2024", to: "Present" }}
+        imgData={{
+          src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/google-logo.png",
+          alt: "Google Logo",
+          width: 512 / 11,
+          height: 512 / 11,
+          href: "https://www.google.com/",
+          style: { transform: "translateX(0.6rem)" },
+        }}
+      >
+        <ul className="experience-list">
+          <li>Present</li>
+        </ul>
+      </ExperienceRow>
 
       <ExperienceRow
         companyName="Balyasny Asset Management"
-        title="Software Engineer II"
-        date={{ from: "January 2024", to: "Present" }}
+        title="Software Engineer"
+        date={{ from: "January 2024", to: "August 2024" }}
         imgData={{
           src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/bam-logo.jpeg",
           alt: "Balyasny Asset Management Logo",
@@ -29,6 +46,24 @@ export default function Experience() {
           href: "https://www.bamfunds.com/",
         }}
       >
+        <ul className="experience-list">
+          <li>
+            Worked with one other developer, a designer, and a product manager
+            to create a React web application that help traders, analysts, and
+            portfolio managers observe the active quality control incidents
+            associated with the datasets that they are subscribed to.
+          </li>
+
+          <li>
+            Created a PostgreSQL database schema and GraphQL api endpoints that
+            allowed for the frontend to retrieve the incident data for a given
+            dataset.
+          </li>
+          <li>
+            Utilized by over 300+ traders and analysts to monitor the quality of
+            their datasets.
+          </li>
+        </ul>
         <div className="technology-row">
           <h3>Technologies: &nbsp; </h3> Python, React.js, HTML, CSS,
           JavaScript, PostgreSQL
@@ -37,7 +72,7 @@ export default function Experience() {
 
       <ExperienceRow
         companyName="Balyasny Asset Management"
-        title="Software Engineer I"
+        title="Associate Software Engineer"
         date={{ from: "June 2023", to: "January 2024" }}
         imgData={{
           src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/bam-logo.jpeg",
@@ -47,6 +82,19 @@ export default function Experience() {
           href: "https://www.bamfunds.com/",
         }}
       >
+        <ul className="experience-list">
+          <li>
+            Worked with three other developers to create a React application
+            that helps traders sort and filter macroeconomic data using tables
+            (AgGrid), visualize data using graphs (lightweight-charts), and
+            query data using Python & Excel code
+          </li>
+          <li>
+            Added a high priority feature to the Data Catalog application (used
+            by 500+ traders and sector data analysts) that enabled research
+            insights to be tagged to multiple datasets
+          </li>
+        </ul>
         <div className="technology-row">
           <h3>Technologies: &nbsp; </h3> React.js, Apollo GraphQL, HTML, CSS,
           JavaScript, PostgreSQL
@@ -87,7 +135,7 @@ export default function Experience() {
       >
         <ul className="experience-list">
           <li>
-            Worked alongside two other software developers on{" "}
+            Worked alongside two other software engineer on{" "}
             <a href="https://mephisto.ai/">Mephisto</a>, a data collection
             platform that allows researchers to easily publish tasks that
             workers can complete for money.
