@@ -23,10 +23,9 @@ export default function Experience() {
         imgData={{
           src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/google-logo.png",
           alt: "Google Logo",
-          width: 512 / 11,
-          height: 512 / 11,
+          width: 512 / 14,
+          height: 512 / 14,
           href: "https://www.google.com/",
-          style: { transform: "translateX(0.6rem)" },
         }}
       >
         <ul className="experience-list">
