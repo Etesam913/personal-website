@@ -4,55 +4,58 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 /*
   2. Remove default margin
 */
 * {
-  margin: 0;
-  --body-background: #fcfbfb;
-  --text-color: #2e2e2e;
-  --green: #376c51;
-  --link: #4e77b6;
-  --gray: #838383;
-  --shadow-color: 0deg 4% 62%;
-  --shadow-elevation-medium: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
-    0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
-    2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
-    5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
-  --shadow-elevation-high: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
-    1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
-    2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
-    4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
-    7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
-    11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
-    17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
-    25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
+    margin: 0;
+    --body-background: #fcfbfb;
+    --text-color: #2e2e2e;
+    --green: #376c51;
+    --link: #4e77b6;
+    --gray: #838383;
+    --shadow-color: 0deg 4% 62%;
+    --shadow-elevation-medium: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+        0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+        2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+        5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+    --shadow-elevation-high: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+        1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
+        2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
+        4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
+        7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
+        11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
+        17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
+        25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
+    font-family: var(--font-bricolage-grotesque);
 }
 
 @media (prefers-color-scheme: dark) {
-  * {
-    color-scheme: dark;
-    --body-background: #323232;
-    --text-color: #f5f5f5;
-    --green: rgb(133, 186, 119);
-    --link: #7ba1db;
-    --shadow-color: 0deg 0% 9%;
-    --shadow-elevation-medium: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
-      0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
-      2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
-      5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+    * {
+        color-scheme: dark;
+        --body-background: #323232;
+        --text-color: #f5f5f5;
+        --green: rgb(133, 186, 119);
+        --link: #7ba1db;
+        --shadow-color: 0deg 0% 9%;
+        --shadow-elevation-medium: 0.3px 0.5px 0.7px
+                hsl(var(--shadow-color) / 0.36),
+            0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+            2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+            5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
 
-    --shadow-elevation-high: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
-      1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
-      2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
-      4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
-      7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
-      11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
-      17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
-      25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
-  }
+        --shadow-elevation-high: 0.3px 0.5px 0.7px
+                hsl(var(--shadow-color) / 0.34),
+            1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
+            2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
+            4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
+            7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
+            11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
+            17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
+            25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
+    }
 }
 
 /*
@@ -60,8 +63,8 @@
 */
 html,
 body {
-  height: 100%;
-  scrollbar-gutter: stable;
+    height: 100%;
+    scrollbar-gutter: stable;
 }
 /*
   Typographic tweaks!
@@ -69,12 +72,12 @@ body {
   5. Improve text rendering
 */
 body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  background-color: var(--body-background);
-  color: var(--text-color);
-  width: min(900px, 90vw);
-  margin: 0 auto;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--body-background);
+    color: var(--text-color);
+    width: min(900px, 90vw);
+    margin: 0 auto;
 }
 /*
   6. Improve media defaults
@@ -84,8 +87,8 @@ picture,
 video,
 canvas,
 svg {
-  display: block;
-  max-width: 100%;
+    display: block;
+    max-width: 100%;
 }
 /*
   7. Remove built-in form typography styles
@@ -94,7 +97,7 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+    font: inherit;
 }
 /*
   8. Avoid text overflows
@@ -106,13 +109,12 @@ h3,
 h4,
 h5,
 h6 {
-  overflow-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 h1,
 h2,
 h3 {
-  font-family: var(--font-manrope);
 }
 
 /*
@@ -120,71 +122,71 @@ h3 {
 */
 #root,
 #__next {
-  isolation: isolate;
+    isolation: isolate;
 }
 
 h1 {
-  margin: 1rem 0;
+    margin: 1rem 0;
 }
 
 h2 {
-  margin: 0.4rem 0;
+    margin: 0.4rem 0;
 }
 
 h3 {
-  margin: 0.3rem 0;
+    margin: 0.3rem 0;
 }
 
 main {
-  padding: 0.5rem 0;
+    padding: 0.5rem 0;
 }
 
 nav {
-  padding: 1.5rem 0;
-  display: flex;
+    padding: 1.5rem 0;
+    display: flex;
 }
 
 p {
-  margin-bottom: 1rem;
-  font-size: 1.15em;
+    margin-bottom: 1rem;
+    font-size: 1.15em;
 }
 
 .left {
-  margin-left: auto;
+    margin-left: auto;
 }
 
 li {
-  font-size: 1.1rem;
-  line-height: 2rem;
-  margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    margin-bottom: 0.75rem;
 }
 
 a {
-  color: var(--link);
+    color: var(--link);
 }
 .header-row-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 @media screen and (max-width: 768px) {
-  h1,
-  h2,
-  h3,
-  p {
-    text-align: center;
-  }
-  .header-row-container {
-    justify-content: center;
-  }
+    h1,
+    h2,
+    h3,
+    p {
+        text-align: center;
+    }
+    .header-row-container {
+        justify-content: center;
+    }
 }
 
 button {
-  padding: 0;
-  border: none;
-  cursor: pointer;
-  background: transparent;
-  color: inherit;
-  cursor: pointer;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
 }

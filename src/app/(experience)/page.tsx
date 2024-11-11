@@ -68,9 +68,7 @@ export default function Experience() {
         <ul className="experience-list">
           <li>
             Programming coursework
-            <ul className="experience-list">
-              <CollegeCoursework />
-            </ul>
+            <CollegeCoursework />
           </li>
         </ul>
       </ExperienceRow>

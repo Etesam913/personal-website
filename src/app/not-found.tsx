@@ -17,7 +17,7 @@ export default function NotFound() {
       </div>
 
       <h2>
-        You can see my projects <Link href="/">here</Link>.
+        You can see my projects <Link href="/projects">here</Link>.
       </h2>
     </>
   );

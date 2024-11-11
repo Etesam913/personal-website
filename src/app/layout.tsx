@@ -1,6 +1,6 @@
-import { inter, manrope } from "./fonts";
+import Navbar from "./(navbar)";
+import { bricolageGrotesque } from "./fonts";
 import "./global.css";
-import Navbar from "./navbar/navbar";
 import PageWrapper from "./page-wrapper";
 
 export const metadata = {
@@ -17,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${manrope.variable}`}>
-      <body className={inter.className}>
+    <html lang="en" className={`${bricolageGrotesque.variable}`}>
+      <body className={`${bricolageGrotesque.variable}`}>
         <Navbar />
         <PageWrapper>{children}</PageWrapper>
       </body>

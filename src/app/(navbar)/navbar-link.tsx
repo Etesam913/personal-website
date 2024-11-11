@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { ReactNode, useEffect, useState } from "react";
-import "./navbar.css";
+import "./index.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -20,12 +20,12 @@ export default function NavbarLink({
       tabIndex={-1}
       whileTap={{ scale: 0.95 }}
       whileHover={{ scale: 1.1 }}
-      className='navbar-link-container'
+      className="navbar-link-container"
     >
       <Link
         tabIndex={1}
         href={href}
-        className='navbar-link'
+        className="navbar-link"
         data-active-page={isActiveLink}
       >
         {children}
