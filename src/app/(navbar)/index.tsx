@@ -9,7 +9,6 @@ export default function Navbar() {
           Etesam Ansari <span className="wave">👋</span>{" "}
         </h2>
         <h2>Software Engineer</h2>
-        <h2>Columbia Grad.</h2>
       </div>
       <div className="navbar-links">
         <NavbarLink href="/">Experience</NavbarLink>

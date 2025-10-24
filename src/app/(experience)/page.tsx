@@ -16,10 +16,11 @@ export default function Experience() {
         />
         <h1>My Experience</h1>
       </div>
+
       <ExperienceRow
         companyName="Google"
-        title="Software Engineer (L3)"
-        date={{ from: "November 2024", to: "Present" }}
+        title="Firestore Console UI - Software Engineer (L4)"
+        date={{ from: "November 2025", to: "Present" }}
         imgData={{
           src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/google-logo.png",
           alt: "Google Logo",
@@ -31,6 +32,41 @@ export default function Experience() {
         <ul className="experience-list">
           <li>Present</li>
         </ul>
+      </ExperienceRow>
+
+      <ExperienceRow
+        companyName="Google"
+        title="Firestore Console UI - Software Engineer (L3)"
+        date={{ from: "November 2024", to: "November 2025" }}
+        imgData={{
+          src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/google-logo.png",
+          alt: "Google Logo",
+          width: 512 / 14,
+          height: 512 / 14,
+          href: "https://www.google.com/",
+        }}
+      >
+        <ul className="experience-list">
+          <li>
+            Collaborated with a team of four developers to build new Firestore
+            database features using Angular and TypeScript.
+          </li>
+          <li>
+            Implemented UI functionality enabling users to add, delete, and
+            update BSON fields (e.g., ObjectId, Int32, Decimal128) in Firestore
+            Enterprise documents to achieve MongoDB compatibility.
+          </li>
+          <li>
+            Re-architected the Firestore document data model in the Console UI
+            to unify data representations across the Firestore Web SDK and HTTP
+            API resulting in a more streamlined and type-safe development
+            experience.
+          </li>
+        </ul>
+        <div className="technology-row">
+          <h3>Technologies: &nbsp; </h3>
+          Angular, TypeScript, JavaScript, HTML, CSS
+        </div>
       </ExperienceRow>
 
       <ExperienceRow
@@ -47,25 +83,26 @@ export default function Experience() {
       >
         <ul className="experience-list">
           <li>
-            Worked with one other developer, a designer, and a product manager
-            to create a React web application that help traders, analysts, and
-            portfolio managers observe the active quality control incidents
-            associated with the datasets that they are subscribed to.
-          </li>
-
+            {" "}
+            Collaborated with another developer, a designer, and a product
+            manager to build a React web application enabling traders, analysts,
+            and portfolio managers to monitor active quality control incidents
+            for their subscribed datasets.{" "}
+          </li>{" "}
           <li>
-            Created a PostgreSQL database schema and GraphQL api endpoints that
-            allowed for the frontend to retrieve the incident data for a given
-            dataset.
-          </li>
+            {" "}
+            Designed a PostgreSQL database schema and developed GraphQL API
+            endpoints to power frontend retrieval of dataset incident data.{" "}
+          </li>{" "}
           <li>
-            Utilized by over 300+ traders and analysts to monitor the quality of
-            their datasets.
+            {" "}
+            Deployed to production and used by over 300 traders and analysts to
+            track and manage dataset quality in real time.{" "}
           </li>
         </ul>
         <div className="technology-row">
           <h3>Technologies: &nbsp; </h3> Python, React.js, HTML, CSS,
-          JavaScript, PostgreSQL
+          TypeScript, JavaScript, PostgreSQL
         </div>
       </ExperienceRow>
 
@@ -83,20 +120,24 @@ export default function Experience() {
       >
         <ul className="experience-list">
           <li>
-            Worked with three other developers to create a React application
-            that helps traders sort and filter macroeconomic data using tables
-            (AgGrid), visualize data using graphs (lightweight-charts), and
-            query data using Python & Excel code
-          </li>
+            {" "}
+            Collaborated with three developers to build a React application that
+            enables traders to sort and filter macroeconomic data using{" "}
+            <strong>AgGrid</strong> tables, visualize trends with{" "}
+            <strong>lightweight-charts</strong>, and query data through{" "}
+            <strong>Python</strong> and <strong>Excel</strong> integrations.{" "}
+          </li>{" "}
           <li>
-            Added a high priority feature to the Data Catalog application (used
-            by 500+ traders and sector data analysts) that enabled research
-            insights to be tagged to multiple datasets
+            {" "}
+            Delivered a high-priority feature for the{" "}
+            <strong>Data Catalog</strong> application—used by over 500 traders
+            and sector analysts—that allowed research insights to be tagged
+            across multiple datasets.{" "}
           </li>
         </ul>
         <div className="technology-row">
           <h3>Technologies: &nbsp; </h3> React.js, Apollo GraphQL, HTML, CSS,
-          JavaScript, PostgreSQL
+          TypeScript, JavaScript, PostgreSQL
         </div>
       </ExperienceRow>
 
