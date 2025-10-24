@@ -3,7 +3,7 @@ import "./index.css";
 
 export default function Navbar() {
   return (
-    <nav>
+    <nav aria-label="Primary">
       <div className="navbar-desc">
         <h2 className="navbar-green">
           Etesam Ansari <span className="wave">👋</span>{" "}

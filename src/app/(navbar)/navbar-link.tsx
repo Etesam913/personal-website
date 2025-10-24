@@ -23,7 +23,7 @@ export default function NavbarLink({
       className="navbar-link-container"
     >
       <Link
-        tabIndex={1}
+        aria-current={isActiveLink ? "page" : undefined}
         href={href}
         className="navbar-link"
         data-active-page={isActiveLink}

@@ -15,7 +15,6 @@ export default function CardLink({
       whileFocus={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
       className="card-link"
-      tabIndex={0}
     >
       {projectName}
     </motion.a>
