@@ -1,16 +1,19 @@
 "use client";
-import { motion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import { ReactNode } from "react";
 import { usePathname } from "next/navigation";
 
 export default function PageWrapper({ children }: { children: ReactNode }) {
   const pathname = usePathname();
+  const prefersReducedMotion = useReducedMotion();
 
   return (
     <motion.main
+      id="main-content"
+      tabIndex={-1}
       key={pathname}
-      initial={{ opacity: 0, y: 18 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={prefersReducedMotion ? false : { opacity: 0, y: 18 }}
+      animate={prefersReducedMotion ? undefined : { opacity: 1, y: 0 }}
     >
       {children}
     </motion.main>

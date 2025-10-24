@@ -19,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${bricolageGrotesque.variable}`}>
       <body className={`${bricolageGrotesque.variable}`}>
+        <a href="#main-content" className="skip-link">Skip to main content</a>
         <Navbar />
         <PageWrapper>{children}</PageWrapper>
       </body>

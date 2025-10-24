@@ -27,8 +27,8 @@ export default function ExperienceRow({
   return (
     <section className="experience-block">
       <div className="row">
-        <h1 className="experience-header">{companyName}</h1>
-        <a href={imgData?.href}>
+        <h2 className="experience-header">{companyName}</h2>
+        <a href={imgData?.href} aria-label={`Visit ${companyName} website`}>
           <Image
             style={{ margin: "0.5rem 0", ...imgData?.style }}
             src={imgData?.src}
