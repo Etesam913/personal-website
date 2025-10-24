@@ -11,13 +11,13 @@ This is my personal website. Here you can learn about my personal projects, work
 First, run the development server:
 
 ```bash
-pnpm run dev
+bun run dev
 ```
 
 To run the build:
 
 ```
-pnpm run vercel:build
+bun run vercel:build
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

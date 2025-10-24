@@ -51,8 +51,8 @@ export default function Projects() {
               A browser extension that replaces your new tab page with page that
               looks like Windows 98/xp/7
             </li>
-            <li>Obtained 2000+ users of the extension</li>
-            <li>Achieved 100+ reviews with an average rating of 4.7.</li>
+            <li>It has 2000+ users</li>
+            <li>Achieved 150+ reviews with an average rating of 4.8.</li>
             <li>Built with React.js and Styled Components</li>
           </ul>
         </div>

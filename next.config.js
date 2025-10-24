@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['etesam.nyc3.cdn.digitaloceanspaces.com',],
-
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'etesam.nyc3.cdn.digitaloceanspaces.com',
+      },
+    ],
   },
 }
 

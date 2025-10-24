@@ -1,8 +1,7 @@
 "use client";
 
+import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
-import ClassAccordion from "./class-accordion";
-import { AnimatePresence, motion } from "framer-motion";
 
 const classesTaken = [
   "User Interface Design",
