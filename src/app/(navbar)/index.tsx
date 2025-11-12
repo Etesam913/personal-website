@@ -5,10 +5,10 @@ export default function Navbar() {
   return (
     <nav aria-label="Primary">
       <div className="navbar-desc">
-        <h2 className="navbar-green">
+        <p className="navbar-green navbar-title">
           Etesam Ansari <span className="wave">👋</span>{" "}
-        </h2>
-        <h2>Software Engineer</h2>
+        </p>
+        <p className="navbar-subtitle">Software Engineer</p>
       </div>
       <div className="navbar-links">
         <NavbarLink href="/">Experience</NavbarLink>

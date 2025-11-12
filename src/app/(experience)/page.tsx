@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ExperienceRow from "./experience-row";
 import CollegeCoursework from "./college-coursework";
+import TechnologiesRow from "./technologies-row";
 
 export default function Experience() {
   return (
@@ -19,7 +20,7 @@ export default function Experience() {
 
       <ExperienceRow
         companyName="Google"
-        title="Firestore Console UI - Software Engineer (L4)"
+        title="Software Engineer (L4)"
         date={{ from: "November 2025", to: "Present" }}
         imgData={{
           src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/google-logo.png",
@@ -30,13 +31,13 @@ export default function Experience() {
         }}
       >
         <ul className="experience-list">
-          <li>Present</li>
+          <li>Currently working on Google Cloud Console features.</li>
         </ul>
       </ExperienceRow>
 
       <ExperienceRow
         companyName="Google"
-        title="Firestore Console UI - Software Engineer (L3)"
+        title="Software Engineer (L3)"
         date={{ from: "November 2024", to: "November 2025" }}
         imgData={{
           src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/google-logo.png",
@@ -49,12 +50,18 @@ export default function Experience() {
         <ul className="experience-list">
           <li>
             Collaborated with a team of four developers to build new Firestore
-            database features using Angular and TypeScript.
+            database features in the Google Cloud Console using Angular,
+            TypeScript, and GraphQL.
+          </li>
+          <li>
+            Developed the Firestore query-insights page which displays query
+            performance metrics and insights. Utilized by 500+ developers daily.
           </li>
           <li>
             Implemented UI functionality enabling users to add, delete, and
             update BSON fields (e.g., ObjectId, Int32, Decimal128) in Firestore
-            Enterprise documents to achieve MongoDB compatibility.
+            Enterprise edition. This gave Firestore the ability to store and
+            query data in a MongoDB-compatible format.
           </li>
           <li>
             Re-architected the Firestore document data model in the Console UI
@@ -63,10 +70,7 @@ export default function Experience() {
             experience.
           </li>
         </ul>
-        <div className="technology-row">
-          <h3>Technologies: &nbsp; </h3>
-          Angular, TypeScript, JavaScript, HTML, CSS
-        </div>
+        <TechnologiesRow technologies="Angular, TypeScript, JavaScript, HTML, CSS, GraphQL" />
       </ExperienceRow>
 
       <ExperienceRow
@@ -100,10 +104,7 @@ export default function Experience() {
             track and manage dataset quality in real time.{" "}
           </li>
         </ul>
-        <div className="technology-row">
-          <h3>Technologies: &nbsp; </h3> Python, React.js, HTML, CSS,
-          TypeScript, JavaScript, PostgreSQL
-        </div>
+        <TechnologiesRow technologies="Python, React.js, HTML, CSS, TypeScript, JavaScript, PostgreSQL" />
       </ExperienceRow>
 
       <ExperienceRow
@@ -135,10 +136,7 @@ export default function Experience() {
             across multiple datasets.{" "}
           </li>
         </ul>
-        <div className="technology-row">
-          <h3>Technologies: &nbsp; </h3> React.js, Apollo GraphQL, HTML, CSS,
-          TypeScript, JavaScript, PostgreSQL
-        </div>
+        <TechnologiesRow technologies="React.js, Apollo GraphQL, HTML, CSS, TypeScript, JavaScript, PostgreSQL" />
       </ExperienceRow>
 
       <ExperienceRow
@@ -175,15 +173,15 @@ export default function Experience() {
       >
         <ul className="experience-list">
           <li>
-            Worked alongside two other software engineer on{" "}
+            Worked alongside two other software engineers on{" "}
             <a href="https://mephisto.ai/">Mephisto</a>, a data collection
             platform that allows researchers to easily publish tasks that
             workers can complete for money.
           </li>
           <li>
-            I published{" "}
+            Published{" "}
             <a href="https://mephisto.ai/docs/guides/how_to_use/worker_experience/mephisto-worker-addons/">
-              a npm library
+              the mephisto-worker-addons npm library
             </a>{" "}
             with two React.js components named &quot;tips&quot; and
             &quot;feedback&quot;.
@@ -197,9 +195,7 @@ export default function Experience() {
             documentation website and beautifying the command line interface.
           </li>
         </ul>
-        <div className="technology-row">
-          <h3>Technologies: &nbsp; </h3> React.js, Python, HTML, CSS, JavaScript
-        </div>
+        <TechnologiesRow technologies="React.js, Python, HTML, CSS, JavaScript" />
       </ExperienceRow>
       <ExperienceRow
         companyName="Genesys"
@@ -221,9 +217,9 @@ export default function Experience() {
             in the repository.
           </li>
           <li>
-            Created a dashboard which displayed the VPAT files from the database
+            Created a dashboard that displayed the VPAT files from the database
             as well as other important information (file name, team name, team
-            contact email, etc...).
+            contact email, etc.).
           </li>
           <li>
             Used an AWS application load balancer, lambdas, DynamoDB, s3, and
@@ -234,10 +230,7 @@ export default function Experience() {
             modern Angular 11.
           </li>
         </ul>
-        <div className="technology-row">
-          <h3>Technologies: &nbsp; </h3> React.js, Angular, AWS Lambda,
-          DynamoDB, s3, Serverless Framework, Jenkins, HTML, CSS, JavaScript
-        </div>
+        <TechnologiesRow technologies="React.js, Angular, AWS Lambda, DynamoDB, s3, Serverless Framework, Jenkins, HTML, CSS, JavaScript" />
       </ExperienceRow>
       <ExperienceRow
         companyName="Correlation One"
@@ -258,13 +251,11 @@ export default function Experience() {
             React.js.
           </li>
           <li>
-            Worked with a Contentful database to get data for each employee on
-            the About page.
+            Integrated with a Contentful database to retrieve and display data
+            for each employee on the About page.
           </li>
         </ul>
-        <div className="technology-row">
-          <h3>Technologies: &nbsp; </h3> React.js, HTML, CSS, JavaScript
-        </div>
+        <TechnologiesRow technologies="React.js, HTML, CSS, JavaScript" />
       </ExperienceRow>
 
       <ExperienceRow
@@ -282,23 +273,19 @@ export default function Experience() {
         <ul className="experience-list">
           <li>
             Worked with four other developers to create the Columbia Daily
-            Spectator Mobile App. Utilized react-native and the expo framework
-            to create a cross platform UI.
+            Spectator Mobile App. Utilized React Native and the Expo framework
+            to create a cross-platform UI.
           </li>
           <li>
             Worked in a team with 10 other developers to migrate Columbia&apos;s
             leading student newspaper&apos;s website to React.js.
           </li>
           <li>
-            Worked with three other developers to create react components for{" "}
-            <a href="https://www.lionclubs.info/">lionclubs</a>, a platform
-            where Columbia students can apply for clubs.
+            Worked with three other developers to create React components for
+            lionclubs, a platform where Columbia students can apply for clubs.
           </li>
         </ul>
-        <div className="technology-row">
-          <h3>Technologies: &nbsp; </h3> React.js, React Native, HTML, CSS,
-          JavaScript
-        </div>
+        <TechnologiesRow technologies="React.js, React Native, HTML, CSS, JavaScript" />
       </ExperienceRow>
     </>
   );

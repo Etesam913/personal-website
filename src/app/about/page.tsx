@@ -34,9 +34,9 @@ export default function About() {
       </p>
       <p>When I am not coding, I like to play basketball.</p>
 
-      <h2 className="email-me-link">
+      <p className="email-me-link">
         <a href="mailto:etesamansari13@gmail.com">Email Me</a>
-      </h2>
+      </p>
 
       <h2 className="no-text-align">My Links</h2>
       <ul>

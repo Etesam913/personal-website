@@ -11,7 +11,7 @@ export default function Projects() {
           style={{ marginRight: "1rem" }}
           height={48}
           width={48}
-          alt="Icon of Me"
+          alt="Projects Icon"
           priority
           src="https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/projects-icon.png"
         />
