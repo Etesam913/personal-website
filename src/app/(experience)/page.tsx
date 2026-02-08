@@ -13,7 +13,7 @@ export default function Experience() {
           width={48}
           priority
           alt="Icon of Desktop Computer"
-          src="https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/my-experience-icon.png"
+          src="https://storage.googleapis.com/etesam-public/Personal-Website/my-experience-icon.png"
         />
         <h1>My Experience</h1>
       </div>
@@ -23,7 +23,7 @@ export default function Experience() {
         title="Software Engineer (L4)"
         date={{ from: "November 2025", to: "Present" }}
         imgData={{
-          src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/google-logo.png",
+          src: "https://storage.googleapis.com/etesam-public/Personal-Website/google-logo.png",
           alt: "Google Logo",
           width: 512 / 14,
           height: 512 / 14,
@@ -40,7 +40,7 @@ export default function Experience() {
         title="Software Engineer (L3)"
         date={{ from: "November 2024", to: "November 2025" }}
         imgData={{
-          src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/google-logo.png",
+          src: "https://storage.googleapis.com/etesam-public/Personal-Website/google-logo.png",
           alt: "Google Logo",
           width: 512 / 14,
           height: 512 / 14,
@@ -78,7 +78,7 @@ export default function Experience() {
         title="Software Engineer"
         date={{ from: "January 2024", to: "August 2024" }}
         imgData={{
-          src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/bam-logo.jpeg",
+          src: "https://storage.googleapis.com/etesam-public/Personal-Website/bam-logo.jpeg",
           alt: "Balyasny Asset Management Logo",
           width: 200 / 5,
           height: 200 / 5,
@@ -112,7 +112,7 @@ export default function Experience() {
         title="Associate Software Engineer"
         date={{ from: "June 2023", to: "January 2024" }}
         imgData={{
-          src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/bam-logo.jpeg",
+          src: "https://storage.googleapis.com/etesam-public/Personal-Website/bam-logo.jpeg",
           alt: "Balyasny Asset Management Logo",
           width: 200 / 5,
           height: 200 / 5,
@@ -126,7 +126,8 @@ export default function Experience() {
             enables traders to sort and filter macroeconomic data using{" "}
             <strong>AgGrid</strong> tables, visualize trends with{" "}
             <strong>lightweight-charts</strong>, and query data through{" "}
-            <strong>Python</strong> and <strong>Excel</strong> integrations.{" "}
+            <strong>Python</strong> and <strong>Excel</strong>{" "}
+            integrations.{" "}
           </li>{" "}
           <li>
             {" "}
@@ -144,7 +145,7 @@ export default function Experience() {
         title="Bachelors in Computer Science"
         date={{ from: "September 2019", to: "May 2023" }}
         imgData={{
-          src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/columbia-logo.png",
+          src: "https://storage.googleapis.com/etesam-public/Personal-Website/columbia-logo.png",
           alt: "Columbia University Logo",
           width: 640 / 15,
           height: 507 / 15,
@@ -164,7 +165,7 @@ export default function Experience() {
         date={{ from: "May 2022", to: "August 2022" }}
         title="Frontend Engineer Intern"
         imgData={{
-          src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/meta-logo.png",
+          src: "https://storage.googleapis.com/etesam-public/Personal-Website/meta-logo.png",
           alt: "Meta Logo",
           width: 300 / 8,
           height: 199 / 8,
@@ -202,7 +203,7 @@ export default function Experience() {
         date={{ from: "June 2021", to: "August 2021" }}
         title="Software Engineer Intern"
         imgData={{
-          src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/genesys-logo.png",
+          src: "https://storage.googleapis.com/etesam-public/Personal-Website/genesys-logo.png",
           alt: "Genesys Logo",
           width: 518 / 14,
           height: 518 / 14,
@@ -237,7 +238,7 @@ export default function Experience() {
         date={{ from: "June 2020", to: "September 2020" }}
         title="Software Engineer Intern"
         imgData={{
-          src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/correlation-one-logo.png",
+          src: "https://storage.googleapis.com/etesam-public/Personal-Website/correlation-one-logo.png",
           alt: "Correlation One Logo",
           width: 518 / 15,
           height: 518 / 15,
@@ -263,7 +264,7 @@ export default function Experience() {
         date={{ from: "September 2019", to: "May 2023" }}
         title="Software Engineer"
         imgData={{
-          src: "https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/spec-logo.png",
+          src: "https://storage.googleapis.com/etesam-public/Personal-Website/spec-logo.png",
           alt: "Columbia Daily Spectator Logo",
           width: 518 / 15,
           height: 518 / 15,

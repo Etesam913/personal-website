@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'etesam.nyc3.cdn.digitaloceanspaces.com',
+        hostname: 'storage.googleapis.com',
       },
     ],
   },

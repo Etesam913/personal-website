@@ -11,7 +11,7 @@ export default function About() {
           width={48}
           alt="Icon of Me"
           priority
-          src="https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/about-icon.png"
+          src="https://storage.googleapis.com/etesam-public/Personal-Website/about-icon.png"
         />
         <h1>About Me</h1>
       </div>
@@ -20,7 +20,7 @@ export default function About() {
         <Image
           priority
           fill
-          src="https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/etesam-avatar.png"
+          src="https://storage.googleapis.com/etesam-public/Personal-Website/etesam-avatar.png"
           alt="avatar of Etesam"
         />
       </div>
@@ -41,7 +41,7 @@ export default function About() {
       <h2 className="no-text-align">My Links</h2>
       <ul>
         <li>
-          <a href="https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/Etesam_Ansari_Resume.pdf">
+          <a href="https://storage.googleapis.com/etesam-public/Personal-Website/Etesam_Ansari_Resume.pdf">
             Resume
           </a>
         </li>

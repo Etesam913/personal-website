@@ -11,7 +11,7 @@ export default function NotFound() {
           width={49}
           priority
           alt="Icon of Desktop Computer"
-          src="https://etesam.nyc3.cdn.digitaloceanspaces.com/Personal-Website/not-found-icon.png"
+          src="https://storage.googleapis.com/etesam-public/Personal-Website/not-found-icon.png"
         />
         <h1>Sorry, this page was not found.</h1>
       </div>
