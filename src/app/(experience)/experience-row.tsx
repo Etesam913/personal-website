@@ -2,9 +2,14 @@ import Image from "next/image";
 import { ReactNode } from "react";
 import "./experience.css";
 
+interface DateValue {
+  display: string;
+  dateTime?: string;
+}
+
 interface ExperienceRowProps {
   companyName: string;
-  date: { from: string; to: string };
+  date: { from: DateValue; to: DateValue };
   imgData: {
     src: string;
     alt: string;
@@ -24,6 +29,13 @@ export default function ExperienceRow({
   imgData,
   children,
 }: ExperienceRowProps) {
+  const renderDate = (value: DateValue) => {
+    if (value.dateTime === undefined) {
+      return <span>{value.display}</span>;
+    }
+    return <time dateTime={value.dateTime}>{value.display}</time>;
+  };
+
   return (
     <section className="experience-block">
       <header className="experience-header">
@@ -42,8 +54,7 @@ export default function ExperienceRow({
         <div className="row">
           <h3>{title}</h3>
           <p className="date-range">
-            <time dateTime={date?.from}>{date?.from}</time> -{" "}
-            <time dateTime={date?.to}>{date?.to}</time>
+            {renderDate(date.from)} - {renderDate(date.to)}
           </p>
         </div>
       </header>

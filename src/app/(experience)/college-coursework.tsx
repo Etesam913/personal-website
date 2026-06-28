@@ -1,7 +1,7 @@
 "use client";
 
-import { AnimatePresence, motion } from "motion/react";
-import { useState } from "react";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { useId, useState } from "react";
 
 const classesTaken = [
   "User Interface Design",
@@ -12,7 +12,7 @@ const classesTaken = [
   "3D UI and Augmented Reality",
   "Advanced Programming",
   "Artificial Intelligence",
-  "Introduction to Devops",
+  "Introduction to DevOps",
   "Discrete Mathematics",
   "Computational Linear Algebra",
   "Introduction to Probability and Statistics",
@@ -36,15 +36,24 @@ const restOfCoursework = classesTaken.slice(3).map((course, i) => {
 
 export default function CollegeCoursework() {
   const [isOpen, setIsOpen] = useState(false);
+  const courseworkId = useId();
+  const prefersReducedMotion = useReducedMotion();
 
   return (
     <ul className="experience-list">
       {previewCoursework}
       <li>
-        <button className="see-more-button" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? "See Less" : "See All"}{" "}
+        <button
+          aria-controls={courseworkId}
+          aria-expanded={isOpen}
+          className="see-more-button"
+          onClick={() => setIsOpen((prevIsOpen) => !prevIsOpen)}
+        >
+          {isOpen ? "Hide coursework" : "See all coursework"}{" "}
           <motion.svg
-            animate={{ rotate: isOpen ? 180 : 0 }}
+            aria-hidden="true"
+            animate={prefersReducedMotion ? undefined : { rotate: isOpen ? 180 : 0 }}
+            focusable="false"
             width="32px"
             height="32px"
             viewBox="0 0 24 24"
@@ -61,10 +70,11 @@ export default function CollegeCoursework() {
       <AnimatePresence>
         {isOpen && (
           <motion.ul
+            id={courseworkId}
             style={{ overflow: "hidden" }}
-            initial={{ height: 0 }}
+            initial={prefersReducedMotion ? false : { height: 0 }}
             animate={{ height: "auto" }}
-            exit={{ height: 0 }}
+            exit={prefersReducedMotion ? undefined : { height: 0 }}
           >
             {restOfCoursework}
           </motion.ul>

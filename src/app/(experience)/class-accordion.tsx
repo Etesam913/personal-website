@@ -1,7 +1,7 @@
 "use client";
 
-import { AnimatePresence, motion } from "motion/react";
-import { useState } from "react";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { useId, useState } from "react";
 
 export default function ClassAccordion({
   classesTaken,
@@ -9,15 +9,24 @@ export default function ClassAccordion({
   classesTaken: string[];
 }) {
   const [isOpen, setIsOpen] = useState(false);
+  const courseworkId = useId();
+  const prefersReducedMotion = useReducedMotion();
   const restOfCoursework = classesTaken.slice(3).map((course, i) => {
     return <li key={`course-${i}`}>{course}</li>;
   });
   return (
     <>
-      <button className="see-more-button" onClick={() => setIsOpen(!isOpen)}>
-        {isOpen ? "See Less" : "See All"}{" "}
+      <button
+        aria-controls={courseworkId}
+        aria-expanded={isOpen}
+        className="see-more-button"
+        onClick={() => setIsOpen((prevIsOpen) => !prevIsOpen)}
+      >
+        {isOpen ? "Hide coursework" : "See all coursework"}{" "}
         <motion.svg
-          animate={{ rotate: isOpen ? 180 : 0 }}
+          aria-hidden="true"
+          animate={prefersReducedMotion ? undefined : { rotate: isOpen ? 180 : 0 }}
+          focusable="false"
           width="32px"
           height="32px"
           viewBox="0 0 24 24"
@@ -33,21 +42,24 @@ export default function ClassAccordion({
 
       <AnimatePresence>
         {isOpen && (
-          <motion.div
+          <motion.ul
+            id={courseworkId}
             style={{ overflow: "hidden" }}
-            initial={{ height: 0 }}
+            initial={prefersReducedMotion ? false : { height: 0 }}
             animate={{
               height: "auto",
-              transition: {
-                type: "spring",
-                damping: 16,
-                stiffness: 105,
-              },
+              transition: prefersReducedMotion
+                ? { duration: 0 }
+                : {
+                    type: "spring" as const,
+                    damping: 16,
+                    stiffness: 105,
+                  },
             }}
-            exit={{ height: 0 }}
+            exit={prefersReducedMotion ? undefined : { height: 0 }}
           >
             {restOfCoursework}
-          </motion.div>
+          </motion.ul>
         )}
       </AnimatePresence>
     </>

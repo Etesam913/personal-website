@@ -3,6 +3,12 @@ import ExperienceRow from "./experience-row";
 import CollegeCoursework from "./college-coursework";
 import TechnologiesRow from "./technologies-row";
 
+export const metadata = {
+  title: "Experience | Etesam Ansari",
+  description:
+    "Work experience, education, and technologies used by software engineer Etesam Ansari.",
+};
+
 export default function Experience() {
   return (
     <>
@@ -12,7 +18,7 @@ export default function Experience() {
           height={48}
           width={48}
           priority
-          alt="Icon of Desktop Computer"
+          alt=""
           src="https://storage.googleapis.com/etesam-public/Personal-Website/my-experience-icon.png"
         />
         <h1>My Experience</h1>
@@ -20,25 +26,11 @@ export default function Experience() {
 
       <ExperienceRow
         companyName="Google"
-        title="Software Engineer (L4)"
-        date={{ from: "November 2025", to: "Present" }}
-        imgData={{
-          src: "https://storage.googleapis.com/etesam-public/Personal-Website/google-logo.png",
-          alt: "Google Logo",
-          width: 512 / 14,
-          height: 512 / 14,
-          href: "https://www.google.com/",
+        title="Software Engineer"
+        date={{
+          from: { display: "November 2024", dateTime: "2024-11" },
+          to: { display: "Present" },
         }}
-      >
-        <ul className="experience-list">
-          <li>Currently working on Google Cloud Console features.</li>
-        </ul>
-      </ExperienceRow>
-
-      <ExperienceRow
-        companyName="Google"
-        title="Software Engineer (L3)"
-        date={{ from: "November 2024", to: "November 2025" }}
         imgData={{
           src: "https://storage.googleapis.com/etesam-public/Personal-Website/google-logo.png",
           alt: "Google Logo",
@@ -49,34 +41,51 @@ export default function Experience() {
       >
         <ul className="experience-list">
           <li>
-            Collaborated with a team of four developers to build new Firestore
-            database features in the Google Cloud Console using Angular,
-            TypeScript, and GraphQL.
+            Collaborated with two developers to build the Google Cloud Platform
+            UI for the publicly launched Enterprise edition of Firestore, a
+            database used by a community of 600,000+ developers.
           </li>
           <li>
-            Developed the Firestore query-insights page which displays query
-            performance metrics and insights. Utilized by 500+ developers daily.
+            Designed and built the Firestore query insights UI, a
+            launch-featured observability tool used by 1,000+ enterprise users
+            to identify and optimize high-latency queries.
           </li>
           <li>
-            Implemented UI functionality enabling users to add, delete, and
-            update BSON fields (e.g., ObjectId, Int32, Decimal128) in Firestore
-            Enterprise edition. This gave Firestore the ability to store and
-            query data in a MongoDB-compatible format.
+            Built GraphQL resolvers connected to Kotlin backend endpoints to
+            power the UI&apos;s data layer.
           </li>
           <li>
-            Re-architected the Firestore document data model in the Console UI
-            to unify data representations across the Firestore Web SDK and HTTP
-            API resulting in a more streamlined and type-safe development
-            experience.
+            Developed the UI and supporting middleware using TypeScript,
+            Angular, Java, and Kotlin; earned TypeScript and Kotlin readability
+            certifications.
           </li>
         </ul>
-        <TechnologiesRow technologies="Angular, TypeScript, JavaScript, HTML, CSS, GraphQL" />
+        <TechnologiesRow technologies="TypeScript, Angular, Java, Kotlin, GraphQL, Google Cloud Platform, Firestore" />
+        <div className="role-progression" aria-label="Google role progression">
+          <p className="role-progression-label">Level progression</p>
+          <div className="role-progression-row">
+            <strong>L4</strong>
+            <span>
+              <time dateTime="2025-10">October 2025</time> - Present
+            </span>
+          </div>
+          <div className="role-progression-row">
+            <strong>L3</strong>
+            <span>
+              <time dateTime="2024-11">November 2024</time> -{" "}
+              <time dateTime="2025-10">October 2025</time>
+            </span>
+          </div>
+        </div>
       </ExperienceRow>
 
       <ExperienceRow
         companyName="Balyasny Asset Management"
         title="Software Engineer"
-        date={{ from: "January 2024", to: "August 2024" }}
+        date={{
+          from: { display: "June 2023", dateTime: "2023-06" },
+          to: { display: "August 2024", dateTime: "2024-08" },
+        }}
         imgData={{
           src: "https://storage.googleapis.com/etesam-public/Personal-Website/bam-logo.jpeg",
           alt: "Balyasny Asset Management Logo",
@@ -87,63 +96,55 @@ export default function Experience() {
       >
         <ul className="experience-list">
           <li>
-            {" "}
-            Collaborated with another developer, a designer, and a product
-            manager to build a React web application enabling traders, analysts,
-            and portfolio managers to monitor active quality control incidents
-            for their subscribed datasets.{" "}
-          </li>{" "}
-          <li>
-            {" "}
-            Designed a PostgreSQL database schema and developed GraphQL API
-            endpoints to power frontend retrieval of dataset incident data.{" "}
-          </li>{" "}
-          <li>
-            {" "}
-            Deployed to production and used by over 300 traders and analysts to
-            track and manage dataset quality in real time.{" "}
+            Released an npm library exposing a React component that
+            automatically fetches currency data and visualizes it in a line
+            chart.
           </li>
-        </ul>
-        <TechnologiesRow technologies="Python, React.js, HTML, CSS, TypeScript, JavaScript, PostgreSQL" />
-      </ExperienceRow>
-
-      <ExperienceRow
-        companyName="Balyasny Asset Management"
-        title="Associate Software Engineer"
-        date={{ from: "June 2023", to: "January 2024" }}
-        imgData={{
-          src: "https://storage.googleapis.com/etesam-public/Personal-Website/bam-logo.jpeg",
-          alt: "Balyasny Asset Management Logo",
-          width: 200 / 5,
-          height: 200 / 5,
-          href: "https://www.bamfunds.com/",
-        }}
-      >
-        <ul className="experience-list">
           <li>
-            {" "}
-            Collaborated with three developers to build a React application that
-            enables traders to sort and filter macroeconomic data using{" "}
-            <strong>AgGrid</strong> tables, visualize trends with{" "}
-            <strong>lightweight-charts</strong>, and query data through{" "}
-            <strong>Python</strong> and <strong>Excel</strong>{" "}
-            integrations.{" "}
-          </li>{" "}
+            Built a React application with three other developers that enables
+            traders to sort and filter macroeconomic data in tables using{" "}
+            <strong>AG Grid</strong>, visualize data in graphs with{" "}
+            <strong>lightweight-charts</strong>, and query data with{" "}
+            <strong>Python</strong> and <strong>Excel</strong>.
+          </li>
           <li>
-            {" "}
             Delivered a high-priority feature for the{" "}
-            <strong>Data Catalog</strong> application—used by over 500 traders
-            and sector analysts—that allowed research insights to be tagged
-            across multiple datasets.{" "}
+            <strong>Data Catalog</strong> application, used by 1,000+ traders
+            and sector data analysts, enabling written insights to be tagged
+            across multiple datasets using GraphQL resolvers, Strapi, and
+            PostgreSQL.
           </li>
         </ul>
-        <TechnologiesRow technologies="React.js, Apollo GraphQL, HTML, CSS, TypeScript, JavaScript, PostgreSQL" />
+        <TechnologiesRow technologies="React.js, TypeScript, JavaScript, Python, Excel, GraphQL, Strapi, PostgreSQL" />
+        <div
+          className="role-progression"
+          aria-label="Balyasny Asset Management role progression"
+        >
+          <p className="role-progression-label">Level progression</p>
+          <div className="role-progression-row">
+            <strong>Software Engineer II</strong>
+            <span>
+              <time dateTime="2024-01">January 2024</time> -{" "}
+              <time dateTime="2024-08">August 2024</time>
+            </span>
+          </div>
+          <div className="role-progression-row">
+            <strong>Software Engineer I</strong>
+            <span>
+              <time dateTime="2023-06">June 2023</time> -{" "}
+              <time dateTime="2024-01">January 2024</time>
+            </span>
+          </div>
+        </div>
       </ExperienceRow>
 
       <ExperienceRow
         companyName="Columbia University"
-        title="Bachelors in Computer Science"
-        date={{ from: "September 2019", to: "May 2023" }}
+        title="Bachelor of Science in Computer Science"
+        date={{
+          from: { display: "September 2019", dateTime: "2019-09" },
+          to: { display: "May 2023", dateTime: "2023-05" },
+        }}
         imgData={{
           src: "https://storage.googleapis.com/etesam-public/Personal-Website/columbia-logo.png",
           alt: "Columbia University Logo",
@@ -162,7 +163,10 @@ export default function Experience() {
 
       <ExperienceRow
         companyName="Meta"
-        date={{ from: "May 2022", to: "August 2022" }}
+        date={{
+          from: { display: "May 2022", dateTime: "2022-05" },
+          to: { display: "August 2022", dateTime: "2022-08" },
+        }}
         title="Frontend Engineer Intern"
         imgData={{
           src: "https://storage.googleapis.com/etesam-public/Personal-Website/meta-logo.png",
@@ -176,31 +180,35 @@ export default function Experience() {
           <li>
             Worked alongside two other software engineers on{" "}
             <a href="https://mephisto.ai/">Mephisto</a>, a data collection
-            platform that allows researchers to easily publish tasks that
-            workers can complete for money.
+            platform that lets researchers publish paid tasks for users to
+            complete.
           </li>
           <li>
             Published{" "}
             <a href="https://mephisto.ai/docs/guides/how_to_use/worker_experience/mephisto-worker-addons/">
-              the mephisto-worker-addons npm library
+              a new version of the mephisto-worker-addons npm library
             </a>{" "}
-            with two React.js components named &quot;tips&quot; and
-            &quot;feedback&quot;.
+            with 20,000+ downloads, adding two React.js components named
+            &quot;tips&quot; and &quot;feedback&quot;.
           </li>
           <li>
-            These components were used in tandem with the Python backend to
-            improve worker-to-worker and worker-to-researcher communication.
+            Integrated the components with a Python backend and SQLite database
+            to improve worker-to-worker and worker-to-researcher communication.
           </li>
           <li>
-            Made other improvements like adding a search bar to the
-            documentation website and beautifying the command line interface.
+            Configured end-to-end testing and continuous integration with
+            Cypress and GitHub Actions, achieving 100% test coverage on the
+            example projects.
           </li>
         </ul>
-        <TechnologiesRow technologies="React.js, Python, HTML, CSS, JavaScript" />
+        <TechnologiesRow technologies="React.js, Python, SQLite, Cypress, GitHub Actions, HTML, CSS, JavaScript" />
       </ExperienceRow>
       <ExperienceRow
         companyName="Genesys"
-        date={{ from: "June 2021", to: "August 2021" }}
+        date={{
+          from: { display: "June 2021", dateTime: "2021-06" },
+          to: { display: "August 2021", dateTime: "2021-08" },
+        }}
         title="Software Engineer Intern"
         imgData={{
           src: "https://storage.googleapis.com/etesam-public/Personal-Website/genesys-logo.png",
@@ -212,30 +220,28 @@ export default function Experience() {
       >
         <ul className="experience-list">
           <li>
-            Worked with two other developers to create a serverless application
-            that automates the uploading of VPAT (Voluntary Product
-            Accessibility Template) files whenever a change is made to the VPAT
-            in the repository.
+            Developed a serverless application that automatically uploads VPAT
+            (Voluntary Product Accessibility Template) files whenever a change
+            is made in a GitHub repository.
           </li>
           <li>
-            Created a dashboard that displayed the VPAT files from the database
-            as well as other important information (file name, team name, team
-            contact email, etc.).
+            Created a dashboard displaying VPAT files and key metadata,
+            including file name, team name, and contact email, adopted by 30+
+            internal teams for submitting accessibility documentation.
           </li>
           <li>
-            Used an AWS application load balancer, lambdas, DynamoDB, s3, and
-            Jenkins to make this possible.
-          </li>
-          <li>
-            Worked with one other developer to migrate an old AngularJS app to
-            modern Angular 11.
+            Built the system with an AWS Application Load Balancer, Lambda,
+            DynamoDB, S3, and Jenkins.
           </li>
         </ul>
-        <TechnologiesRow technologies="React.js, Angular, AWS Lambda, DynamoDB, s3, Serverless Framework, Jenkins, HTML, CSS, JavaScript" />
+        <TechnologiesRow technologies="AWS Application Load Balancer, AWS Lambda, DynamoDB, S3, Jenkins, HTML, CSS, JavaScript" />
       </ExperienceRow>
       <ExperienceRow
         companyName="Correlation One"
-        date={{ from: "June 2020", to: "September 2020" }}
+        date={{
+          from: { display: "June 2020", dateTime: "2020-06" },
+          to: { display: "September 2020", dateTime: "2020-09" },
+        }}
         title="Software Engineer Intern"
         imgData={{
           src: "https://storage.googleapis.com/etesam-public/Personal-Website/correlation-one-logo.png",
@@ -261,7 +267,10 @@ export default function Experience() {
 
       <ExperienceRow
         companyName="Columbia Daily Spectator"
-        date={{ from: "September 2019", to: "May 2023" }}
+        date={{
+          from: { display: "September 2019", dateTime: "2019-09" },
+          to: { display: "May 2023", dateTime: "2023-05" },
+        }}
         title="Software Engineer"
         imgData={{
           src: "https://storage.googleapis.com/etesam-public/Personal-Website/spec-logo.png",

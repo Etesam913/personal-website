@@ -1,6 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Page Not Found | Etesam Ansari",
+};
+
 export default function NotFound() {
   return (
     <>
@@ -10,7 +14,7 @@ export default function NotFound() {
           height={48}
           width={49}
           priority
-          alt="Icon of Desktop Computer"
+          alt=""
           src="https://storage.googleapis.com/etesam-public/Personal-Website/not-found-icon.png"
         />
         <h1>Sorry, this page was not found.</h1>

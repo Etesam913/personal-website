@@ -17,6 +17,7 @@
 .technology-row{
   display: flex;
   align-items: center;
+  font-size: 1.17em;
   line-height: 1.7rem;
   margin-top: 1rem;
 }
@@ -33,10 +34,38 @@
   .experience-header {
     margin: 0 0 2rem;
   }
+  .role-progression-row {
+    flex-direction: column;
+    gap: 0.15rem;
+    text-align: center;
+  }
 }
 
 .experience-list {
   margin-top: 0.5rem;
+}
+
+.role-progression {
+  display: grid;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+}
+
+.role-progression-label {
+  color: var(--gray);
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.role-progression-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.role-progression-row > span {
+  font-weight: bold;
 }
 
 .see-more-button {
@@ -55,8 +84,4 @@
   margin: 0;
   font-size: 1.17em;
   font-weight: bold;
-}
-
-.technology-label {
-  font-size: 1.17em;
 }

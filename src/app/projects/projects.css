@@ -12,7 +12,7 @@
 .cards-container {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+    grid-template-columns: 1fr;
     gap: 2rem;
     margin: 1rem 0 1.5rem;
 }
@@ -71,6 +71,11 @@
     border: 0;
     font-weight: 600;
     font-size: 1.35em;
+}
+
+.card-title {
+    margin: 0;
+    text-align: center;
 }
 
 .placeholder-box {

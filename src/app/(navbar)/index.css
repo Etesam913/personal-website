@@ -59,6 +59,12 @@
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .wave {
+    animation: none;
+  }
+}
+
 .navbar-links {
   display: flex;
   justify-content: flex-end;
@@ -84,6 +90,13 @@
 .navbar-link[data-active-page="true"] {
   color: inherit;
   transition: 400ms color;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar-link,
+  .navbar-link[data-active-page="true"] {
+    transition: none;
+  }
 }
 
 @media screen and (max-width: 768px) {

@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 
 export default function CardLink({
   projectName,
@@ -8,12 +8,14 @@ export default function CardLink({
   projectName: string;
   href: string;
 }) {
+  const prefersReducedMotion = useReducedMotion();
+
   return (
     <motion.a
       href={href}
-      whileHover={{ scale: 1.1 }}
-      whileFocus={{ scale: 1.1 }}
-      whileTap={{ scale: 0.95 }}
+      whileHover={prefersReducedMotion ? undefined : { scale: 1.1 }}
+      whileFocus={prefersReducedMotion ? undefined : { scale: 1.1 }}
+      whileTap={prefersReducedMotion ? undefined : { scale: 0.95 }}
       className="card-link"
     >
       {projectName}

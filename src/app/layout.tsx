@@ -4,8 +4,9 @@ import "./global.css";
 import PageWrapper from "./page-wrapper";
 
 export const metadata = {
-  title: "Etesam Ansari's Personal Website",
-  description: "Check out my cool projects!",
+  title: "Etesam Ansari",
+  description:
+    "Software engineer portfolio for Etesam Ansari, including experience, projects, and contact links.",
   icons: {
     icon: "/favicon.ico",
   },
@@ -19,7 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${bricolageGrotesque.variable}`}>
       <body className={`${bricolageGrotesque.variable}`}>
-        <a href="#main-content" className="skip-link">Skip to main content</a>
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
         <Navbar />
         <PageWrapper>{children}</PageWrapper>
       </body>
