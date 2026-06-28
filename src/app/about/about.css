@@ -11,7 +11,8 @@
     margin: 0 auto 2rem;
     transform: translateX(0px);
   }
-  .no-text-align{
+
+  .no-text-align {
     text-align: left;
   }
 }
@@ -20,5 +21,4 @@
   margin-bottom: 1.5rem;
   font-size: 1.5em;
   font-weight: bold;
-  text-align: center;
 }

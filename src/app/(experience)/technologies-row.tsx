@@ -4,9 +4,9 @@ export default function TechnologiesRow({
   technologies: string;
 }) {
   return (
-    <div className="technology-row">
-      <strong className="technology-label">Technologies:&nbsp;</strong>{" "}
+    <p className="technology-row">
+      <strong className="technology-label">Technologies:</strong>{" "}
       {technologies}
-    </div>
+    </p>
   );
 }

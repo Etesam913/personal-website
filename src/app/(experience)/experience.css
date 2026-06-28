@@ -4,6 +4,10 @@
   border-bottom: 1.5px dashed var(--text-color);
 }
 
+.experience-header {
+  margin-bottom: 1.15rem;
+}
+
 .experience-block:last-child {
   border-bottom: none;
 }
@@ -14,10 +18,8 @@
   justify-content: space-between;
 }
 
-.technology-row{
-  display: flex;
-  align-items: center;
-  font-size: 1.17em;
+.technology-row {
+  font-size: 0.95rem;
   line-height: 1.7rem;
   margin-top: 1rem;
 }
@@ -25,19 +27,6 @@
 @media screen and (max-width: 768px) {
   .row {
     flex-direction: column;
-  }
-  .technology-row{
-    flex-direction: column;
-    text-align: center;
-    margin-top: 2rem;
-  }
-  .experience-header {
-    margin: 0 0 2rem;
-  }
-  .role-progression-row {
-    flex-direction: column;
-    gap: 0.15rem;
-    text-align: center;
   }
 }
 
@@ -56,16 +45,24 @@
   font-size: 0.95rem;
   font-weight: bold;
   margin: 0;
+  text-align: left;
 }
 
 .role-progression-row {
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
   gap: 1rem;
 }
 
-.role-progression-row > span {
+.role-progression-row>span {
   font-weight: bold;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.technology-label {
+  white-space: nowrap;
 }
 
 .see-more-button {
@@ -73,9 +70,10 @@
   align-items: center;
   border-bottom: 1px solid var(--text-color);
   margin-bottom: 1rem;
-  
+
 }
-.see-more-button > svg{
+
+.see-more-button>svg {
   margin-left: 0.5rem;
 }
 

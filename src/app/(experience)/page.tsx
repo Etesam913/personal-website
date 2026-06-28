@@ -64,13 +64,13 @@ export default function Experience() {
         <div className="role-progression" aria-label="Google role progression">
           <p className="role-progression-label">Level progression</p>
           <div className="role-progression-row">
-            <strong>L4</strong>
+            <strong>Software Engineer L4</strong>
             <span>
               <time dateTime="2025-10">October 2025</time> - Present
             </span>
           </div>
           <div className="role-progression-row">
-            <strong>L3</strong>
+            <strong>Software Engineer L3</strong>
             <span>
               <time dateTime="2024-11">November 2024</time> -{" "}
               <time dateTime="2025-10">October 2025</time>

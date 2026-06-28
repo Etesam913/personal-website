@@ -6,6 +6,7 @@
 *::after {
   box-sizing: border-box;
 }
+
 /*
   2. Remove default margin
 */
@@ -65,6 +66,7 @@ body {
   height: 100%;
   scrollbar-gutter: stable;
 }
+
 /*
   Typographic tweaks!
   4. Add accessible line-height
@@ -80,6 +82,7 @@ body {
   width: min(900px, 90vw);
   margin: 0 auto;
 }
+
 /*j
   6. Improve media defaults
 */
@@ -91,6 +94,7 @@ svg {
   display: block;
   max-width: 100%;
 }
+
 /*
   7. Remove built-in form typography styles
 */
@@ -100,6 +104,7 @@ textarea,
 select {
   font: inherit;
 }
+
 /*
   8. Avoid text overflows
 */
@@ -190,9 +195,11 @@ a {
   border: 2px solid var(--link);
   border-radius: 6px;
 }
+
 .skip-link:focus {
   top: 0.5rem;
 }
+
 .header-row-container {
   display: flex;
   justify-content: flex-start;
@@ -200,12 +207,6 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  h1,
-  h2,
-  h3,
-  p {
-    text-align: center;
-  }
   .header-row-container {
     justify-content: center;
   }

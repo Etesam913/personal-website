@@ -40,7 +40,7 @@ export default function ExperienceRow({
     <section className="experience-block">
       <header className="experience-header">
         <div className="row">
-          <h2 className="experience-header">{companyName}</h2>
+          <h2>{companyName}</h2>
           <a href={imgData?.href} aria-label={`Visit ${companyName} website`}>
             <Image
               style={{ margin: "0.5rem 0", ...imgData?.style }}
