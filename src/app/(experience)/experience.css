@@ -48,6 +48,12 @@
   text-align: left;
 }
 
+@media (prefers-color-scheme: dark) {
+  .role-progression-label {
+    color: #cccccc;
+  }
+}
+
 .role-progression-row {
   display: flex;
   align-items: baseline;

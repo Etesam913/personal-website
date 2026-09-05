@@ -72,9 +72,29 @@ export default function CollegeCoursework() {
           <motion.ul
             id={courseworkId}
             style={{ overflow: "hidden" }}
-            initial={prefersReducedMotion ? false : { height: 0 }}
-            animate={{ height: "auto" }}
-            exit={prefersReducedMotion ? undefined : { height: 0 }}
+            initial={prefersReducedMotion ? false : { height: 0, opacity: 0 }}
+            animate={{
+              height: "auto",
+              opacity: 1,
+              transition: prefersReducedMotion
+                ? { duration: 0 }
+                : {
+                    height: { duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] },
+                    opacity: { duration: 0.25, ease: "easeInOut" },
+                  },
+            }}
+            exit={
+              prefersReducedMotion
+                ? undefined
+                : {
+                    height: 0,
+                    opacity: 0,
+                    transition: {
+                      height: { duration: 0.25, ease: [0.04, 0.62, 0.23, 0.98] },
+                      opacity: { duration: 0.15, ease: "easeInOut" },
+                    },
+                  }
+            }
           >
             {restOfCoursework}
           </motion.ul>
